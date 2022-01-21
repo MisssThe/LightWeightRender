@@ -249,6 +249,30 @@ Source/Source/Graph/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.s
 .PHONY : Source/Source/Graph/Window.cpp.s
 
+Utils/Source/FileUtil.o: Utils/Source/FileUtil.cpp.o
+.PHONY : Utils/Source/FileUtil.o
+
+# target to build an object file
+Utils/Source/FileUtil.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/FileUtil.cpp.o
+.PHONY : Utils/Source/FileUtil.cpp.o
+
+Utils/Source/FileUtil.i: Utils/Source/FileUtil.cpp.i
+.PHONY : Utils/Source/FileUtil.i
+
+# target to preprocess a source file
+Utils/Source/FileUtil.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/FileUtil.cpp.i
+.PHONY : Utils/Source/FileUtil.cpp.i
+
+Utils/Source/FileUtil.s: Utils/Source/FileUtil.cpp.s
+.PHONY : Utils/Source/FileUtil.s
+
+# target to generate assembly for a file
+Utils/Source/FileUtil.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/FileUtil.cpp.s
+.PHONY : Utils/Source/FileUtil.cpp.s
+
 Utils/Source/JsonUtil.o: Utils/Source/JsonUtil.cpp.o
 .PHONY : Utils/Source/JsonUtil.o
 
@@ -344,6 +368,30 @@ Utils/Source/MathUtil.s: Utils/Source/MathUtil.cpp.s
 Utils/Source/MathUtil.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/MathUtil.cpp.s
 .PHONY : Utils/Source/MathUtil.cpp.s
+
+Utils/Source/StringUtil.o: Utils/Source/StringUtil.cpp.o
+.PHONY : Utils/Source/StringUtil.o
+
+# target to build an object file
+Utils/Source/StringUtil.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/StringUtil.cpp.o
+.PHONY : Utils/Source/StringUtil.cpp.o
+
+Utils/Source/StringUtil.i: Utils/Source/StringUtil.cpp.i
+.PHONY : Utils/Source/StringUtil.i
+
+# target to preprocess a source file
+Utils/Source/StringUtil.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/StringUtil.cpp.i
+.PHONY : Utils/Source/StringUtil.cpp.i
+
+Utils/Source/StringUtil.s: Utils/Source/StringUtil.cpp.s
+.PHONY : Utils/Source/StringUtil.s
+
+# target to generate assembly for a file
+Utils/Source/StringUtil.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/StringUtil.cpp.s
+.PHONY : Utils/Source/StringUtil.cpp.s
 
 Utils/Source/ThreadUtil.o: Utils/Source/ThreadUtil.cpp.o
 .PHONY : Utils/Source/ThreadUtil.o
@@ -441,6 +489,9 @@ help:
 	@echo "... Source/Source/Graph/Window.o"
 	@echo "... Source/Source/Graph/Window.i"
 	@echo "... Source/Source/Graph/Window.s"
+	@echo "... Utils/Source/FileUtil.o"
+	@echo "... Utils/Source/FileUtil.i"
+	@echo "... Utils/Source/FileUtil.s"
 	@echo "... Utils/Source/JsonUtil.o"
 	@echo "... Utils/Source/JsonUtil.i"
 	@echo "... Utils/Source/JsonUtil.s"
@@ -453,6 +504,9 @@ help:
 	@echo "... Utils/Source/MathUtil.o"
 	@echo "... Utils/Source/MathUtil.i"
 	@echo "... Utils/Source/MathUtil.s"
+	@echo "... Utils/Source/StringUtil.o"
+	@echo "... Utils/Source/StringUtil.i"
+	@echo "... Utils/Source/StringUtil.s"
 	@echo "... Utils/Source/ThreadUtil.o"
 	@echo "... Utils/Source/ThreadUtil.i"
 	@echo "... Utils/Source/ThreadUtil.s"

@@ -13,8 +13,22 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderPipeline.cpp.o
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderPipeline.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/RenderPipeline.cpp
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Shader.cpp.o
+ ../Include/glad/include/glad/glad.h
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/Shader.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/Shader.cpp
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/FileUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/LogUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/StringUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.o
  ../Include/glad/include/glad/glad.h
  ../Include/glfw/3.3.4/include/GLFW/glfw3.h
@@ -33,6 +47,10 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.o
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/MainLoopUtil.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/ThreadUtil.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h
+CMakeFiles/LightWeightRenderer.dir/Utils/Source/FileUtil.cpp.o
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/FileUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/LogUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/FileUtil.cpp
 CMakeFiles/LightWeightRenderer.dir/Utils/Source/JsonUtil.cpp.o
  ../Include/jsoncpp/1.9.4_1/include/json/allocator.h
  ../Include/jsoncpp/1.9.4_1/include/json/config.h
@@ -66,6 +84,19 @@ CMakeFiles/LightWeightRenderer.dir/Utils/Source/MainLoopUtil.cpp.o
 CMakeFiles/LightWeightRenderer.dir/Utils/Source/MathUtil.cpp.o
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/MathUtil.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/MathUtil.cpp
+CMakeFiles/LightWeightRenderer.dir/Utils/Source/StringUtil.cpp.o
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/StringUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/StringUtil.cpp
 CMakeFiles/LightWeightRenderer.dir/Utils/Source/ThreadUtil.cpp.o
  ../Include/jsoncpp/1.9.4_1/include/json/allocator.h
  ../Include/jsoncpp/1.9.4_1/include/json/config.h

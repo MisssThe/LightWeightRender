@@ -48,7 +48,7 @@ public:
         if (vector != nullptr) {
             int length = vector->size();
             for (int i = 0; i < length; ++i) {
-                func(vector[i]);
+                func((*vector)[i]);
             }
         }
     }
@@ -76,6 +76,13 @@ public:
                 TraverJsonValue(temp, func);
                 func(member, temp);
             }
+        }
+    }
+    static void TraverString(std::string str,std::function<void(char)> func)
+    {
+        int length = str.length();
+        for (int i = 0; i < length; ++i) {
+            func(str[i]);
         }
     }
 };

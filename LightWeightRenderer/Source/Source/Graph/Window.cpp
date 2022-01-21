@@ -70,6 +70,8 @@ void Window::updateWindow() {
 }
 
 void Window::deleteWindow() {
+    //保证线程安全
+    ThreadUtil::Stop();
     if (window != nullptr)
     {
         glfwDestroyWindow(this->window);
@@ -80,6 +82,11 @@ void Window::deleteWindow() {
             return false;
         return true;
     });
+    if (id_queue.size() == 0) {
+        glfwTerminate();
+        isInit = false;
+    }
+    ThreadUtil::Resume();
 }
 
 Window::~Window() {

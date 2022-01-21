@@ -131,6 +131,9 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/Window.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/FileUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/JsonUtil.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -143,10 +146,16 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/MathUtil.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/StringUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/ThreadUtil.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/FileUtil.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/JsonUtil.cpp">
@@ -159,6 +168,9 @@
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/MathUtil.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/StringUtil.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/ThreadUtil.cpp">

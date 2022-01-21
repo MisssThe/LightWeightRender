@@ -13,8 +13,22 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderPipeline.cpp.o: \
  ../Source/Head/Graph/RenderPipeline.h \
  ../Source/Source/Graph/RenderPipeline.cpp
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Shader.cpp.o: \
+ ../Include/glad/include/glad/glad.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
  ../Source/Head/Graph/Shader.h \
- ../Source/Source/Graph/Shader.cpp
+ ../Source/Source/Graph/Shader.cpp \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/StringUtil.h \
+ ../Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.o: \
  ../Include/glad/include/glad/glad.h \
  ../Include/glfw/3.3.4/include/GLFW/glfw3.h \
@@ -33,6 +47,10 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.o: \
  ../Utils/Head/MainLoopUtil.h \
  ../Utils/Head/ThreadUtil.h \
  ../Utils/Head/TraverUtil.h
+CMakeFiles/LightWeightRenderer.dir/Utils/Source/FileUtil.cpp.o: \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Source/FileUtil.cpp
 CMakeFiles/LightWeightRenderer.dir/Utils/Source/JsonUtil.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
  ../Include/jsoncpp/1.9.4_1/include/json/config.h \
@@ -66,6 +84,19 @@ CMakeFiles/LightWeightRenderer.dir/Utils/Source/MainLoopUtil.cpp.o: \
 CMakeFiles/LightWeightRenderer.dir/Utils/Source/MathUtil.cpp.o: \
  ../Utils/Head/MathUtil.h \
  ../Utils/Source/MathUtil.cpp
+CMakeFiles/LightWeightRenderer.dir/Utils/Source/StringUtil.cpp.o: \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/StringUtil.h \
+ ../Utils/Head/TraverUtil.h \
+ ../Utils/Source/StringUtil.cpp
 CMakeFiles/LightWeightRenderer.dir/Utils/Source/ThreadUtil.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
  ../Include/jsoncpp/1.9.4_1/include/json/config.h \
