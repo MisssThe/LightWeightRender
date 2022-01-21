@@ -1,0 +1,14 @@
+//
+// Created by MisThe on 2022/1/20.
+//
+
+#ifndef LIGHTWEIGHTRENDERER_RENDERPIPELINE_H
+#define LIGHTWEIGHTRENDERER_RENDERPIPELINE_H
+
+
+class RenderPipeline {
+
+};
+
+
+#endif //LIGHTWEIGHTRENDERER_RENDERPIPELINE_H

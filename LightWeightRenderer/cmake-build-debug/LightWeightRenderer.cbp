@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LightWeightRenderer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LightWeightRenderer">
+				<Option output="/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/LightWeightRenderer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glew/2.2.0_1/include/GL"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glfw/3.3.4/include/GLFW"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glad/include/glad"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glad/include/KHR"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/jsoncpp/1.9.4_1/include/json"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/assimp/5.0.1/include"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glm/0.9.9.8/include"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/stb_image/include"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/freetype/2.11.0/include/freetype2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 LightWeightRenderer"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LightWeightRenderer/fast">
+				<Option output="/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/LightWeightRenderer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glew/2.2.0_1/include/GL"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glfw/3.3.4/include/GLFW"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glad/include/glad"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glad/include/KHR"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/jsoncpp/1.9.4_1/include/json"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/assimp/5.0.1/include"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/glm/0.9.9.8/include"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/stb_image/include"/>
+					<Add directory="/Users/tandijie/LightWeightRender/LightWeightRenderer/Include/freetype/2.11.0/include/freetype2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 LightWeightRenderer/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/ModelLoader.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderObject.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderPipeline.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/Shader.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/Window.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Module.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/ModelLoader.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/RenderObject.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/RenderPipeline.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/Shader.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/Window.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/JsonUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/LogUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/MainLoopUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/MathUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/ThreadUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/JsonUtil.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/LogUtil.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/MainLoopUtil.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/MathUtil.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/ThreadUtil.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/glad.c">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/main.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

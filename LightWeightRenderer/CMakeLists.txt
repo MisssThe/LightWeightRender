@@ -1,0 +1,33 @@
+cmake_minimum_required(VERSION 3.20)
+project(LightWeightRenderer)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(GLEW_H ${PROJECT_SOURCE_DIR}/Include/glew/2.2.0_1/include/GL)
+set(GLFW_H ${PROJECT_SOURCE_DIR}/Include/glfw/3.3.4/include/GLFW)
+set(GLAD_H ${PROJECT_SOURCE_DIR}/Include/glad/include/glad)
+set(KH_H ${PROJECT_SOURCE_DIR}/Include/glad/include/KHR)
+set(JSON_H ${PROJECT_SOURCE_DIR}/Include/jsoncpp/1.9.4_1/include/json)
+set(ASSIMP_H ${PROJECT_SOURCE_DIR}/Include/assimp/5.0.1/include)
+set(GLM_H ${PROJECT_SOURCE_DIR}/Include/glm/0.9.9.8/include)
+set(IMAGE_H ${PROJECT_SOURCE_DIR}/Include/stb_image/include)
+set(FREETYPE_H ${PROJECT_SOURCE_DIR}/Include/freetype/2.11.0/include/freetype2)
+#set(FBX_H ${PROJECT_SOURCE_DIR}/Include/FBX/include)
+include_directories(${GLEW_H} ${GLFW_H} ${GLAD_H} ${KH_H} ${JSON_H} ${ASSIMP_H} ${GLM_H} ${IMAGE_H} ${FREETYPE_H})
+
+set(GLEW_LINK ${PROJECT_SOURCE_DIR}/Include/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib)
+set(GLFW_LINK ${PROJECT_SOURCE_DIR}/Include/glfw/3.3.4/lib/libglfw.3.3.dylib)
+set(JSON_LINK ${PROJECT_SOURCE_DIR}/Include/jsoncpp/1.9.4_1/lib/libjsoncpp.24.dylib)
+set(ASSIMP_LINK ${PROJECT_SOURCE_DIR}/Include/assimp/5.0.1/lib/libassimp.dylib)
+#set(FBX_LINK  ${PROJECT_SOURCE_DIR}/Include/FBX/lib/clang/debug/libfbxsdk.a)
+link_libraries(${OPENGL} ${GLFW_LINK} ${GLEW_LINK} ${JSON_LINK} ${ASSIMP_LINK})
+
+add_executable(
+        LightWeightRenderer         main.cpp    glad.c
+        Source/Module.h
+        Utils/Head/ThreadUtil.h     Utils/Source/ThreadUtil.cpp
+        Utils/Head/MathUtil.h       Utils/Source/MathUtil.cpp
+        Utils/Head/JsonUtil.h       Utils/Source/JsonUtil.cpp
+        Utils/Head/LogUtil.h        Utils/Source/LogUtil.cpp
+        Utils/Head/TraverUtil.h
+        Source/Source/Graph/Window.cpp Source/Head/Graph/Window.h Source/Source/Graph/RenderPipeline.cpp Source/Head/Graph/RenderPipeline.h Utils/Source/MainLoopUtil.cpp Utils/Head/MainLoopUtil.h Source/Source/Graph/Shader.cpp Source/Head/Graph/Shader.h Source/Source/Graph/ModelLoader.cpp Source/Head/Graph/ModelLoader.h Source/Source/Graph/RenderObject.cpp Source/Head/Graph/RenderObject.h)
