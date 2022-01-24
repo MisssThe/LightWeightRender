@@ -33,7 +33,7 @@ void RenderObject::setShader(const Shader *shader) {
     if (this->shader != shader)
     {
         if (shader == nullptr)
-            shader = new Shader("","","");
+            shader = new Shader("","");
         this->shader = (Shader*)shader;
         this->setMaterial(nullptr);
     }

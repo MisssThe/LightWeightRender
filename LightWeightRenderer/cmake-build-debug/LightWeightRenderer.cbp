@@ -113,13 +113,16 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Transform.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
-		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/ModelLoader.h">
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/MeshLoader/AssimpLoader.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/MeshLoader/BaseLoader.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/MeshLoader/GeneralLoader.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderPipeline.h">
-			<Option target="LightWeightRenderer"/>
-		</Unit>
-		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/VertexInfo.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/Window.h">
@@ -146,13 +149,13 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Transform.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
-		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/ModelLoader.cpp">
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/MeshLoader/AssimpLoader.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/MeshLoader/BaseLoader.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/RenderPipeline.cpp">
-			<Option target="LightWeightRenderer"/>
-		</Unit>
-		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/VertexInfo.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/Window.cpp">

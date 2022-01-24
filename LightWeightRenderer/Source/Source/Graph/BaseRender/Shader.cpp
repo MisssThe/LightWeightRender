@@ -5,13 +5,14 @@
 #include "../../../Head/Graph/BaseRender/Shader.h"
 
 std::string Shader::cut_of_word = "//--------------------Uniform--------------------";
+std::unordered_map<std::string,Shader::ShaderInfo> Shader::shader_map;
 
 void Shader::use() {
     glUseProgram(this->shaderID);
 }
 
-Shader::Shader(std::string vertexPath, std::string fragmentPath, std::string shaderName) {
-    this->setName(shaderName,vertexPath);
+Shader::Shader(std::string vertexPath, std::string fragmentPath) {
+    this->init(vertexPath);
     std::string*vCode = FileUtil::ReadFile(vertexPath);
     std::string*fCode = FileUtil::ReadFile(fragmentPath);
     this->shaderID = glCreateProgram();
@@ -20,12 +21,14 @@ Shader::Shader(std::string vertexPath, std::string fragmentPath, std::string sha
     glLinkProgram(this->shaderID);
 }
 
-void Shader::setName(std::string name, std::string path) {
-    if (name.empty()) {
-        std::vector<std::string> vec = StringUtil::Split(&path, "/");
-        name = vec[vec.size() - 1];
+void Shader::init(std::string path) {
+    this->shaderName = path;
+    //判断shader是否已经编译
+    if (shader_map.find(this->shaderName) != shader_map.end())
+    {
+        this->shaderID = shader_map[this->shaderName].shaderID;
+        this->keyWordMap = *shader_map[this->shaderName].keyWordMap;
     }
-    this->shaderName = name;
 }
 
 void Shader::compile(std::string*codeStr,int shaderType) {

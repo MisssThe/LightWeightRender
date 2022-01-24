@@ -6,8 +6,13 @@
 #define LIGHTWEIGHTRENDERER_TRANSFORM_H
 
 
-class Transform {
+#include <glm/glm.hpp>
 
+class Transform {
+public:
+    glm::vec3 position;
+    glm::vec3 rotation;
+    glm::vec3 scale;
 };
 
 

@@ -249,29 +249,53 @@ Source/Source/Graph/BaseRender/Transform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.s
 .PHONY : Source/Source/Graph/BaseRender/Transform.cpp.s
 
-Source/Source/Graph/ModelLoader.o: Source/Source/Graph/ModelLoader.cpp.o
-.PHONY : Source/Source/Graph/ModelLoader.o
+Source/Source/Graph/MeshLoader/AssimpLoader.o: Source/Source/Graph/MeshLoader/AssimpLoader.cpp.o
+.PHONY : Source/Source/Graph/MeshLoader/AssimpLoader.o
 
 # target to build an object file
-Source/Source/Graph/ModelLoader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/ModelLoader.cpp.o
-.PHONY : Source/Source/Graph/ModelLoader.cpp.o
+Source/Source/Graph/MeshLoader/AssimpLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/MeshLoader/AssimpLoader.cpp.o
+.PHONY : Source/Source/Graph/MeshLoader/AssimpLoader.cpp.o
 
-Source/Source/Graph/ModelLoader.i: Source/Source/Graph/ModelLoader.cpp.i
-.PHONY : Source/Source/Graph/ModelLoader.i
+Source/Source/Graph/MeshLoader/AssimpLoader.i: Source/Source/Graph/MeshLoader/AssimpLoader.cpp.i
+.PHONY : Source/Source/Graph/MeshLoader/AssimpLoader.i
 
 # target to preprocess a source file
-Source/Source/Graph/ModelLoader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/ModelLoader.cpp.i
-.PHONY : Source/Source/Graph/ModelLoader.cpp.i
+Source/Source/Graph/MeshLoader/AssimpLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/MeshLoader/AssimpLoader.cpp.i
+.PHONY : Source/Source/Graph/MeshLoader/AssimpLoader.cpp.i
 
-Source/Source/Graph/ModelLoader.s: Source/Source/Graph/ModelLoader.cpp.s
-.PHONY : Source/Source/Graph/ModelLoader.s
+Source/Source/Graph/MeshLoader/AssimpLoader.s: Source/Source/Graph/MeshLoader/AssimpLoader.cpp.s
+.PHONY : Source/Source/Graph/MeshLoader/AssimpLoader.s
 
 # target to generate assembly for a file
-Source/Source/Graph/ModelLoader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/ModelLoader.cpp.s
-.PHONY : Source/Source/Graph/ModelLoader.cpp.s
+Source/Source/Graph/MeshLoader/AssimpLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/MeshLoader/AssimpLoader.cpp.s
+.PHONY : Source/Source/Graph/MeshLoader/AssimpLoader.cpp.s
+
+Source/Source/Graph/MeshLoader/BaseLoader.o: Source/Source/Graph/MeshLoader/BaseLoader.cpp.o
+.PHONY : Source/Source/Graph/MeshLoader/BaseLoader.o
+
+# target to build an object file
+Source/Source/Graph/MeshLoader/BaseLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/MeshLoader/BaseLoader.cpp.o
+.PHONY : Source/Source/Graph/MeshLoader/BaseLoader.cpp.o
+
+Source/Source/Graph/MeshLoader/BaseLoader.i: Source/Source/Graph/MeshLoader/BaseLoader.cpp.i
+.PHONY : Source/Source/Graph/MeshLoader/BaseLoader.i
+
+# target to preprocess a source file
+Source/Source/Graph/MeshLoader/BaseLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/MeshLoader/BaseLoader.cpp.i
+.PHONY : Source/Source/Graph/MeshLoader/BaseLoader.cpp.i
+
+Source/Source/Graph/MeshLoader/BaseLoader.s: Source/Source/Graph/MeshLoader/BaseLoader.cpp.s
+.PHONY : Source/Source/Graph/MeshLoader/BaseLoader.s
+
+# target to generate assembly for a file
+Source/Source/Graph/MeshLoader/BaseLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/MeshLoader/BaseLoader.cpp.s
+.PHONY : Source/Source/Graph/MeshLoader/BaseLoader.cpp.s
 
 Source/Source/Graph/RenderPipeline.o: Source/Source/Graph/RenderPipeline.cpp.o
 .PHONY : Source/Source/Graph/RenderPipeline.o
@@ -296,30 +320,6 @@ Source/Source/Graph/RenderPipeline.s: Source/Source/Graph/RenderPipeline.cpp.s
 Source/Source/Graph/RenderPipeline.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderPipeline.cpp.s
 .PHONY : Source/Source/Graph/RenderPipeline.cpp.s
-
-Source/Source/Graph/VertexInfo.o: Source/Source/Graph/VertexInfo.cpp.o
-.PHONY : Source/Source/Graph/VertexInfo.o
-
-# target to build an object file
-Source/Source/Graph/VertexInfo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/VertexInfo.cpp.o
-.PHONY : Source/Source/Graph/VertexInfo.cpp.o
-
-Source/Source/Graph/VertexInfo.i: Source/Source/Graph/VertexInfo.cpp.i
-.PHONY : Source/Source/Graph/VertexInfo.i
-
-# target to preprocess a source file
-Source/Source/Graph/VertexInfo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/VertexInfo.cpp.i
-.PHONY : Source/Source/Graph/VertexInfo.cpp.i
-
-Source/Source/Graph/VertexInfo.s: Source/Source/Graph/VertexInfo.cpp.s
-.PHONY : Source/Source/Graph/VertexInfo.s
-
-# target to generate assembly for a file
-Source/Source/Graph/VertexInfo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/VertexInfo.cpp.s
-.PHONY : Source/Source/Graph/VertexInfo.cpp.s
 
 Source/Source/Graph/Window.o: Source/Source/Graph/Window.cpp.o
 .PHONY : Source/Source/Graph/Window.o
@@ -609,15 +609,15 @@ help:
 	@echo "... Source/Source/Graph/BaseRender/Transform.o"
 	@echo "... Source/Source/Graph/BaseRender/Transform.i"
 	@echo "... Source/Source/Graph/BaseRender/Transform.s"
-	@echo "... Source/Source/Graph/ModelLoader.o"
-	@echo "... Source/Source/Graph/ModelLoader.i"
-	@echo "... Source/Source/Graph/ModelLoader.s"
+	@echo "... Source/Source/Graph/MeshLoader/AssimpLoader.o"
+	@echo "... Source/Source/Graph/MeshLoader/AssimpLoader.i"
+	@echo "... Source/Source/Graph/MeshLoader/AssimpLoader.s"
+	@echo "... Source/Source/Graph/MeshLoader/BaseLoader.o"
+	@echo "... Source/Source/Graph/MeshLoader/BaseLoader.i"
+	@echo "... Source/Source/Graph/MeshLoader/BaseLoader.s"
 	@echo "... Source/Source/Graph/RenderPipeline.o"
 	@echo "... Source/Source/Graph/RenderPipeline.i"
 	@echo "... Source/Source/Graph/RenderPipeline.s"
-	@echo "... Source/Source/Graph/VertexInfo.o"
-	@echo "... Source/Source/Graph/VertexInfo.i"
-	@echo "... Source/Source/Graph/VertexInfo.s"
 	@echo "... Source/Source/Graph/Window.o"
 	@echo "... Source/Source/Graph/Window.i"
 	@echo "... Source/Source/Graph/Window.s"
