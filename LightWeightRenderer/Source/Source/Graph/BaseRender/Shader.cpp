@@ -2,7 +2,7 @@
 // Created by MisThe on 2022/1/21.
 //
 
-#include "../../Head/Graph/Shader.h"
+#include "../../../Head/Graph/BaseRender/Shader.h"
 
 std::string Shader::cut_of_word = "//--------------------Uniform--------------------";
 
@@ -79,4 +79,8 @@ void Shader::findKeyWord(std::string*code) {
             }
         });
     }
+}
+
+std::string Shader::getName() {
+    return this->shaderName;
 }

@@ -26,11 +26,16 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Include/freetype/2.11.0/include/freetype2"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Material.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.o"
+  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Mesh.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Mesh.cpp.o"
+  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/RenderObject.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/RenderObject.cpp.o"
+  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Shader.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Shader.cpp.o"
+  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Transform.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.o"
   "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/ModelLoader.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/ModelLoader.cpp.o"
-  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/RenderObject.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderObject.cpp.o"
   "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/RenderPipeline.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderPipeline.cpp.o"
-  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/Shader.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Shader.cpp.o"
+  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/VertexInfo.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/VertexInfo.cpp.o"
   "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/Window.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.o"
+  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/CollisionDetection.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.o"
   "/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/FileUtil.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Utils/Source/FileUtil.cpp.o"
   "/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/JsonUtil.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Utils/Source/JsonUtil.cpp.o"
   "/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/LogUtil.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Utils/Source/LogUtil.cpp.o"

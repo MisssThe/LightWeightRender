@@ -129,6 +129,126 @@ LightWeightRenderer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/build
 .PHONY : LightWeightRenderer/fast
 
+Source/Source/Graph/BaseRender/Material.o: Source/Source/Graph/BaseRender/Material.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Material.o
+
+# target to build an object file
+Source/Source/Graph/BaseRender/Material.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Material.cpp.o
+
+Source/Source/Graph/BaseRender/Material.i: Source/Source/Graph/BaseRender/Material.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Material.i
+
+# target to preprocess a source file
+Source/Source/Graph/BaseRender/Material.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Material.cpp.i
+
+Source/Source/Graph/BaseRender/Material.s: Source/Source/Graph/BaseRender/Material.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Material.s
+
+# target to generate assembly for a file
+Source/Source/Graph/BaseRender/Material.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Material.cpp.s
+
+Source/Source/Graph/BaseRender/Mesh.o: Source/Source/Graph/BaseRender/Mesh.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Mesh.o
+
+# target to build an object file
+Source/Source/Graph/BaseRender/Mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Mesh.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Mesh.cpp.o
+
+Source/Source/Graph/BaseRender/Mesh.i: Source/Source/Graph/BaseRender/Mesh.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Mesh.i
+
+# target to preprocess a source file
+Source/Source/Graph/BaseRender/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Mesh.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Mesh.cpp.i
+
+Source/Source/Graph/BaseRender/Mesh.s: Source/Source/Graph/BaseRender/Mesh.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Mesh.s
+
+# target to generate assembly for a file
+Source/Source/Graph/BaseRender/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Mesh.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Mesh.cpp.s
+
+Source/Source/Graph/BaseRender/RenderObject.o: Source/Source/Graph/BaseRender/RenderObject.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/RenderObject.o
+
+# target to build an object file
+Source/Source/Graph/BaseRender/RenderObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/RenderObject.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/RenderObject.cpp.o
+
+Source/Source/Graph/BaseRender/RenderObject.i: Source/Source/Graph/BaseRender/RenderObject.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/RenderObject.i
+
+# target to preprocess a source file
+Source/Source/Graph/BaseRender/RenderObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/RenderObject.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/RenderObject.cpp.i
+
+Source/Source/Graph/BaseRender/RenderObject.s: Source/Source/Graph/BaseRender/RenderObject.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/RenderObject.s
+
+# target to generate assembly for a file
+Source/Source/Graph/BaseRender/RenderObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/RenderObject.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/RenderObject.cpp.s
+
+Source/Source/Graph/BaseRender/Shader.o: Source/Source/Graph/BaseRender/Shader.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Shader.o
+
+# target to build an object file
+Source/Source/Graph/BaseRender/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Shader.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Shader.cpp.o
+
+Source/Source/Graph/BaseRender/Shader.i: Source/Source/Graph/BaseRender/Shader.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Shader.i
+
+# target to preprocess a source file
+Source/Source/Graph/BaseRender/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Shader.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Shader.cpp.i
+
+Source/Source/Graph/BaseRender/Shader.s: Source/Source/Graph/BaseRender/Shader.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Shader.s
+
+# target to generate assembly for a file
+Source/Source/Graph/BaseRender/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Shader.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Shader.cpp.s
+
+Source/Source/Graph/BaseRender/Transform.o: Source/Source/Graph/BaseRender/Transform.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Transform.o
+
+# target to build an object file
+Source/Source/Graph/BaseRender/Transform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Transform.cpp.o
+
+Source/Source/Graph/BaseRender/Transform.i: Source/Source/Graph/BaseRender/Transform.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Transform.i
+
+# target to preprocess a source file
+Source/Source/Graph/BaseRender/Transform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Transform.cpp.i
+
+Source/Source/Graph/BaseRender/Transform.s: Source/Source/Graph/BaseRender/Transform.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Transform.s
+
+# target to generate assembly for a file
+Source/Source/Graph/BaseRender/Transform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Transform.cpp.s
+
 Source/Source/Graph/ModelLoader.o: Source/Source/Graph/ModelLoader.cpp.o
 .PHONY : Source/Source/Graph/ModelLoader.o
 
@@ -152,30 +272,6 @@ Source/Source/Graph/ModelLoader.s: Source/Source/Graph/ModelLoader.cpp.s
 Source/Source/Graph/ModelLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/ModelLoader.cpp.s
 .PHONY : Source/Source/Graph/ModelLoader.cpp.s
-
-Source/Source/Graph/RenderObject.o: Source/Source/Graph/RenderObject.cpp.o
-.PHONY : Source/Source/Graph/RenderObject.o
-
-# target to build an object file
-Source/Source/Graph/RenderObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderObject.cpp.o
-.PHONY : Source/Source/Graph/RenderObject.cpp.o
-
-Source/Source/Graph/RenderObject.i: Source/Source/Graph/RenderObject.cpp.i
-.PHONY : Source/Source/Graph/RenderObject.i
-
-# target to preprocess a source file
-Source/Source/Graph/RenderObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderObject.cpp.i
-.PHONY : Source/Source/Graph/RenderObject.cpp.i
-
-Source/Source/Graph/RenderObject.s: Source/Source/Graph/RenderObject.cpp.s
-.PHONY : Source/Source/Graph/RenderObject.s
-
-# target to generate assembly for a file
-Source/Source/Graph/RenderObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderObject.cpp.s
-.PHONY : Source/Source/Graph/RenderObject.cpp.s
 
 Source/Source/Graph/RenderPipeline.o: Source/Source/Graph/RenderPipeline.cpp.o
 .PHONY : Source/Source/Graph/RenderPipeline.o
@@ -201,29 +297,29 @@ Source/Source/Graph/RenderPipeline.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderPipeline.cpp.s
 .PHONY : Source/Source/Graph/RenderPipeline.cpp.s
 
-Source/Source/Graph/Shader.o: Source/Source/Graph/Shader.cpp.o
-.PHONY : Source/Source/Graph/Shader.o
+Source/Source/Graph/VertexInfo.o: Source/Source/Graph/VertexInfo.cpp.o
+.PHONY : Source/Source/Graph/VertexInfo.o
 
 # target to build an object file
-Source/Source/Graph/Shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Shader.cpp.o
-.PHONY : Source/Source/Graph/Shader.cpp.o
+Source/Source/Graph/VertexInfo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/VertexInfo.cpp.o
+.PHONY : Source/Source/Graph/VertexInfo.cpp.o
 
-Source/Source/Graph/Shader.i: Source/Source/Graph/Shader.cpp.i
-.PHONY : Source/Source/Graph/Shader.i
+Source/Source/Graph/VertexInfo.i: Source/Source/Graph/VertexInfo.cpp.i
+.PHONY : Source/Source/Graph/VertexInfo.i
 
 # target to preprocess a source file
-Source/Source/Graph/Shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Shader.cpp.i
-.PHONY : Source/Source/Graph/Shader.cpp.i
+Source/Source/Graph/VertexInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/VertexInfo.cpp.i
+.PHONY : Source/Source/Graph/VertexInfo.cpp.i
 
-Source/Source/Graph/Shader.s: Source/Source/Graph/Shader.cpp.s
-.PHONY : Source/Source/Graph/Shader.s
+Source/Source/Graph/VertexInfo.s: Source/Source/Graph/VertexInfo.cpp.s
+.PHONY : Source/Source/Graph/VertexInfo.s
 
 # target to generate assembly for a file
-Source/Source/Graph/Shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Shader.cpp.s
-.PHONY : Source/Source/Graph/Shader.cpp.s
+Source/Source/Graph/VertexInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/VertexInfo.cpp.s
+.PHONY : Source/Source/Graph/VertexInfo.cpp.s
 
 Source/Source/Graph/Window.o: Source/Source/Graph/Window.cpp.o
 .PHONY : Source/Source/Graph/Window.o
@@ -248,6 +344,30 @@ Source/Source/Graph/Window.s: Source/Source/Graph/Window.cpp.s
 Source/Source/Graph/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.s
 .PHONY : Source/Source/Graph/Window.cpp.s
+
+Source/Source/Physics/CollisionDetection.o: Source/Source/Physics/CollisionDetection.cpp.o
+.PHONY : Source/Source/Physics/CollisionDetection.o
+
+# target to build an object file
+Source/Source/Physics/CollisionDetection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.o
+.PHONY : Source/Source/Physics/CollisionDetection.cpp.o
+
+Source/Source/Physics/CollisionDetection.i: Source/Source/Physics/CollisionDetection.cpp.i
+.PHONY : Source/Source/Physics/CollisionDetection.i
+
+# target to preprocess a source file
+Source/Source/Physics/CollisionDetection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.i
+.PHONY : Source/Source/Physics/CollisionDetection.cpp.i
+
+Source/Source/Physics/CollisionDetection.s: Source/Source/Physics/CollisionDetection.cpp.s
+.PHONY : Source/Source/Physics/CollisionDetection.s
+
+# target to generate assembly for a file
+Source/Source/Physics/CollisionDetection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.s
+.PHONY : Source/Source/Physics/CollisionDetection.cpp.s
 
 Utils/Source/FileUtil.o: Utils/Source/FileUtil.cpp.o
 .PHONY : Utils/Source/FileUtil.o
@@ -474,21 +594,36 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LightWeightRenderer"
+	@echo "... Source/Source/Graph/BaseRender/Material.o"
+	@echo "... Source/Source/Graph/BaseRender/Material.i"
+	@echo "... Source/Source/Graph/BaseRender/Material.s"
+	@echo "... Source/Source/Graph/BaseRender/Mesh.o"
+	@echo "... Source/Source/Graph/BaseRender/Mesh.i"
+	@echo "... Source/Source/Graph/BaseRender/Mesh.s"
+	@echo "... Source/Source/Graph/BaseRender/RenderObject.o"
+	@echo "... Source/Source/Graph/BaseRender/RenderObject.i"
+	@echo "... Source/Source/Graph/BaseRender/RenderObject.s"
+	@echo "... Source/Source/Graph/BaseRender/Shader.o"
+	@echo "... Source/Source/Graph/BaseRender/Shader.i"
+	@echo "... Source/Source/Graph/BaseRender/Shader.s"
+	@echo "... Source/Source/Graph/BaseRender/Transform.o"
+	@echo "... Source/Source/Graph/BaseRender/Transform.i"
+	@echo "... Source/Source/Graph/BaseRender/Transform.s"
 	@echo "... Source/Source/Graph/ModelLoader.o"
 	@echo "... Source/Source/Graph/ModelLoader.i"
 	@echo "... Source/Source/Graph/ModelLoader.s"
-	@echo "... Source/Source/Graph/RenderObject.o"
-	@echo "... Source/Source/Graph/RenderObject.i"
-	@echo "... Source/Source/Graph/RenderObject.s"
 	@echo "... Source/Source/Graph/RenderPipeline.o"
 	@echo "... Source/Source/Graph/RenderPipeline.i"
 	@echo "... Source/Source/Graph/RenderPipeline.s"
-	@echo "... Source/Source/Graph/Shader.o"
-	@echo "... Source/Source/Graph/Shader.i"
-	@echo "... Source/Source/Graph/Shader.s"
+	@echo "... Source/Source/Graph/VertexInfo.o"
+	@echo "... Source/Source/Graph/VertexInfo.i"
+	@echo "... Source/Source/Graph/VertexInfo.s"
 	@echo "... Source/Source/Graph/Window.o"
 	@echo "... Source/Source/Graph/Window.i"
 	@echo "... Source/Source/Graph/Window.s"
+	@echo "... Source/Source/Physics/CollisionDetection.o"
+	@echo "... Source/Source/Physics/CollisionDetection.i"
+	@echo "... Source/Source/Physics/CollisionDetection.s"
 	@echo "... Utils/Source/FileUtil.o"
 	@echo "... Utils/Source/FileUtil.i"
 	@echo "... Utils/Source/FileUtil.s"

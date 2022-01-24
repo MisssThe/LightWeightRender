@@ -1,0 +1,15 @@
+//
+// Created by MisThe on 2022/1/21.
+// 碰撞检测器
+//
+
+#ifndef LIGHTWEIGHTRENDERER_COLLISIONDETECTION_H
+#define LIGHTWEIGHTRENDERER_COLLISIONDETECTION_H
+
+
+class CollisionDetection {
+
+};
+
+
+#endif //LIGHTWEIGHTRENDERER_COLLISIONDETECTION_H

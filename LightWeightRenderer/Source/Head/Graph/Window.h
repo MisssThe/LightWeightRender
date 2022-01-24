@@ -1,6 +1,7 @@
 //
 // Created by MisThe on 2022/1/20.
 // 构建一个显示窗口
+// 所有窗口共用顶点、材质等信息
 //
 
 #ifndef LIGHTWEIGHTRENDERER_WINDOW_H
@@ -17,7 +18,7 @@
 class Window
 {
 public:
-    Window(std::string name = "test",int width = 0,int height = 0);
+    Window(std::function<void()> func,std::string name = "test",int width = 0,int height = 0);
     ~Window();
 private:
     void initContext();
@@ -29,11 +30,12 @@ private:
     GLFWwindow*window;
     int width,height;
     std::string windowName;
-    bool isFirst;
     int windowID;
+    std::function<void()> renderFUnc;
     static bool isInit;
     static int base_id;
     static std::queue<int> id_queue;
+    static GLFWwindow* main_window;
 };
 
 

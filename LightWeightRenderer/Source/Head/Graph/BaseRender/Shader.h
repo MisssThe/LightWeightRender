@@ -8,8 +8,8 @@
 #include <string>
 #include <glad.h>
 #include <unordered_map>
-#include "../../../Utils/Head/StringUtil.h"
-#include "../../../Utils/Head/FileUtil.h"
+#include "../../../../Utils/Head/StringUtil.h"
+#include "../../../../Utils/Head/FileUtil.h"
 
 class Shader {
 public:
@@ -21,6 +21,7 @@ public:
     std::unordered_map<std::string,KeyWord> keyWordMap;
 public:
     Shader(std::string vertexPath,std::string fragmentPath,std::string shaderName);
+    std::string getName();
     void use();
 private:
     std::string shaderName;

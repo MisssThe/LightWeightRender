@@ -9,12 +9,16 @@
 bool Window::isInit = false;
 int  Window::base_id = 0;
 std::queue<int> Window::id_queue;
+GLFWwindow* Window::main_window;
 
-Window::Window(std::string name, int width, int height) {
+Window::Window(std::function<void()> func,std::string name, int width, int height) {
+    if (func == nullptr)
+        LogUtil::LogError("create window","use invalid render func to create window");
     this->windowName = name;
     this->width = width;
     this->height = height;
     this->windowID = ++base_id;
+    this->renderFUnc = func;
     id_queue.push(this->windowID);
     if (!isInit)
         this->initContext();
@@ -36,7 +40,9 @@ void Window::initContext() {
 }
 
 void Window::initWindow() {
-    this->window = glfwCreateWindow(this->width, this->height, this->windowName.c_str(), NULL, NULL);
+    this->window = glfwCreateWindow(this->width, this->height, this->windowName.c_str(), NULL, main_window);
+    if (main_window == nullptr)
+        main_window = this->window;
     if (window == NULL)
     {
         LogUtil::LogError("init window","Failed to create GLFW window");
@@ -63,6 +69,7 @@ bool Window::run() {
 void Window::updateWindow() {
     glfwMakeContextCurrent(this->window);
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    this->renderFUnc();
     glfwSwapBuffers(this->window);
     int id = id_queue.front();
     if (this->windowID == id)

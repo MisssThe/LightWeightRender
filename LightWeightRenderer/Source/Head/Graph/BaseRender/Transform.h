@@ -1,0 +1,14 @@
+//
+// Created by MisThe on 2022/1/21.
+//
+
+#ifndef LIGHTWEIGHTRENDERER_TRANSFORM_H
+#define LIGHTWEIGHTRENDERER_TRANSFORM_H
+
+
+class Transform {
+
+};
+
+
+#endif //LIGHTWEIGHTRENDERER_TRANSFORM_H
