@@ -12,11 +12,19 @@ RenderObject::RenderObject(RenderOrder order,Shader *shader, Material *material,
     this->setMesh(mesh);
 }
 
+bool RenderObject::render() {
+    //根据自身属性绘制
+    this->mesh->use();
+    this->shader->use();
+    this->material->use(this->transform);
+    glDrawElements(GL_TRIANGLES, 60000, GL_UNSIGNED_INT, 0);
+    return isAlive;
+}
+
 void RenderObject::setMaterial(Material *material) {
     this->material = material;
     if (this->material == nullptr)
         this->material = new Material(this->shader);
-    this->material->setTransform(this->transform);
 }
 
 void RenderObject::setMesh(Mesh *mesh) {
@@ -35,17 +43,8 @@ void RenderObject::setShader(const Shader *shader) {
         if (shader == nullptr)
             shader = new Shader("","");
         this->shader = (Shader*)shader;
-        this->setMaterial(nullptr);
+        this->material->setShader(this->shader);
     }
-}
-
-bool RenderObject::render() {
-    //根据自身属性绘制
-    this->shader->use();
-    this->material->use();
-    this->mesh->use();
-    glDrawElements(GL_TRIANGLES, 60000, GL_UNSIGNED_INT, 0);
-    return isAlive;
 }
 
 RenderObject::RenderOrder RenderObject::GetOrder() {

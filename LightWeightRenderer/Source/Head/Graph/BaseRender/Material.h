@@ -12,9 +12,14 @@
 
 class Material {
 public:
-    Material(Shader*shader);
-    void use();
+    Material(Shader*shader);                    //临时材质
+    Material(Shader*shader,std::string name);   //本地材质
+    void use(Transform*transform);
+    void setShader(Shader*shader);
     void setTransform(Transform*transform);
+private:
+    Shader*shader;
+    Transform*transform;
 };
 
 

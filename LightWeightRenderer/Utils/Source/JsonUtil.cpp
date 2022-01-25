@@ -5,7 +5,10 @@
 #include "../Head/JsonUtil.h"
 #include "../Head/TraverUtil.h"
 
+std::string JsonUtil::current_path;
+
 Json::Value JsonUtil::ReadJson(std::string path) {
+    path = CheckPath(path);
     std::ifstream jsonFile;
     jsonFile.open(path);
     Json::Value root;
@@ -68,4 +71,28 @@ void JsonUtil::UpdateJson(std::queue<std::string> keyPath, std::string value, st
         LogUtil::LogError("Update Json","invalid json path");
     }
 
+}
+
+std::string JsonUtil::CheckPath(std::string path) {
+    if (current_path == "")
+    {
+        current_path = std::filesystem::current_path();
+        current_path = StringUtil::SplitAndReduce(&current_path,"/",1);
+    }
+    std::ifstream file;
+    file.open(path);
+    if (file.is_open())
+    {
+        file.close();
+        return path;
+    }
+    path = current_path + path;
+    file.open(path);
+    if (file.is_open())
+    {
+        file.close();
+        return path;
+    }
+    LogUtil::LogError("check path","file not exit");
+    return NULL;
 }

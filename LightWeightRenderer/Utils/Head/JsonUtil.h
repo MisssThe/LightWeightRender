@@ -12,6 +12,7 @@
 #include <queue>
 #include "../Head/LogUtil.h"
 #include "TraverUtil.h"
+#include "StringUtil.h"
 
 class JsonUtil
 {
@@ -21,6 +22,9 @@ public:
     static void        WriteJson(std::queue<std::string> keyPath,std::string value,std::string path);
     static void        UpdateJson(std::queue<std::string> keyPath,std::string value,std::string path);
     static void        WriteJson(Json::Value value,std::string path);
+private:
+    static std::string CheckPath(std::string path);
+    static std::string current_path;
 };
 
 

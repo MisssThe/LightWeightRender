@@ -13,17 +13,13 @@
 
 class Mesh {
 public:
-    struct MeshInfo
-    {
-
-    };
-public:
     Mesh(std::string path);
     void use();
 private:
     std::string meshName;
     unsigned int VAO;
-    static std::unordered_map<std::string,MeshInfo> mesh_map;
+    BaseLoader::MeshInfo*meshInfo;
+    static std::unordered_map<std::string,unsigned int> mesh_map;
 private:
     void loadMesh(std::string path);
     void processMesh(BaseLoader::MeshInfo* meshInfo);

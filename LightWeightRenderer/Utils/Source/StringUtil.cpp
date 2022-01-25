@@ -27,3 +27,14 @@ std::vector<std::string> StringUtil::Split(std::string*strPtr, std::string flag)
     } while (!str.empty());
     return result;
 }
+
+std::string StringUtil::SplitAndReduce(std::string *str, std::string flag, int num) {
+    std::vector<std::string> temp = Split(str,flag);
+    num = temp.size() - num + 1;
+    std::string finalStr = "";
+    TraverUtil::TraverVector<std::string>(&temp,[&finalStr, &num](std::string str){
+        if (num-- > 0)
+            finalStr += str;
+    });
+    return finalStr;
+}

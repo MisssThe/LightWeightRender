@@ -11,7 +11,8 @@
 
 class StringUtil {
 public:
-    static std::vector<std::string> Split(std::string*str,std::string flag);
+    static std::vector<std::string> Split(std::string*str,std::string flag);        //按标志符分割字符串
+    static std::string SplitAndReduce(std::string*str,std::string flag,int num);    //从末端删除指定数量按标志符分割的字符串
 };
 
 

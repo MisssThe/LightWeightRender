@@ -129,6 +129,30 @@ LightWeightRenderer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/build
 .PHONY : LightWeightRenderer/fast
 
+Source/Source/Extend/TexturePacker.o: Source/Source/Extend/TexturePacker.cpp.o
+.PHONY : Source/Source/Extend/TexturePacker.o
+
+# target to build an object file
+Source/Source/Extend/TexturePacker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/TexturePacker.cpp.o
+.PHONY : Source/Source/Extend/TexturePacker.cpp.o
+
+Source/Source/Extend/TexturePacker.i: Source/Source/Extend/TexturePacker.cpp.i
+.PHONY : Source/Source/Extend/TexturePacker.i
+
+# target to preprocess a source file
+Source/Source/Extend/TexturePacker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/TexturePacker.cpp.i
+.PHONY : Source/Source/Extend/TexturePacker.cpp.i
+
+Source/Source/Extend/TexturePacker.s: Source/Source/Extend/TexturePacker.cpp.s
+.PHONY : Source/Source/Extend/TexturePacker.s
+
+# target to generate assembly for a file
+Source/Source/Extend/TexturePacker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/TexturePacker.cpp.s
+.PHONY : Source/Source/Extend/TexturePacker.cpp.s
+
 Source/Source/Graph/BaseRender/Material.o: Source/Source/Graph/BaseRender/Material.cpp.o
 .PHONY : Source/Source/Graph/BaseRender/Material.o
 
@@ -594,6 +618,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LightWeightRenderer"
+	@echo "... Source/Source/Extend/TexturePacker.o"
+	@echo "... Source/Source/Extend/TexturePacker.i"
+	@echo "... Source/Source/Extend/TexturePacker.s"
 	@echo "... Source/Source/Graph/BaseRender/Material.o"
 	@echo "... Source/Source/Graph/BaseRender/Material.i"
 	@echo "... Source/Source/Graph/BaseRender/Material.s"

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/TexturePacker.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Mesh.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/RenderObject.cpp.o"

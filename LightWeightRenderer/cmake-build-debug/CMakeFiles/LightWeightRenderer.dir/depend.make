@@ -3,6 +3,9 @@
 
 CMakeFiles/LightWeightRenderer.dir/glad.c.o: \
  ../glad.c
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/TexturePacker.cpp.o: \
+ ../Source/Head/Extend/TexturePacker.h \
+ ../Source/Source/Extend/TexturePacker.cpp
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.o: \
  ../Include/glad/include/glad/glad.h \
  ../Include/glm/0.9.9.8/include/glm/common.hpp \
@@ -1331,6 +1334,7 @@ CMakeFiles/LightWeightRenderer.dir/Utils/Source/JsonUtil.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
  ../Utils/Head/JsonUtil.h \
  ../Utils/Head/LogUtil.h \
+ ../Utils/Head/StringUtil.h \
  ../Utils/Head/TraverUtil.h \
  ../Utils/Source/JsonUtil.cpp
 CMakeFiles/LightWeightRenderer.dir/Utils/Source/LogUtil.cpp.o: \

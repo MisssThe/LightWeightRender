@@ -26,6 +26,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Include/freetype/2.11.0/include/freetype2"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/TexturePacker.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/TexturePacker.cpp.o"
   "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Material.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.o"
   "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Mesh.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Mesh.cpp.o"
   "/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/RenderObject.cpp" "/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/RenderObject.cpp.o"
