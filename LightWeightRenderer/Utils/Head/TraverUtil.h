@@ -52,6 +52,17 @@ public:
             }
         }
     }
+    template<class T> static void TraverVectorBool(std::vector<T>*vector,std::function<bool(T)> func) {
+        if (vector != nullptr) {
+            int length = vector->size();
+            for (int i = 0; i < length; ++i) {
+                if (func((*vector)[i]))
+                {
+                    break;
+                }
+            }
+        }
+    }
     template<class T1,class T2> static void TraverUMap(std::unordered_map<T1,T2>*umap,std::function<void(T1,T2)> func) {
         if (umap != nullptr) {
             for (auto item:*umap)

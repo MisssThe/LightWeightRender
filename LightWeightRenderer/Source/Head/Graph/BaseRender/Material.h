@@ -20,6 +20,10 @@ public:
 private:
     Shader*shader;
     Transform*transform;
+    static bool isReady;
+    static std::unordered_map<std::string,std::function<void()>> type_func;
+private:
+    void init();
 };
 
 

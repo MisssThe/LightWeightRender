@@ -249,6 +249,30 @@ Source/Source/Graph/BaseRender/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Shader.cpp.s
 .PHONY : Source/Source/Graph/BaseRender/Shader.cpp.s
 
+Source/Source/Graph/BaseRender/Texture.o: Source/Source/Graph/BaseRender/Texture.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Texture.o
+
+# target to build an object file
+Source/Source/Graph/BaseRender/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Texture.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Texture.cpp.o
+
+Source/Source/Graph/BaseRender/Texture.i: Source/Source/Graph/BaseRender/Texture.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Texture.i
+
+# target to preprocess a source file
+Source/Source/Graph/BaseRender/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Texture.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Texture.cpp.i
+
+Source/Source/Graph/BaseRender/Texture.s: Source/Source/Graph/BaseRender/Texture.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Texture.s
+
+# target to generate assembly for a file
+Source/Source/Graph/BaseRender/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Texture.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Texture.cpp.s
+
 Source/Source/Graph/BaseRender/Transform.o: Source/Source/Graph/BaseRender/Transform.cpp.o
 .PHONY : Source/Source/Graph/BaseRender/Transform.o
 
@@ -633,6 +657,9 @@ help:
 	@echo "... Source/Source/Graph/BaseRender/Shader.o"
 	@echo "... Source/Source/Graph/BaseRender/Shader.i"
 	@echo "... Source/Source/Graph/BaseRender/Shader.s"
+	@echo "... Source/Source/Graph/BaseRender/Texture.o"
+	@echo "... Source/Source/Graph/BaseRender/Texture.i"
+	@echo "... Source/Source/Graph/BaseRender/Texture.s"
 	@echo "... Source/Source/Graph/BaseRender/Transform.o"
 	@echo "... Source/Source/Graph/BaseRender/Transform.i"
 	@echo "... Source/Source/Graph/BaseRender/Transform.s"

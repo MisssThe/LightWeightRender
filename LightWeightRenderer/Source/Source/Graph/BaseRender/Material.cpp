@@ -4,7 +4,11 @@
 
 #include "../../../Head/Graph/BaseRender/Material.h"
 
+bool Material::isReady = false;
+
 Material::Material(Shader *shader) {
+    //初始化material基础设置，只会初始化一次
+//    if ()
     //创建临时材质,根据shader 关键字创建面板
 //    shader->keyWordMap;
 }
@@ -37,4 +41,9 @@ void Material::setTransform(Transform *transform) {
     this->transform = transform;
     if (this->transform == nullptr)
         this->transform = new Transform();
+}
+
+void Material::init() {
+
+    isReady = true;
 }

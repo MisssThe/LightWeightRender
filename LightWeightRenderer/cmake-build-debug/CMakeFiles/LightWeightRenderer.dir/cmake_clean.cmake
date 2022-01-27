@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Mesh.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/RenderObject.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Shader.cpp.o"
+  "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Texture.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/MeshLoader/AssimpLoader.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/MeshLoader/BaseLoader.cpp.o"

@@ -2,6 +2,7 @@
 #include "Utils/Head/JsonUtil.h"
 #include "Source/Head/Graph/Window.h"
 #include "Source/Head/Graph/RenderPipeline.h"
+#include "Utils/Head/SortUtil.h"
 #include <unordered_map>
 int main() {
     RenderPipeline pipeline1,pipeline2;
