@@ -7,7 +7,7 @@
 void RenderPipeline::render() {
     TraverUtil::TraverQueue<std::queue<Material*>*>(&this->renderQueue,[](std::queue<Material*>* queue) {
         TraverUtil::TraverQueue<Material*>(queue,[](Material* object){
-            return object->render();
+//            return object->render();
         });
     });
 }

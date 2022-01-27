@@ -1,7 +1,7 @@
 //
 // Created by MisThe on 2022/1/21.
 // 实现材质功能，存储自定义数据
-// 渲染的最小单位
+// 记录的数据暂处于内存中，刷新或更换shader时刷新磁盘文件
 //
 
 #ifndef LIGHTWEIGHTRENDERER_MATERIAL_H
@@ -9,24 +9,24 @@
 
 
 #include "Shader.h"
-#include "Transform.h"
-#include "Mesh.h"
+#include "../../../../Utils/Head/JsonUtil.h"
 
 class Material {
 public:
     Material(std::string path);
-    Material* RefreshPanel();                                                 //创建显示面板
-    void use(Transform*transform);
+    Material* RefreshPanel();
     void setShader(Shader*shader);
-    void setTransform(Transform*transform);
     bool render();
 private:
     Shader*shader;
-    Transform*transform;
-    Mesh*mesh;
-    bool isAlive;
-    static bool isReady;
-    static std::unordered_map<std::string,std::function<void(Shader*)>> type_func;
+    std::string shaderName;
+    struct Info
+    {
+        std::string type;
+        std::string value;
+        bool modify;
+    };
+    std::unordered_map<std::string,Info> property_map;
 private:
     void init();
 };
