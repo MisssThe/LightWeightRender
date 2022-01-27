@@ -1,0 +1,5 @@
+存放网格相关文件
+
+在mesh config中配置文件名和路径，格式为{preheat : {mesh name : mesh path,...}, passivity : {mesh name : mesh path,...}}
+
+不需要预加载所有网格

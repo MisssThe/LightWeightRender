@@ -101,13 +101,13 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Extend/TexturePacker.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Extend/UI/Image.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Material.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Mesh.h">
-			<Option target="LightWeightRenderer"/>
-		</Unit>
-		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/RenderObject.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Shader.h">
@@ -119,6 +119,18 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Transform.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/GraphController/GraphController.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/GraphController/MaterialController.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/GraphController/MeshController.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/GraphController/ShaderController.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/MeshLoader/AssimpLoader.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -126,6 +138,9 @@
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/MeshLoader/GeneralLoader.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderObject.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderPipeline.h">
@@ -143,13 +158,13 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/TexturePacker.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/UI/Image.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Material.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Mesh.cpp">
-			<Option target="LightWeightRenderer"/>
-		</Unit>
-		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/RenderObject.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Shader.cpp">
@@ -161,10 +176,22 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Transform.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/MaterialController.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/MeshController.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/ShaderController.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/MeshLoader/AssimpLoader.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/MeshLoader/BaseLoader.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/RenderObject.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/RenderPipeline.cpp">

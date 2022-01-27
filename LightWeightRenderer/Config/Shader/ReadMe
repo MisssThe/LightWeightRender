@@ -1,0 +1,9 @@
+Shader存放目录
+
+程序运行时扫描ShaderConfig目录获取要创建的shader目录
+
+在程序运行中不能额外创建编译shader
+
+在程序运行中不能随意删除shader
+
+config添加格式 {"shader name" : [{"vertex" : "shader path_1"}, {"fragment" : "shader path_2"}, ...]

@@ -77,7 +77,7 @@ std::string JsonUtil::CheckPath(std::string path) {
     if (current_path == "")
     {
         current_path = std::filesystem::current_path();
-        current_path = StringUtil::SplitAndReduce(&current_path,"/",1);
+        current_path = StringUtil::SplitAndReduce(&current_path,"/",3);
     }
     std::ifstream file;
     file.open(path);
@@ -93,6 +93,6 @@ std::string JsonUtil::CheckPath(std::string path) {
         file.close();
         return path;
     }
-    LogUtil::LogError("check path","file not exit");
+    LogUtil::LogError("check path","file not exit[" + path + "]\n");
     return NULL;
 }

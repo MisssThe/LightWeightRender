@@ -4,8 +4,6 @@
 
 #include "../../../Head/Graph/BaseRender/Mesh.h"
 
-std::unordered_map<std::string,unsigned int> Mesh::mesh_map;
-
 Mesh::Mesh(std::string path) {
     this->meshName = path;
     this->loadMesh(path);
@@ -13,13 +11,8 @@ Mesh::Mesh(std::string path) {
 
 void Mesh::loadMesh(std::string path) {
     //从路径加载网格
-    if (mesh_map.find(path) == mesh_map.end())
-    {
-        BaseLoader::MeshInfo* meshInfo = GeneralLoader::Load(path);
-        this->processMesh(meshInfo);
-        mesh_map[path] = this->VAO;
-    }
-    this->VAO = mesh_map[path];
+    BaseLoader::MeshInfo* meshInfo = GeneralLoader::Load(path);
+    this->processMesh(meshInfo);
 }
 
 void Mesh::processMesh(BaseLoader::MeshInfo* meshInfo) {

@@ -10,7 +10,7 @@
 #include "BaseRender/Mesh.h"
 #include "BaseRender/Shader.h"
 #include "BaseRender/Transform.h"
-#include "BaseRender/RenderObject.h"
+#include "RenderObject.h"
 
 class RenderPipeline {
 public:
@@ -21,7 +21,7 @@ public:
     void render();
 private:
     static bool isInit;
-    std::queue<std::queue<RenderObject*>*> renderQueue;
+    std::queue<std::queue<Material*>*> renderQueue;
 private:
     void init();
     void loadShader();

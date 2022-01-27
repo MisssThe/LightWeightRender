@@ -5,17 +5,28 @@
 #include "../../../Head/Graph/BaseRender/Material.h"
 
 bool Material::isReady = false;
+std::unordered_map<std::string,std::function<void(Shader*)>> Material::type_func;
 
-Material::Material(Shader *shader) {
-    //初始化material基础设置，只会初始化一次
-//    if ()
-    //创建临时材质,根据shader 关键字创建面板
-//    shader->keyWordMap;
+bool Material::render() {
+    this->mesh->use();
+    this->shader->use();
+    glDrawElements(GL_TRIANGLES, 60000, GL_UNSIGNED_INT, 0);
+    return this->isAlive;
 }
 
-Material::Material(Shader *shader,std::string name) {
-    //读取材质配置文件，没有则创建
 
+Material::Material(Shader *shader, Mesh *mesh, Transform *transform) {
+//    if (shader == nullptr)
+//        this->shader = new Shader()
+}
+
+Material::Material(Shader *shader, Mesh *mesh, Transform *transform, std::string name) {
+
+}
+
+Material *Material::infoPanel() {
+//    Material*mat = new Material()
+    return nullptr;
 }
 
 
@@ -33,8 +44,7 @@ void Material::use(Transform*transform) {
 void Material::setShader(Shader*shader)
 {
     this->shader = shader;
-    if (this->shader == nullptr)
-        this->shader = new Shader("","");
+//    if (this->shader == nullptr)
 }
 
 void Material::setTransform(Transform *transform) {
@@ -44,6 +54,10 @@ void Material::setTransform(Transform *transform) {
 }
 
 void Material::init() {
+    type_func.insert(std::pair<std::string,std::function<void(Shader*)>>("",[](Shader* shader){
+//        glUniform1f(shader->keyWordMap)
 
+    }));
+//    type_func.insert(std::pair<std::string,std::function<void()>());
     isReady = true;
 }

@@ -10,11 +10,14 @@
 #include <fstream>
 #include <sstream>
 #include "../Head/LogUtil.h"
+#include "../Head/StringUtil.h"
 
 class FileUtil {
 public:
-    static std::string * ReadFile(std::string path, unsigned int ioState = std::ifstream::failbit | std::ifstream::badbit);
+    static std::string * ReadFile(std::string path, unsigned int ioState = std::ifstream::failbit | std::ifstream::badbit,bool isCurrent = false);
     static void WriteFile();
+private:
+    static std::string current_path;
 };
 
 

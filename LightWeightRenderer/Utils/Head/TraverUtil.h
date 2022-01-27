@@ -79,13 +79,29 @@ public:
             }
         }
     }
+
+    //不可中断json value 遍历
     static void TraverJsonValue(Json::Value* json,std::function<void(std::string,Json::Value*)> func){
-        if (json->empty()) {
+        if (!json->empty() && json->isObject()) {
             Json::Value::Members members = json->getMemberNames();
             for (std::string member: members) {
                 Json::Value *temp = &(*json)[member];
                 TraverJsonValue(temp, func);
                 func(member, temp);
+            }
+        }
+    }
+
+    // 可中断json value遍历
+    // @return true 中断，false 继续
+    static void TraverJsonValueBool(Json::Value* json,std::function<bool(std::string,Json::Value*)> func){
+        if (!json->empty() && json->isObject()) {
+            Json::Value::Members members = json->getMemberNames();
+            for (std::string member: members) {
+                Json::Value *temp = &(*json)[member];
+                TraverJsonValue(temp, func);
+                if (func(member, temp))
+                    return;
             }
         }
     }

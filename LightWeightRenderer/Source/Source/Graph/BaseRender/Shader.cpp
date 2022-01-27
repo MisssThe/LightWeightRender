@@ -4,65 +4,55 @@
 
 #include "../../../Head/Graph/BaseRender/Shader.h"
 
-std::string Shader::cut_of_word = "//--------------------Uniform--------------------";
-std::unordered_map<std::string,Shader::ShaderInfo> Shader::shader_map;
+std::string Shader::cut_of_word = "//------------ UNIFORM ------------";
 
 void Shader::use() {
     glUseProgram(this->shaderID);
 }
 
-Shader::Shader(std::string vertexPath, std::string fragmentPath) {
-    this->init(vertexPath);
-    std::string*vCode = FileUtil::ReadFile(vertexPath);
-    std::string*fCode = FileUtil::ReadFile(fragmentPath);
+Shader::Shader(std::unordered_map<unsigned int ,std::string> paths) {
     this->shaderID = glCreateProgram();
-    compile(vCode,GL_VERTEX_SHADER);
-    compile(fCode,GL_FRAGMENT_SHADER);
+    TraverUtil::TraverUMap<unsigned int,std::string>(&paths,[this](unsigned int type,std::string path){
+        std::string *code = FileUtil::ReadFile(path);
+        this->compile(code,type);
+        this->findKeyWord(code);
+        delete code;
+    });
     glLinkProgram(this->shaderID);
-}
-
-void Shader::init(std::string path) {
-    this->shaderName = path;
-    //判断shader是否已经编译
-    if (shader_map.find(this->shaderName) != shader_map.end())
-    {
-        this->shaderID = shader_map[this->shaderName].shaderID;
-        this->keyWordMap = *shader_map[this->shaderName].keyWordMap;
-    }
+    this->findKeyWordLocation();
 }
 
 void Shader::compile(std::string*codeStr,int shaderType) {
-    this->findKeyWord(codeStr);
     unsigned int shader = glCreateShader(shaderType);
     const char* codeChar = codeStr->c_str();
     glShaderSource(shader, 1, &codeChar, NULL);
     glCompileShader(shader);
-    this->check(shader,false);
+//    this->check(shader,false);
     glAttachShader(shaderID,shader);
     glDeleteShader(shader);
 }
 
 void Shader::check(unsigned int shader, bool isProgram) {
-    int success;
-    char infoLog[1024];
-    if (!isProgram)
-    {
-        glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
-        if (!success)
-        {
-            glGetShaderInfoLog(shader, 1024, NULL, infoLog);
-            LogUtil::LogError("ShaderCompile", std::string(infoLog));
-        }
-    }
-    else
-    {
-        glGetProgramiv(shader, GL_LINK_STATUS, &success);
-        if (!success)
-        {
-            glGetProgramInfoLog(shader, 1024, NULL, infoLog);
-            LogUtil::LogError("ProgramCompile", std::string(infoLog));
-        }
-    }
+//    int success;
+//    char infoLog[1024];
+//    if (!isProgram)
+//    {
+//        glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+//        if (!success)
+//        {
+//            glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+//            LogUtil::LogError("ShaderCompile", std::string(infoLog));
+//        }
+//    }
+//    else
+//    {
+//        glGetProgramiv(shader, GL_LINK_STATUS, &success);
+//        if (!success)
+//        {
+//            glGetProgramInfoLog(shader, 1024, NULL, infoLog);
+//            LogUtil::LogError("ProgramCompile", std::string(infoLog));
+//        }
+//    }
 }
 
 void Shader::findKeyWord(std::string*code) {
@@ -74,16 +64,17 @@ void Shader::findKeyWord(std::string*code) {
         std::function<void(std::string)> func = [](std::string str){};
         TraverUtil::TraverVector<std::string>(&strVec,[this](std::string str) {
             std::vector<std::string> keyWordVec = StringUtil::Split(&str, " ");
-            keyWordVec[0];
             int index = keyWordVec.size() - 1;
             if (index > 0) {
-                int location = glGetUniformLocation(this->shaderID,"");
-                this->keyWordMap.insert(std::pair<std::string, KeyWord>(keyWordVec[index], {keyWordVec[0], location}));
+                this->keyWordMap.insert(std::pair<std::string, KeyWord>(keyWordVec[index], {keyWordVec[1], 0}));
             }
         });
     }
 }
 
-std::string Shader::getName() {
-    return this->shaderName;
+void Shader::findKeyWordLocation() {
+    TraverUtil::TraverUMap<std::string, KeyWord>(&this->keyWordMap,[this](std::string name,KeyWord keyWord){
+        int location = glGetUniformLocation(this->shaderID,name.c_str());
+        this->keyWordMap[name].location = location;
+    });
 }

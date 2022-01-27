@@ -1,0 +1,14 @@
+//
+// Created by MisThe on 2022/1/27.
+//
+
+#ifndef LIGHTWEIGHTRENDERER_RENDEROBJECT_H
+#define LIGHTWEIGHTRENDERER_RENDEROBJECT_H
+
+
+class RenderObject {
+
+};
+
+
+#endif //LIGHTWEIGHTRENDERER_RENDEROBJECT_H

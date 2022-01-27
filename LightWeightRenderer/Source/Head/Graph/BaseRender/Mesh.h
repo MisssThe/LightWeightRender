@@ -19,7 +19,6 @@ private:
     std::string meshName;
     unsigned int VAO;
     BaseLoader::MeshInfo*meshInfo;
-    static std::unordered_map<std::string,unsigned int> mesh_map;
 private:
     void loadMesh(std::string path);
     void processMesh(BaseLoader::MeshInfo* meshInfo);

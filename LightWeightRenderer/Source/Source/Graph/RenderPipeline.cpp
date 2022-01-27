@@ -5,8 +5,8 @@
 #include "../../Head/Graph/RenderPipeline.h"
 
 void RenderPipeline::render() {
-    TraverUtil::TraverQueue<std::queue<RenderObject*>*>(&this->renderQueue,[](std::queue<RenderObject*>* queue) {
-        TraverUtil::TraverQueue<RenderObject*>(queue,[](RenderObject* object){
+    TraverUtil::TraverQueue<std::queue<Material*>*>(&this->renderQueue,[](std::queue<Material*>* queue) {
+        TraverUtil::TraverQueue<Material*>(queue,[](Material* object){
             return object->render();
         });
     });
