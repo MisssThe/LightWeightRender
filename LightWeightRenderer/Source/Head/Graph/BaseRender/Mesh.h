@@ -1,5 +1,6 @@
 //
 // Created by MisThe on 2022/1/21.
+// 记录的数据暂处于内存中，刷新或更换shader时刷新磁盘文件
 //
 
 #ifndef LIGHTWEIGHTRENDERER_MESH_H

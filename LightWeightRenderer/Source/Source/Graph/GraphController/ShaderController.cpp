@@ -8,6 +8,9 @@
 std::string ShaderController::shader_config_path = "LightWeightRenderer/Config/Shader/ShaderConfig.json";
 std::unordered_map<std::string,Shader*> ShaderController::shader_map;
 bool ShaderController::isReady = false;
+std::string ShaderController::shader_default_name = "";
+
+
 void ShaderController::Init() {
     if (!isReady) {
         isReady = true;
@@ -47,4 +50,8 @@ unsigned int ShaderController::CheckType(std::string str) {
     else
         LogUtil::LogError("check shader type","type error");
     return -1;
+}
+
+Shader *ShaderController::GetDefaultShader() {
+    return GetShader(shader_default_name);
 }

@@ -14,9 +14,8 @@
 
 class Material {
 public:
-    Material(Shader*shader,Mesh*mesh,Transform*transform);                    //临时材质
-    Material(Shader*shader,Mesh*mesh,Transform*transform,std::string name);   //本地材质
-    Material* infoPanel();                                                    //创建显示面板
+    Material(std::string path);
+    Material* RefreshPanel();                                                 //创建显示面板
     void use(Transform*transform);
     void setShader(Shader*shader);
     void setTransform(Transform*transform);

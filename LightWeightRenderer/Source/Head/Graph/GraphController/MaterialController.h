@@ -7,6 +7,7 @@
 
 
 #include "../BaseRender/Material.h"
+#include "../../../../Utils/Head/JsonUtil.h"
 
 class MaterialController {
 public:
@@ -14,7 +15,9 @@ public:
     static Material*CreateMaterial();
 
 private:
-    std::unordered_map<std::string,Material*> material_map;
+    static std::unordered_map<std::string,Material*> material_map;
+    static bool isReady;
+    static std::string material_config_path;
 };
 
 

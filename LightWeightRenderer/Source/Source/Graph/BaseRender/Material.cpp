@@ -24,11 +24,6 @@ Material::Material(Shader *shader, Mesh *mesh, Transform *transform, std::string
 
 }
 
-Material *Material::infoPanel() {
-//    Material*mat = new Material()
-    return nullptr;
-}
-
 
 
 void Material::use(Transform*transform) {
@@ -60,4 +55,8 @@ void Material::init() {
     }));
 //    type_func.insert(std::pair<std::string,std::function<void()>());
     isReady = true;
+}
+
+Material *Material::RefreshPanel() {
+    return nullptr;
 }
