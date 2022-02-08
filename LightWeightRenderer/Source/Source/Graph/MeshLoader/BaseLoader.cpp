@@ -10,7 +10,7 @@ BaseLoader::MeshInfo *BaseLoader::processMesh(BaseLoader::TempMesh *tempMesh) {
     MeshInfo*finalMesh = new MeshInfo();
     finalMesh->vertex = reinterpret_cast<float *>(&tempMesh->vertexVec[0]);
     finalMesh->index = &tempMesh->indexVec[0];
-    finalMesh->vertexSize = tempMesh->vertexVec.size() * sizeof(Vertex);
+    finalMesh->vertexSize = tempMesh->vertexVec.size() * sizeof(float);
     finalMesh->indexSize = tempMesh->indexVec.size() * sizeof(unsigned int);
     finalMesh->attriVec.push_back({3,27,0});
     finalMesh->attriVec.push_back({3,27,3});

@@ -26,7 +26,8 @@ private:
     bool run();
     void updateWindow();
     void deleteWindow();
-private:
+
+public:
     GLFWwindow*window;
     int width,height;
     std::string windowName;

@@ -391,6 +391,45 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/Image.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/Image.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/UI/Image.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/Image.cpp.s
 
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o: ../Source/Source/Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Renderer.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Renderer.cpp > CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Renderer.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.s
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o: ../Source/Source/Extend/InfoPanel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/InfoPanel.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/InfoPanel.cpp > CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/InfoPanel.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.s
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o: ../Source/Source/Graph/GraphController/TextureController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/TextureController.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/TextureController.cpp > CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/TextureController.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.s
+
 # Object files for target LightWeightRenderer
 LightWeightRenderer_OBJECTS = \
 "CMakeFiles/LightWeightRenderer.dir/main.cpp.o" \
@@ -417,7 +456,10 @@ LightWeightRenderer_OBJECTS = \
 "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/ShaderController.cpp.o" \
 "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/MaterialController.cpp.o" \
 "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderObject.cpp.o" \
-"CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/Image.cpp.o"
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/Image.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o"
 
 # External object files for target LightWeightRenderer
 LightWeightRenderer_EXTERNAL_OBJECTS =
@@ -447,13 +489,16 @@ LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Grap
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/MaterialController.cpp.o
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderObject.cpp.o
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/Image.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/build.make
 LightWeightRenderer: ../Include/glfw/3.3.4/lib/libglfw.3.3.dylib
 LightWeightRenderer: ../Include/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib
 LightWeightRenderer: ../Include/jsoncpp/1.9.4_1/lib/libjsoncpp.24.dylib
 LightWeightRenderer: ../Include/assimp/5.0.1/lib/libassimp.dylib
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable LightWeightRenderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable LightWeightRenderer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LightWeightRenderer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

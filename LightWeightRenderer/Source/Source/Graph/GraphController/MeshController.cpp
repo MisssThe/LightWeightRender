@@ -6,8 +6,12 @@
 
 std::unordered_map<std::string,Mesh*> MeshController::mesh_map;
 std::unordered_map<std::string,std::string> MeshController::mesh_path_map;
-std::string MeshController::mesh_config_path = "LightWeightRenderer/Config/Mesh/MeshConfig.json";
+std::string MeshController::mesh_config_path = "LightWeightRenderer/Config/MeshConfig.json";
 bool MeshController::isReady = false;
+//-------------- 基础网格默认路径 ----------------
+std::string MeshController::square_mesh_name = "square";
+std::string MeshController::cube_mesh_name = "cube";
+//-------------- 基础网格默认路径 ----------------
 
 void MeshController::Init() {
     if (!isReady)
@@ -18,17 +22,19 @@ void MeshController::Init() {
             if (name == "preheat")
                 TraverUtil::TraverJsonValue(value,[](std::string name,Json::Value*v){
                     std::string path = v->asString();
+                    path = FileUtil::CheckPath(path);
                     mesh_path_map.insert(std::pair<std::string,std::string>(name,path));
                     Mesh*mesh = new Mesh(path);
                     mesh_map.insert(std::pair<std::string,Mesh*>(name,mesh));
                 });
             else if (name == "passivity")
                 TraverUtil::TraverJsonValue(value,[](std::string name,Json::Value*v){
-                    mesh_path_map.insert(std::pair<std::string,std::string>(name,v->asString()));
+                    std::string path = FileUtil::CheckPath(v->asString());
+                    mesh_path_map.insert(std::pair<std::string,std::string>(name,path));
                 });
             else
-                LogUtil::LogError("mesh controller init","mesh config error");
-            return true;
+                return true;
+            return false;
         });
     }
 }
@@ -39,11 +45,20 @@ Mesh *MeshController::GetMesh(std::string name) {
         mesh = mesh_map[name];
     else
     {
-        mesh = new Mesh(name);
+        std::string path = mesh_path_map[name];
+        path = FileUtil::CheckPath(path);
+        mesh = new Mesh(path);
         if (mesh_path_map.find(name) == mesh_path_map.end())
             LogUtil::LogError("get mesh","mesh name error");
-        std::string path = mesh_path_map[name];
-        mesh_map.insert(std::pair<std::string,Mesh*>(path,mesh));
+        mesh_map.insert(std::pair<std::string,Mesh*>(name,mesh));
     }
-    return nullptr;
+    return mesh;
+}
+
+Mesh *MeshController::GetSquareMesh() {
+    return GetMesh(square_mesh_name);
+}
+
+Mesh *MeshController::GetCubeMesh() {
+    return GetMesh(cube_mesh_name);
 }

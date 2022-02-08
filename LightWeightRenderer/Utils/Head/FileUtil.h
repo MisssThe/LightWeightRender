@@ -14,8 +14,9 @@
 
 class FileUtil {
 public:
-    static std::string * ReadFile(std::string path, unsigned int ioState = std::ifstream::failbit | std::ifstream::badbit,bool isCurrent = false);
+    static std::string * ReadFile(std::string path, unsigned int ioState = std::ifstream::failbit | std::ifstream::badbit);
     static void WriteFile();
+    static std::string CheckPath(std::string path);
 private:
     static std::string current_path;
 };

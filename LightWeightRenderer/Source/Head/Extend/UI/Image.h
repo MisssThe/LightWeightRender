@@ -6,7 +6,9 @@
 #define LIGHTWEIGHTRENDERER_IMAGE_H
 
 
-class Image {
+#include "../../Graph/RenderObject.h"
+
+class Image : public RenderObject{
 
 };
 

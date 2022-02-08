@@ -11,13 +11,9 @@ void FileUtil::WriteFile() {
 }
 
 
-std::string* FileUtil::ReadFile(std::string path,unsigned int ioState,bool isCurrent)
+std::string* FileUtil::ReadFile(std::string path,unsigned int ioState)
 {
-    if (current_path == "")
-    {
-        current_path = std::filesystem::current_path();
-        current_path = StringUtil::SplitAndReduce(&current_path,"/",3);
-    }
+    path = CheckPath(path);
     std::string* code;
     std::ifstream file;
     file.exceptions(ioState);
@@ -31,10 +27,30 @@ std::string* FileUtil::ReadFile(std::string path,unsigned int ioState,bool isCur
     }
     catch (std::ifstream::failure& e)
     {
-        if (!isCurrent)
-            return ReadFile(current_path + path,ioState, true);
-        else
-            LogUtil::LogError("ReadFile","file read failed:[" + path + "]\n");
+        LogUtil::LogError("ReadFile","file read failed:[" + path + "]\n");
     }
     return code;
 }
+
+std::string FileUtil::CheckPath(std::string path) {
+    if (current_path == "")
+    {
+        current_path = std::filesystem::current_path();
+        current_path = StringUtil::SplitAndReduce(&current_path,"/",3);
+    }
+    std::ifstream file;
+    file.open(path);
+    if (file.is_open())
+    {
+        file.close();
+        return path;
+    }
+    path = current_path + path;
+    file.open(path);
+    if (file.is_open())
+    {
+        file.close();
+        return path;
+    }
+    LogUtil::LogError("check path","file not exit[" + path + "]\n");
+    return NULL;}

@@ -36,13 +36,10 @@ void JsonUtil::WriteJson(std::queue<std::string> jsonPath, std::string value, st
             root = root[key];
             return false;
         });
-        std::cout << root;
         TraverUtil::TraverQueue<std::string>(&jsonPath,[&root](std::string key){
             root[key] = Json::Value();
             root = root[key];
         });
-        std::cout << head;
-
         if (!root.empty())
             root[front] = value;
         else

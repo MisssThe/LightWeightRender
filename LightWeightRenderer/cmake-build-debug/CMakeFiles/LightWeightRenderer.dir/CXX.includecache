@@ -102,12 +102,6 @@ string
 vector
 -
 
-/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Material.h
-Shader.h
-/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Shader.h
-../../../../Utils/Head/JsonUtil.h
-/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/JsonUtil.h
-
 /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Shader.h
 string
 -
@@ -120,9 +114,9 @@ unordered_map
 ../../../../Utils/Head/FileUtil.h
 /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/FileUtil.h
 
-/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Material.cpp
-../../../Head/Graph/BaseRender/Material.h
-/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Material.h
+/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Shader.cpp
+../../../Head/Graph/BaseRender/Shader.h
+/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Shader.h
 
 /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/FileUtil.h
 string
@@ -134,22 +128,6 @@ sstream
 ../Head/LogUtil.h
 /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/LogUtil.h
 ../Head/StringUtil.h
-/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/StringUtil.h
-
-/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/JsonUtil.h
-string
--
-iostream
--
-fstream
--
-queue
--
-../Head/LogUtil.h
-/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/LogUtil.h
-TraverUtil.h
-/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h
-StringUtil.h
 /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/StringUtil.h
 
 /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/LogUtil.h

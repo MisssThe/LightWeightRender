@@ -12,6 +12,23 @@ Mesh::Mesh(std::string path) {
 void Mesh::loadMesh(std::string path) {
     //从路径加载网格
     BaseLoader::MeshInfo* meshInfo = GeneralLoader::Load(path);
+
+    float vertices[] = {
+            0.5f,  0.5f, 0.0f,  // top right
+            0.5f, -0.5f, 0.0f,  // bottom right
+            -0.5f, -0.5f, 0.0f,  // bottom left
+            -0.5f,  0.5f, 0.0f   // top left
+    };
+    unsigned int indices[] = {  // note that we start from 0!
+            0, 1, 3,  // first Triangle
+            1, 2, 3   // second Triangle
+    };
+    meshInfo->vertex = vertices;
+    meshInfo->index = indices;
+    meshInfo->vertexSize = 12 * sizeof(float);
+    meshInfo->indexSize = 6 * sizeof(unsigned int);
+    meshInfo->attriVec.clear();
+    meshInfo->attriVec.push_back(BaseLoader::AttriStruct());
     this->processMesh(meshInfo);
 }
 
@@ -22,10 +39,12 @@ void Mesh::processMesh(BaseLoader::MeshInfo* meshInfo) {
         glGenBuffers(1, &VBO);
         glGenBuffers(1, &EBO);
         glBindVertexArray(VAO);
+
         glBindBuffer(GL_ARRAY_BUFFER, VBO);
         glBufferData(GL_ARRAY_BUFFER, meshInfo->vertexSize, meshInfo->vertex, GL_STATIC_DRAW);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, meshInfo->indexSize, meshInfo->index, GL_STATIC_DRAW);
+
         int length = meshInfo->attriVec.size();
         for (int i = 0; i < length; ++i) {
             glVertexAttribPointer(i, meshInfo->attriVec[i].vertexNum, GL_FLOAT, GL_FALSE, meshInfo->attriVec[i].offset * sizeof(float), (void*)meshInfo->attriVec[i].initOffset);

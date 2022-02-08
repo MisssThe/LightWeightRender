@@ -20,3 +20,7 @@ Material::Material(std::string path) {
         this->property_map.insert(std::pair<std::string,Info>(name,{(*value)[0].asString(),(*value)[1].asString(),(*value)[2].asBool()}));
     });
 }
+
+void Material::use() {
+
+}

@@ -42,7 +42,7 @@ public:
     public:
         int vertexNum  = 3;
         int offset     = 3;
-        long initOffset = 3;
+        long initOffset = 0;
     };
     struct MeshInfo
     {

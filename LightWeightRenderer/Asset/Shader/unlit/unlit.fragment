@@ -1,0 +1,24 @@
+#version 330 core
+
+//------------ LAYOUT ------------
+//------------ LAYOUT ------------
+
+
+//------------ UNIFORM ------------
+uniform sampler2D texture1;
+//------------ UNIFORM ------------
+
+
+//------------ INOUT -------------
+in vec2 TexCoord;
+out vec4 FragColor;
+//------------ INOUT -------------
+
+
+//------------- MAIN -------------
+void main()
+{
+    FragColor = vec4(0.1,0.4,0.8,1);
+    FragColor = texture(texture1, TexCoord);
+}
+//------------- MAIN -------------

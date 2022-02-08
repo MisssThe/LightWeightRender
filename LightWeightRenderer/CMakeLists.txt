@@ -35,5 +35,14 @@ add_executable(
         Utils/Source/MainLoopUtil.cpp Utils/Head/MainLoopUtil.h
         Source/Source/Graph/BaseRender/Shader.cpp Source/Head/Graph/BaseRender/Shader.h
         Utils/Source/FileUtil.cpp Utils/Head/FileUtil.h
-        Utils/Source/StringUtil.cpp Utils/Head/StringUtil.h Source/Source/Graph/BaseRender/Material.cpp Source/Head/Graph/BaseRender/Material.h Source/Source/Graph/BaseRender/Mesh.cpp Source/Head/Graph/BaseRender/Mesh.h Source/Source/Graph/BaseRender/Transform.cpp Source/Head/Graph/BaseRender/Transform.h Source/Source/Physics/CollisionDetection.cpp Source/Head/Physics/CollisionDetection.h Source/Head/Graph/MeshLoader/BaseLoader.h Source/Source/Graph/MeshLoader/AssimpLoader.cpp Source/Head/Graph/MeshLoader/AssimpLoader.h Source/Head/Graph/MeshLoader/GeneralLoader.h Source/Source/Graph/MeshLoader/BaseLoader.cpp Source/Source/Extend/TexturePacker.cpp Source/Head/Extend/TexturePacker.h Source/Source/Graph/BaseRender/Texture.cpp Source/Head/Graph/BaseRender/Texture.h Utils/Head/SortUtil.h Source/Source/Graph/GraphController/MeshController.cpp Source/Head/Graph/GraphController/MeshController.h Source/Source/Graph/GraphController/ShaderController.cpp Source/Head/Graph/GraphController/ShaderController.h Source/Source/Graph/GraphController/MaterialController.cpp Source/Head/Graph/GraphController/MaterialController.h Source/Source/Graph/RenderObject.cpp Source/Head/Graph/RenderObject.h Source/Source/Extend/UI/Image.cpp Source/Head/Extend/UI/Image.h
-        Source/Head/Graph/GraphController/GraphController.h)
+        Utils/Source/StringUtil.cpp Utils/Head/StringUtil.h
+        Source/Source/Graph/BaseRender/Material.cpp Source/Head/Graph/BaseRender/Material.h
+        Source/Source/Graph/BaseRender/Mesh.cpp Source/Head/Graph/BaseRender/Mesh.h
+        Source/Source/Graph/BaseRender/Transform.cpp Source/Head/Graph/BaseRender/Transform.h
+        Source/Source/Physics/CollisionDetection.cpp Source/Head/Physics/CollisionDetection.h
+        Source/Head/Graph/MeshLoader/BaseLoader.h Source/Source/Graph/MeshLoader/AssimpLoader.cpp
+        Source/Head/Graph/MeshLoader/AssimpLoader.h Source/Head/Graph/MeshLoader/GeneralLoader.h
+        Source/Source/Graph/MeshLoader/BaseLoader.cpp Source/Source/Extend/TexturePacker.cpp
+        Source/Head/Extend/TexturePacker.h Source/Source/Graph/BaseRender/Texture.cpp Source/Head/Graph/BaseRender/Texture.h Utils/Head/SortUtil.h Source/Source/Graph/GraphController/MeshController.cpp Source/Head/Graph/GraphController/MeshController.h Source/Source/Graph/GraphController/ShaderController.cpp Source/Head/Graph/GraphController/ShaderController.h Source/Source/Graph/GraphController/MaterialController.cpp Source/Head/Graph/GraphController/MaterialController.h Source/Source/Graph/RenderObject.cpp Source/Head/Graph/RenderObject.h Source/Source/Extend/UI/Image.cpp Source/Head/Extend/UI/Image.h
+        Source/Head/Graph/GraphController/GraphController.h
+        Source/Head/Renderer.h Source/Source/Renderer.cpp Source/Source/Extend/InfoPanel.cpp Source/Head/Extend/InfoPanel.h Source/Source/Graph/GraphController/TextureController.cpp Source/Head/Graph/GraphController/TextureController.h)

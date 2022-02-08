@@ -14,14 +14,19 @@
 
 class RenderPipeline {
 public:
-public:
+    RenderPipeline();
     int  addObject(RenderObject*ro);
     int  addObject(RenderObject ro);
     void dropObject(int index);
     void render();
 private:
     static bool isInit;
-    std::queue<std::queue<Material*>*> renderQueue;
+    struct RenderQueue
+    {
+        RenderType type;
+        std::queue<RenderObject*> queue;
+    };
+    std::queue<RenderQueue*> renderQueue;
 private:
     void init();
     void loadShader();

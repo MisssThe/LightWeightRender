@@ -27,32 +27,32 @@ void Shader::compile(std::string*codeStr,int shaderType) {
     const char* codeChar = codeStr->c_str();
     glShaderSource(shader, 1, &codeChar, NULL);
     glCompileShader(shader);
-//    this->check(shader,false);
+    this->check(shader,false);
     glAttachShader(shaderID,shader);
     glDeleteShader(shader);
 }
 
 void Shader::check(unsigned int shader, bool isProgram) {
-//    int success;
-//    char infoLog[1024];
-//    if (!isProgram)
-//    {
-//        glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
-//        if (!success)
-//        {
-//            glGetShaderInfoLog(shader, 1024, NULL, infoLog);
-//            LogUtil::LogError("ShaderCompile", std::string(infoLog));
-//        }
-//    }
-//    else
-//    {
-//        glGetProgramiv(shader, GL_LINK_STATUS, &success);
-//        if (!success)
-//        {
-//            glGetProgramInfoLog(shader, 1024, NULL, infoLog);
-//            LogUtil::LogError("ProgramCompile", std::string(infoLog));
-//        }
-//    }
+    int success;
+    char infoLog[1024];
+    if (!isProgram)
+    {
+        glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+        if (!success)
+        {
+            glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+            LogUtil::LogError("ShaderCompile", std::string(infoLog));
+        }
+    }
+    else
+    {
+        glGetProgramiv(shader, GL_LINK_STATUS, &success);
+        if (!success)
+        {
+            glGetProgramInfoLog(shader, 1024, NULL, infoLog);
+            LogUtil::LogError("ProgramCompile", std::string(infoLog));
+        }
+    }
 }
 
 void Shader::findKeyWord(std::string*code) {

@@ -20,10 +20,10 @@ public:
         LLABF,BT
     };
 public:
-    void pack(std::vector<Texture> textures,PackType type);
+    void pack(std::vector<Texture*> textures,PackType type);
 private:
-    std::vector<Texture> textures;
-    std::vector<Texture> standbyTextures;       //texture无法装入图集时暂时放入备用容器
+    std::vector<Texture*> textures;
+    std::vector<Texture*> standbyTextures;       //texture无法装入图集时暂时放入备用容器
     struct int2
     {
         int x,y;

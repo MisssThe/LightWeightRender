@@ -1,7 +1,0 @@
-{
-  "shader name" : ["string" , "ui" , false],
-  "base map" : ["string" , "base texture" , true],
-  "normal map" : ["string" , "normal texture", true],
-  "scale" : ["float" , "2.4", true],
-  "speed" : ["float3" , "3,4,2", true]
-}

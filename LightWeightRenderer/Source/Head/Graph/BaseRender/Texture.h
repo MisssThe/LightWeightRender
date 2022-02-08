@@ -6,18 +6,20 @@
 #define LIGHTWEIGHTRENDERER_TEXTURE_H
 
 #include <string>
+#include <glad/glad.h>
+#include "../../../../Utils/Head/LogUtil.h"
+#include "../../../../Utils/Head/FileUtil.h"
 
 class Texture {
 public:
-    Texture();
     Texture(std::string path);
     ~Texture();
     int getWidth();
     int getHeight();
-    int getID();
+    void use();
 private:
     int width,height;
-    int textureID;
+    unsigned int texture;
 };
 
 #endif //LIGHTWEIGHTRENDERER_TEXTURE_H

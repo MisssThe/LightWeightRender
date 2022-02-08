@@ -98,6 +98,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Extend/InfoPanel.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Extend/TexturePacker.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -131,6 +134,9 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/GraphController/ShaderController.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/GraphController/TextureController.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/MeshLoader/AssimpLoader.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -152,7 +158,13 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/CollisionDetection.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Renderer.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Module.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/InfoPanel.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/TexturePacker.cpp">
@@ -185,6 +197,9 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/ShaderController.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/TextureController.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/MeshLoader/AssimpLoader.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -201,6 +216,9 @@
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/CollisionDetection.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Renderer.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/FileUtil.h">

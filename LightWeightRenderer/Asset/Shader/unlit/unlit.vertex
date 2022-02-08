@@ -1,0 +1,23 @@
+#version 330 core
+
+//------------ LAYOUT ------------
+layout (location = 0) in vec3 aPos;
+//------------ LAYOUT ------------
+
+
+//------------ UNIFORM ------------
+uniform vec2 pp;
+uniform vec3 aa;
+//------------ UNIFORM ------------
+
+
+//------------- INOUT -------------
+//------------- INOUT -------------
+
+
+//-------------- MAIN --------------
+void main()
+{
+    gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);
+}
+//-------------- MAIN --------------

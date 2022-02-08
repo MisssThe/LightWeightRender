@@ -1,5 +1,7 @@
 //
 // Created by MisThe on 2022/1/27.
+// 对加载的资源集中管理
+// 考虑资源自动卸载与资源预加载
 //
 
 #ifndef LIGHTWEIGHTRENDERER_GRAPHCONTROLLER_H
@@ -9,6 +11,7 @@
 #include "ShaderController.h"
 #include "MeshController.h"
 #include "MaterialController.h"
+#include "TextureController.h"
 
 class GraphController {
 public:
@@ -17,6 +20,7 @@ public:
         ShaderController::Init();
         MeshController::Init();
         MaterialController::Init();
+        TextureController::Init();
     }
     static void Restart()
     {

@@ -1,0 +1,6 @@
+{
+  "UI" : [
+    {"vertex" : "LightWeightRenderer/Asset/Shader/unlit/unlit.vertex"},
+    {"fragment" : "LightWeightRenderer/Asset/Shader/unlit/unlit.fragment"}
+  ]
+}

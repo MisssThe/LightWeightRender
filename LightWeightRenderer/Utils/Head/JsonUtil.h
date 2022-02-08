@@ -6,13 +6,10 @@
 #ifndef LIGHTWEIGHTRENDERER_JSONUTIL_H
 #define LIGHTWEIGHTRENDERER_JSONUTIL_H
 
-#include <string>
-#include <iostream>
-#include <fstream>
 #include <queue>
-#include "../Head/LogUtil.h"
 #include "TraverUtil.h"
 #include "StringUtil.h"
+#include "FileUtil.h"
 
 class JsonUtil
 {

@@ -5,29 +5,36 @@
 #include "../../Head/Graph/RenderPipeline.h"
 
 void RenderPipeline::render() {
-    TraverUtil::TraverQueue<std::queue<Material*>*>(&this->renderQueue,[](std::queue<Material*>* queue) {
-        TraverUtil::TraverQueue<Material*>(queue,[](Material* object){
-//            return object->render();
+    TraverUtil::TraverQueue<RenderQueue*>(&this->renderQueue,[](RenderQueue* queue) {
+        TraverUtil::TraverQueue<RenderObject*>(&queue->queue,[](RenderObject* object){
+            return object->render();
         });
     });
 }
 
 void RenderPipeline::init() {
-    //扫描文件夹查找所有shader文件
-
-    //扫描配置目录查找所有shader文件
-
-    //编译shader文件
-}
-
-
-void RenderPipeline::loadShader() {
-
+    int begin = RenderType::BEGIN;
+    for (int i = ++begin; i < RenderType::END; ++i) {
+        RenderQueue* rq = new RenderQueue();
+        rq->type = RenderType(i);
+        this->renderQueue.push(rq);
+    }
 }
 
 
 int RenderPipeline::addObject(RenderObject *ro) {
+    if (ro)
+    {
+        if ((int)ro->getType() > this->renderQueue.size())
+            LogUtil::LogError("add object in pipeline","error render type");
+        TraverUtil::TraverQueue<RenderQueue*>(&this->renderQueue,[&ro, this](RenderQueue*rq){
+            if (rq->type == ro->getType())
+                rq->queue.push(ro);
+        });
 
+    }
+    else
+        LogUtil::LogError("add object in pipeline","null object");
     return 0;
 }
 
@@ -37,4 +44,8 @@ int RenderPipeline::addObject(RenderObject ro) {
 
 void RenderPipeline::dropObject(int index) {
 
+}
+
+RenderPipeline::RenderPipeline() {
+    this->init();
 }

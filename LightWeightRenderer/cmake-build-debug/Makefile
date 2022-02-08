@@ -129,6 +129,30 @@ LightWeightRenderer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/build
 .PHONY : LightWeightRenderer/fast
 
+Source/Source/Extend/InfoPanel.o: Source/Source/Extend/InfoPanel.cpp.o
+.PHONY : Source/Source/Extend/InfoPanel.o
+
+# target to build an object file
+Source/Source/Extend/InfoPanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o
+.PHONY : Source/Source/Extend/InfoPanel.cpp.o
+
+Source/Source/Extend/InfoPanel.i: Source/Source/Extend/InfoPanel.cpp.i
+.PHONY : Source/Source/Extend/InfoPanel.i
+
+# target to preprocess a source file
+Source/Source/Extend/InfoPanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.i
+.PHONY : Source/Source/Extend/InfoPanel.cpp.i
+
+Source/Source/Extend/InfoPanel.s: Source/Source/Extend/InfoPanel.cpp.s
+.PHONY : Source/Source/Extend/InfoPanel.s
+
+# target to generate assembly for a file
+Source/Source/Extend/InfoPanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.s
+.PHONY : Source/Source/Extend/InfoPanel.cpp.s
+
 Source/Source/Extend/TexturePacker.o: Source/Source/Extend/TexturePacker.cpp.o
 .PHONY : Source/Source/Extend/TexturePacker.o
 
@@ -369,6 +393,30 @@ Source/Source/Graph/GraphController/ShaderController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/ShaderController.cpp.s
 .PHONY : Source/Source/Graph/GraphController/ShaderController.cpp.s
 
+Source/Source/Graph/GraphController/TextureController.o: Source/Source/Graph/GraphController/TextureController.cpp.o
+.PHONY : Source/Source/Graph/GraphController/TextureController.o
+
+# target to build an object file
+Source/Source/Graph/GraphController/TextureController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o
+.PHONY : Source/Source/Graph/GraphController/TextureController.cpp.o
+
+Source/Source/Graph/GraphController/TextureController.i: Source/Source/Graph/GraphController/TextureController.cpp.i
+.PHONY : Source/Source/Graph/GraphController/TextureController.i
+
+# target to preprocess a source file
+Source/Source/Graph/GraphController/TextureController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.i
+.PHONY : Source/Source/Graph/GraphController/TextureController.cpp.i
+
+Source/Source/Graph/GraphController/TextureController.s: Source/Source/Graph/GraphController/TextureController.cpp.s
+.PHONY : Source/Source/Graph/GraphController/TextureController.s
+
+# target to generate assembly for a file
+Source/Source/Graph/GraphController/TextureController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.s
+.PHONY : Source/Source/Graph/GraphController/TextureController.cpp.s
+
 Source/Source/Graph/MeshLoader/AssimpLoader.o: Source/Source/Graph/MeshLoader/AssimpLoader.cpp.o
 .PHONY : Source/Source/Graph/MeshLoader/AssimpLoader.o
 
@@ -512,6 +560,30 @@ Source/Source/Physics/CollisionDetection.s: Source/Source/Physics/CollisionDetec
 Source/Source/Physics/CollisionDetection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.s
 .PHONY : Source/Source/Physics/CollisionDetection.cpp.s
+
+Source/Source/Renderer.o: Source/Source/Renderer.cpp.o
+.PHONY : Source/Source/Renderer.o
+
+# target to build an object file
+Source/Source/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o
+.PHONY : Source/Source/Renderer.cpp.o
+
+Source/Source/Renderer.i: Source/Source/Renderer.cpp.i
+.PHONY : Source/Source/Renderer.i
+
+# target to preprocess a source file
+Source/Source/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.i
+.PHONY : Source/Source/Renderer.cpp.i
+
+Source/Source/Renderer.s: Source/Source/Renderer.cpp.s
+.PHONY : Source/Source/Renderer.s
+
+# target to generate assembly for a file
+Source/Source/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.s
+.PHONY : Source/Source/Renderer.cpp.s
 
 Utils/Source/FileUtil.o: Utils/Source/FileUtil.cpp.o
 .PHONY : Utils/Source/FileUtil.o
@@ -738,6 +810,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LightWeightRenderer"
+	@echo "... Source/Source/Extend/InfoPanel.o"
+	@echo "... Source/Source/Extend/InfoPanel.i"
+	@echo "... Source/Source/Extend/InfoPanel.s"
 	@echo "... Source/Source/Extend/TexturePacker.o"
 	@echo "... Source/Source/Extend/TexturePacker.i"
 	@echo "... Source/Source/Extend/TexturePacker.s"
@@ -768,6 +843,9 @@ help:
 	@echo "... Source/Source/Graph/GraphController/ShaderController.o"
 	@echo "... Source/Source/Graph/GraphController/ShaderController.i"
 	@echo "... Source/Source/Graph/GraphController/ShaderController.s"
+	@echo "... Source/Source/Graph/GraphController/TextureController.o"
+	@echo "... Source/Source/Graph/GraphController/TextureController.i"
+	@echo "... Source/Source/Graph/GraphController/TextureController.s"
 	@echo "... Source/Source/Graph/MeshLoader/AssimpLoader.o"
 	@echo "... Source/Source/Graph/MeshLoader/AssimpLoader.i"
 	@echo "... Source/Source/Graph/MeshLoader/AssimpLoader.s"
@@ -786,6 +864,9 @@ help:
 	@echo "... Source/Source/Physics/CollisionDetection.o"
 	@echo "... Source/Source/Physics/CollisionDetection.i"
 	@echo "... Source/Source/Physics/CollisionDetection.s"
+	@echo "... Source/Source/Renderer.o"
+	@echo "... Source/Source/Renderer.i"
+	@echo "... Source/Source/Renderer.s"
 	@echo "... Utils/Source/FileUtil.o"
 	@echo "... Utils/Source/FileUtil.i"
 	@echo "... Utils/Source/FileUtil.s"

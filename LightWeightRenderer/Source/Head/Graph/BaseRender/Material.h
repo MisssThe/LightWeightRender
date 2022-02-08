@@ -16,7 +16,7 @@ public:
     Material(std::string path);
     Material* RefreshPanel();
     void setShader(Shader*shader);
-    bool render();
+    void use();
 private:
     Shader*shader;
     std::string shaderName;

@@ -3,6 +3,9 @@
 
 CMakeFiles/LightWeightRenderer.dir/glad.c.o: \
  ../glad.c
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o: \
+ ../Source/Head/Extend/InfoPanel.h \
+ ../Source/Source/Extend/InfoPanel.cpp
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/TexturePacker.cpp.o: \
  ../Include/glm/0.9.9.8/include/glm/detail/_swizzle.hpp \
  ../Include/glm/0.9.9.8/include/glm/detail/_swizzle_func.hpp \
@@ -38,11 +41,223 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/TexturePacker.cpp.o: \
  ../Source/Head/Extend/TexturePacker.h \
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Source/Extend/TexturePacker.cpp \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/LogUtil.h \
  ../Utils/Head/SortUtil.h \
+ ../Utils/Head/StringUtil.h \
  ../Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/Image.cpp.o: \
+ ../Include/assimp/5.0.1/include/assimp/Compiler/poppack1.h \
+ ../Include/assimp/5.0.1/include/assimp/Compiler/pstdint.h \
+ ../Include/assimp/5.0.1/include/assimp/Compiler/pushpack1.h \
+ ../Include/assimp/5.0.1/include/assimp/Importer.hpp \
+ ../Include/assimp/5.0.1/include/assimp/MathFunctions.h \
+ ../Include/assimp/5.0.1/include/assimp/aabb.h \
+ ../Include/assimp/5.0.1/include/assimp/anim.h \
+ ../Include/assimp/5.0.1/include/assimp/camera.h \
+ ../Include/assimp/5.0.1/include/assimp/color4.h \
+ ../Include/assimp/5.0.1/include/assimp/color4.inl \
+ ../Include/assimp/5.0.1/include/assimp/config.h \
+ ../Include/assimp/5.0.1/include/assimp/defs.h \
+ ../Include/assimp/5.0.1/include/assimp/light.h \
+ ../Include/assimp/5.0.1/include/assimp/material.h \
+ ../Include/assimp/5.0.1/include/assimp/material.inl \
+ ../Include/assimp/5.0.1/include/assimp/matrix3x3.h \
+ ../Include/assimp/5.0.1/include/assimp/matrix3x3.inl \
+ ../Include/assimp/5.0.1/include/assimp/matrix4x4.h \
+ ../Include/assimp/5.0.1/include/assimp/matrix4x4.inl \
+ ../Include/assimp/5.0.1/include/assimp/mesh.h \
+ ../Include/assimp/5.0.1/include/assimp/metadata.h \
+ ../Include/assimp/5.0.1/include/assimp/postprocess.h \
+ ../Include/assimp/5.0.1/include/assimp/quaternion.h \
+ ../Include/assimp/5.0.1/include/assimp/quaternion.inl \
+ ../Include/assimp/5.0.1/include/assimp/scene.h \
+ ../Include/assimp/5.0.1/include/assimp/texture.h \
+ ../Include/assimp/5.0.1/include/assimp/types.h \
+ ../Include/assimp/5.0.1/include/assimp/vector2.h \
+ ../Include/assimp/5.0.1/include/assimp/vector2.inl \
+ ../Include/assimp/5.0.1/include/assimp/vector3.h \
+ ../Include/assimp/5.0.1/include/assimp/vector3.inl \
+ ../Include/glad/include/glad/glad.h \
+ ../Include/glm/0.9.9.8/include/glm/common.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_fixes.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_swizzle.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_swizzle_func.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_vectorize.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/compute_common.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/compute_vector_relational.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_common.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_common_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_exponential.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_exponential_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_geometric.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_geometric_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_integer.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_integer_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_matrix.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_matrix_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_packing.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_packing_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_trigonometric.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_trigonometric_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_vector_relational.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_vector_relational_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/qualifier.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/setup.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_half.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_half.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x4_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec1.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec1.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec4_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/exponential.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/scalar_int_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/scalar_uint_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int2_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int3_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int4_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint2_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint3_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint4_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/fwd.hpp \
+ ../Include/glm/0.9.9.8/include/glm/geometric.hpp \
+ ../Include/glm/0.9.9.8/include/glm/glm.hpp \
+ ../Include/glm/0.9.9.8/include/glm/integer.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/matrix.hpp \
+ ../Include/glm/0.9.9.8/include/glm/packing.hpp \
+ ../Include/glm/0.9.9.8/include/glm/simd/common.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/exponential.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/geometric.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/integer.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/matrix.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/neon.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/platform.h \
+ ../Include/glm/0.9.9.8/include/glm/trigonometric.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vec2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vec3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vec4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vector_relational.hpp \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
  ../Source/Head/Extend/UI/Image.h \
- ../Source/Source/Extend/UI/Image.cpp
+ ../Source/Head/Graph/BaseRender/Material.h \
+ ../Source/Head/Graph/BaseRender/Mesh.h \
+ ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Transform.h \
+ ../Source/Head/Graph/GraphController/MaterialController.h \
+ ../Source/Head/Graph/GraphController/MeshController.h \
+ ../Source/Head/Graph/GraphController/ShaderController.h \
+ ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
+ ../Source/Head/Graph/MeshLoader/BaseLoader.h \
+ ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
+ ../Source/Head/Graph/RenderObject.h \
+ ../Source/Source/Extend/UI/Image.cpp \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/StringUtil.h \
+ ../Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.o: \
  ../Include/glad/include/glad/glad.h \
  ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
@@ -271,8 +486,22 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Shader.cpp.o: 
  ../Utils/Head/StringUtil.h \
  ../Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Texture.cpp.o: \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Include/stb_image/include/stb_image.h \
  ../Source/Head/Graph/BaseRender/Texture.h \
- ../Source/Source/Graph/BaseRender/Texture.cpp
+ ../Source/Source/Graph/BaseRender/Texture.cpp \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/StringUtil.h \
+ ../Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.o: \
  ../Include/glm/0.9.9.8/include/glm/common.hpp \
  ../Include/glm/0.9.9.8/include/glm/detail/_fixes.hpp \
@@ -646,6 +875,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/MeshContr
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
  ../Source/Source/Graph/GraphController/MeshController.cpp \
+ ../Utils/Head/FileUtil.h \
  ../Utils/Head/JsonUtil.h \
  ../Utils/Head/LogUtil.h \
  ../Utils/Head/MathUtil.h \
@@ -665,6 +895,24 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/ShaderCon
  ../Source/Head/Graph/BaseRender/Shader.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Source/Graph/GraphController/ShaderController.cpp \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/StringUtil.h \
+ ../Utils/Head/TraverUtil.h
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o: \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
+ ../Source/Head/Graph/GraphController/TextureController.h \
+ ../Source/Source/Graph/GraphController/TextureController.cpp \
  ../Utils/Head/FileUtil.h \
  ../Utils/Head/JsonUtil.h \
  ../Utils/Head/LogUtil.h \
@@ -1015,8 +1263,216 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/MeshLoader/BaseLoader.cpp
  ../Utils/Head/LogUtil.h \
  ../Utils/Head/MathUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderObject.cpp.o: \
+ ../Include/assimp/5.0.1/include/assimp/Compiler/poppack1.h \
+ ../Include/assimp/5.0.1/include/assimp/Compiler/pstdint.h \
+ ../Include/assimp/5.0.1/include/assimp/Compiler/pushpack1.h \
+ ../Include/assimp/5.0.1/include/assimp/Importer.hpp \
+ ../Include/assimp/5.0.1/include/assimp/MathFunctions.h \
+ ../Include/assimp/5.0.1/include/assimp/aabb.h \
+ ../Include/assimp/5.0.1/include/assimp/anim.h \
+ ../Include/assimp/5.0.1/include/assimp/camera.h \
+ ../Include/assimp/5.0.1/include/assimp/color4.h \
+ ../Include/assimp/5.0.1/include/assimp/color4.inl \
+ ../Include/assimp/5.0.1/include/assimp/config.h \
+ ../Include/assimp/5.0.1/include/assimp/defs.h \
+ ../Include/assimp/5.0.1/include/assimp/light.h \
+ ../Include/assimp/5.0.1/include/assimp/material.h \
+ ../Include/assimp/5.0.1/include/assimp/material.inl \
+ ../Include/assimp/5.0.1/include/assimp/matrix3x3.h \
+ ../Include/assimp/5.0.1/include/assimp/matrix3x3.inl \
+ ../Include/assimp/5.0.1/include/assimp/matrix4x4.h \
+ ../Include/assimp/5.0.1/include/assimp/matrix4x4.inl \
+ ../Include/assimp/5.0.1/include/assimp/mesh.h \
+ ../Include/assimp/5.0.1/include/assimp/metadata.h \
+ ../Include/assimp/5.0.1/include/assimp/postprocess.h \
+ ../Include/assimp/5.0.1/include/assimp/quaternion.h \
+ ../Include/assimp/5.0.1/include/assimp/quaternion.inl \
+ ../Include/assimp/5.0.1/include/assimp/scene.h \
+ ../Include/assimp/5.0.1/include/assimp/texture.h \
+ ../Include/assimp/5.0.1/include/assimp/types.h \
+ ../Include/assimp/5.0.1/include/assimp/vector2.h \
+ ../Include/assimp/5.0.1/include/assimp/vector2.inl \
+ ../Include/assimp/5.0.1/include/assimp/vector3.h \
+ ../Include/assimp/5.0.1/include/assimp/vector3.inl \
+ ../Include/glad/include/glad/glad.h \
+ ../Include/glm/0.9.9.8/include/glm/common.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_fixes.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_swizzle.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_swizzle_func.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_vectorize.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/compute_common.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/compute_vector_relational.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_common.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_common_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_exponential.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_exponential_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_geometric.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_geometric_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_integer.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_integer_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_matrix.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_matrix_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_packing.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_packing_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_trigonometric.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_trigonometric_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_vector_relational.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_vector_relational_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/qualifier.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/setup.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_half.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_half.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x4_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec1.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec1.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec4_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/exponential.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/scalar_int_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/scalar_uint_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int2_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int3_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int4_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint2_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint3_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint4_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/fwd.hpp \
+ ../Include/glm/0.9.9.8/include/glm/geometric.hpp \
+ ../Include/glm/0.9.9.8/include/glm/glm.hpp \
+ ../Include/glm/0.9.9.8/include/glm/integer.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/matrix.hpp \
+ ../Include/glm/0.9.9.8/include/glm/packing.hpp \
+ ../Include/glm/0.9.9.8/include/glm/simd/common.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/exponential.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/geometric.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/integer.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/matrix.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/neon.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/platform.h \
+ ../Include/glm/0.9.9.8/include/glm/trigonometric.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vec2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vec3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vec4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vector_relational.hpp \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Source/Head/Graph/BaseRender/Material.h \
+ ../Source/Head/Graph/BaseRender/Mesh.h \
+ ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Transform.h \
+ ../Source/Head/Graph/GraphController/MaterialController.h \
+ ../Source/Head/Graph/GraphController/MeshController.h \
+ ../Source/Head/Graph/GraphController/ShaderController.h \
+ ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
+ ../Source/Head/Graph/MeshLoader/BaseLoader.h \
+ ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
  ../Source/Head/Graph/RenderObject.h \
- ../Source/Source/Graph/RenderObject.cpp
+ ../Source/Source/Graph/RenderObject.cpp \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/StringUtil.h \
+ ../Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderPipeline.cpp.o: \
  ../Include/assimp/5.0.1/include/assimp/Compiler/poppack1.h \
  ../Include/assimp/5.0.1/include/assimp/Compiler/pstdint.h \
@@ -1214,6 +1670,9 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderPipeline.cpp.o: \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
+ ../Source/Head/Graph/GraphController/MaterialController.h \
+ ../Source/Head/Graph/GraphController/MeshController.h \
+ ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
@@ -1247,6 +1706,226 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.o: \
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.o: \
  ../Source/Head/Physics/CollisionDetection.h \
  ../Source/Source/Physics/CollisionDetection.cpp
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o: \
+ ../Include/assimp/5.0.1/include/assimp/Compiler/poppack1.h \
+ ../Include/assimp/5.0.1/include/assimp/Compiler/pstdint.h \
+ ../Include/assimp/5.0.1/include/assimp/Compiler/pushpack1.h \
+ ../Include/assimp/5.0.1/include/assimp/Importer.hpp \
+ ../Include/assimp/5.0.1/include/assimp/MathFunctions.h \
+ ../Include/assimp/5.0.1/include/assimp/aabb.h \
+ ../Include/assimp/5.0.1/include/assimp/anim.h \
+ ../Include/assimp/5.0.1/include/assimp/camera.h \
+ ../Include/assimp/5.0.1/include/assimp/color4.h \
+ ../Include/assimp/5.0.1/include/assimp/color4.inl \
+ ../Include/assimp/5.0.1/include/assimp/config.h \
+ ../Include/assimp/5.0.1/include/assimp/defs.h \
+ ../Include/assimp/5.0.1/include/assimp/light.h \
+ ../Include/assimp/5.0.1/include/assimp/material.h \
+ ../Include/assimp/5.0.1/include/assimp/material.inl \
+ ../Include/assimp/5.0.1/include/assimp/matrix3x3.h \
+ ../Include/assimp/5.0.1/include/assimp/matrix3x3.inl \
+ ../Include/assimp/5.0.1/include/assimp/matrix4x4.h \
+ ../Include/assimp/5.0.1/include/assimp/matrix4x4.inl \
+ ../Include/assimp/5.0.1/include/assimp/mesh.h \
+ ../Include/assimp/5.0.1/include/assimp/metadata.h \
+ ../Include/assimp/5.0.1/include/assimp/postprocess.h \
+ ../Include/assimp/5.0.1/include/assimp/quaternion.h \
+ ../Include/assimp/5.0.1/include/assimp/quaternion.inl \
+ ../Include/assimp/5.0.1/include/assimp/scene.h \
+ ../Include/assimp/5.0.1/include/assimp/texture.h \
+ ../Include/assimp/5.0.1/include/assimp/types.h \
+ ../Include/assimp/5.0.1/include/assimp/vector2.h \
+ ../Include/assimp/5.0.1/include/assimp/vector2.inl \
+ ../Include/assimp/5.0.1/include/assimp/vector3.h \
+ ../Include/assimp/5.0.1/include/assimp/vector3.inl \
+ ../Include/glad/include/glad/glad.h \
+ ../Include/glfw/3.3.4/include/GLFW/glfw3.h \
+ ../Include/glm/0.9.9.8/include/glm/common.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_fixes.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_swizzle.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_swizzle_func.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/_vectorize.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/compute_common.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/compute_vector_relational.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_common.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_common_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_exponential.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_exponential_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_geometric.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_geometric_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_integer.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_integer_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_matrix.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_matrix_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_packing.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_packing_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_trigonometric.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_trigonometric_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_vector_relational.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/func_vector_relational_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/qualifier.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/setup.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_half.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_half.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat2x4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat3x4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_mat4x4_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec1.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec1.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec2.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec3.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec4.inl \
+ ../Include/glm/0.9.9.8/include/glm/detail/type_vec4_simd.inl \
+ ../Include/glm/0.9.9.8/include/glm/exponential.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double2x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double3x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_double4x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float2x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float3x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/matrix_float4x4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/scalar_int_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/scalar_uint_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_bool4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_double4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float2_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float3_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_float4_precision.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int2_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int3_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_int4_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint2_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint3_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/ext/vector_uint4_sized.hpp \
+ ../Include/glm/0.9.9.8/include/glm/fwd.hpp \
+ ../Include/glm/0.9.9.8/include/glm/geometric.hpp \
+ ../Include/glm/0.9.9.8/include/glm/glm.hpp \
+ ../Include/glm/0.9.9.8/include/glm/integer.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat2x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat2x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat2x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat3x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat3x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat3x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat4x2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat4x3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/mat4x4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/matrix.hpp \
+ ../Include/glm/0.9.9.8/include/glm/packing.hpp \
+ ../Include/glm/0.9.9.8/include/glm/simd/common.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/exponential.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/geometric.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/integer.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/matrix.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/neon.h \
+ ../Include/glm/0.9.9.8/include/glm/simd/platform.h \
+ ../Include/glm/0.9.9.8/include/glm/trigonometric.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vec2.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vec3.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vec4.hpp \
+ ../Include/glm/0.9.9.8/include/glm/vector_relational.hpp \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Source/Head/Graph/BaseRender/Material.h \
+ ../Source/Head/Graph/BaseRender/Mesh.h \
+ ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
+ ../Source/Head/Graph/BaseRender/Transform.h \
+ ../Source/Head/Graph/GraphController/GraphController.h \
+ ../Source/Head/Graph/GraphController/MaterialController.h \
+ ../Source/Head/Graph/GraphController/MeshController.h \
+ ../Source/Head/Graph/GraphController/ShaderController.h \
+ ../Source/Head/Graph/GraphController/TextureController.h \
+ ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
+ ../Source/Head/Graph/MeshLoader/BaseLoader.h \
+ ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
+ ../Source/Head/Graph/RenderObject.h \
+ ../Source/Head/Graph/RenderPipeline.h \
+ ../Source/Head/Graph/Window.h \
+ ../Source/Head/Renderer.h \
+ ../Source/Source/Renderer.cpp \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MainLoopUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/StringUtil.h \
+ ../Utils/Head/ThreadUtil.h \
+ ../Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Utils/Source/FileUtil.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
  ../Include/jsoncpp/1.9.4_1/include/json/config.h \
@@ -1272,6 +1951,7 @@ CMakeFiles/LightWeightRenderer.dir/Utils/Source/JsonUtil.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/FileUtil.h \
  ../Utils/Head/JsonUtil.h \
  ../Utils/Head/LogUtil.h \
  ../Utils/Head/StringUtil.h \
@@ -1520,23 +2200,25 @@ CMakeFiles/LightWeightRenderer.dir/main.cpp.o: \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/GraphController/GraphController.h \
  ../Source/Head/Graph/GraphController/MaterialController.h \
  ../Source/Head/Graph/GraphController/MeshController.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \
+ ../Source/Head/Graph/GraphController/TextureController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
  ../Source/Head/Graph/RenderObject.h \
  ../Source/Head/Graph/RenderPipeline.h \
  ../Source/Head/Graph/Window.h \
+ ../Source/Head/Renderer.h \
  ../Utils/Head/FileUtil.h \
  ../Utils/Head/JsonUtil.h \
  ../Utils/Head/LogUtil.h \
  ../Utils/Head/MainLoopUtil.h \
  ../Utils/Head/MathUtil.h \
- ../Utils/Head/SortUtil.h \
  ../Utils/Head/StringUtil.h \
  ../Utils/Head/ThreadUtil.h \
  ../Utils/Head/TraverUtil.h \

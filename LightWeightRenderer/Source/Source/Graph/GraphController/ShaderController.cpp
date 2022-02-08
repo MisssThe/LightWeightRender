@@ -5,10 +5,10 @@
 #include "../../../Head/Graph/GraphController/ShaderController.h"
 
 
-std::string ShaderController::shader_config_path = "LightWeightRenderer/Config/Shader/ShaderConfig.json";
+std::string ShaderController::shader_config_path = "LightWeightRenderer/Config/ShaderConfig.json";
 std::unordered_map<std::string,Shader*> ShaderController::shader_map;
 bool ShaderController::isReady = false;
-std::string ShaderController::shader_default_name = "";
+std::string ShaderController::shader_default_name = "UI";
 
 
 void ShaderController::Init() {
