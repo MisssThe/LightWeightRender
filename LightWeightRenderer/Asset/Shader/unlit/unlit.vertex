@@ -18,6 +18,8 @@ uniform vec3 aa;
 //-------------- MAIN --------------
 void main()
 {
+    float p = pp.x;
+    float a = aa.y;
     gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);
 }
 //-------------- MAIN --------------

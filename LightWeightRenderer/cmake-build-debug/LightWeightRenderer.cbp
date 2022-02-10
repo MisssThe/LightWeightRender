@@ -107,6 +107,9 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Extend/UI/Image.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Camera.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Material.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -120,6 +123,12 @@
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/BaseRender/Transform.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/GraphController/AssetController.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/GraphController/CameraController.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/GraphController/GraphController.h">
@@ -173,6 +182,9 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Extend/UI/Image.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Camera.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Material.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -186,6 +198,12 @@
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Transform.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/AssetController.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/CameraController.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/MaterialController.cpp">
@@ -221,6 +239,9 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Renderer.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/ConstUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/FileUtil.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -246,6 +267,9 @@
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/ConstUtil.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/FileUtil.cpp">

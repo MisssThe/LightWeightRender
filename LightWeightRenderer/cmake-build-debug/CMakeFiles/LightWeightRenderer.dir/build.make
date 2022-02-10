@@ -430,6 +430,58 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureCo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/TextureController.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.s
 
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o: ../Source/Source/Graph/BaseRender/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Camera.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Camera.cpp > CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/BaseRender/Camera.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.s
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.o: ../Source/Source/Graph/GraphController/CameraController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/CameraController.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/CameraController.cpp > CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/CameraController.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.s
+
+CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.o: ../Utils/Source/ConstUtil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/ConstUtil.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/ConstUtil.cpp > CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/ConstUtil.cpp -o CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.s
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.o: ../Source/Source/Graph/GraphController/AssetController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/AssetController.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/AssetController.cpp > CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Graph/GraphController/AssetController.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.s
+
 # Object files for target LightWeightRenderer
 LightWeightRenderer_OBJECTS = \
 "CMakeFiles/LightWeightRenderer.dir/main.cpp.o" \
@@ -459,7 +511,11 @@ LightWeightRenderer_OBJECTS = \
 "CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/Image.cpp.o" \
 "CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o" \
 "CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o" \
-"CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o"
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.o"
 
 # External object files for target LightWeightRenderer
 LightWeightRenderer_EXTERNAL_OBJECTS =
@@ -492,13 +548,17 @@ LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/InfoPanel.cpp.o
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureController.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.o
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/build.make
 LightWeightRenderer: ../Include/glfw/3.3.4/lib/libglfw.3.3.dylib
 LightWeightRenderer: ../Include/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib
 LightWeightRenderer: ../Include/jsoncpp/1.9.4_1/lib/libjsoncpp.24.dylib
 LightWeightRenderer: ../Include/assimp/5.0.1/lib/libassimp.dylib
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable LightWeightRenderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable LightWeightRenderer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LightWeightRenderer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

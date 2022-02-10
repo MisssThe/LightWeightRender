@@ -1,5 +1,6 @@
 //
 // Created by MisThe on 2022/1/20.
+// 和批方式（按材质和批（可以节省材质数据设置））
 //
 
 #include "../../Head/Graph/RenderPipeline.h"

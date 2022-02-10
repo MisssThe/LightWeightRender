@@ -201,6 +201,30 @@ Source/Source/Extend/UI/Image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/UI/Image.cpp.s
 .PHONY : Source/Source/Extend/UI/Image.cpp.s
 
+Source/Source/Graph/BaseRender/Camera.o: Source/Source/Graph/BaseRender/Camera.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Camera.o
+
+# target to build an object file
+Source/Source/Graph/BaseRender/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o
+.PHONY : Source/Source/Graph/BaseRender/Camera.cpp.o
+
+Source/Source/Graph/BaseRender/Camera.i: Source/Source/Graph/BaseRender/Camera.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Camera.i
+
+# target to preprocess a source file
+Source/Source/Graph/BaseRender/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.i
+.PHONY : Source/Source/Graph/BaseRender/Camera.cpp.i
+
+Source/Source/Graph/BaseRender/Camera.s: Source/Source/Graph/BaseRender/Camera.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Camera.s
+
+# target to generate assembly for a file
+Source/Source/Graph/BaseRender/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.s
+.PHONY : Source/Source/Graph/BaseRender/Camera.cpp.s
+
 Source/Source/Graph/BaseRender/Material.o: Source/Source/Graph/BaseRender/Material.cpp.o
 .PHONY : Source/Source/Graph/BaseRender/Material.o
 
@@ -320,6 +344,54 @@ Source/Source/Graph/BaseRender/Transform.s: Source/Source/Graph/BaseRender/Trans
 Source/Source/Graph/BaseRender/Transform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.s
 .PHONY : Source/Source/Graph/BaseRender/Transform.cpp.s
+
+Source/Source/Graph/GraphController/AssetController.o: Source/Source/Graph/GraphController/AssetController.cpp.o
+.PHONY : Source/Source/Graph/GraphController/AssetController.o
+
+# target to build an object file
+Source/Source/Graph/GraphController/AssetController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.o
+.PHONY : Source/Source/Graph/GraphController/AssetController.cpp.o
+
+Source/Source/Graph/GraphController/AssetController.i: Source/Source/Graph/GraphController/AssetController.cpp.i
+.PHONY : Source/Source/Graph/GraphController/AssetController.i
+
+# target to preprocess a source file
+Source/Source/Graph/GraphController/AssetController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.i
+.PHONY : Source/Source/Graph/GraphController/AssetController.cpp.i
+
+Source/Source/Graph/GraphController/AssetController.s: Source/Source/Graph/GraphController/AssetController.cpp.s
+.PHONY : Source/Source/Graph/GraphController/AssetController.s
+
+# target to generate assembly for a file
+Source/Source/Graph/GraphController/AssetController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.s
+.PHONY : Source/Source/Graph/GraphController/AssetController.cpp.s
+
+Source/Source/Graph/GraphController/CameraController.o: Source/Source/Graph/GraphController/CameraController.cpp.o
+.PHONY : Source/Source/Graph/GraphController/CameraController.o
+
+# target to build an object file
+Source/Source/Graph/GraphController/CameraController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.o
+.PHONY : Source/Source/Graph/GraphController/CameraController.cpp.o
+
+Source/Source/Graph/GraphController/CameraController.i: Source/Source/Graph/GraphController/CameraController.cpp.i
+.PHONY : Source/Source/Graph/GraphController/CameraController.i
+
+# target to preprocess a source file
+Source/Source/Graph/GraphController/CameraController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.i
+.PHONY : Source/Source/Graph/GraphController/CameraController.cpp.i
+
+Source/Source/Graph/GraphController/CameraController.s: Source/Source/Graph/GraphController/CameraController.cpp.s
+.PHONY : Source/Source/Graph/GraphController/CameraController.s
+
+# target to generate assembly for a file
+Source/Source/Graph/GraphController/CameraController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraController.cpp.s
+.PHONY : Source/Source/Graph/GraphController/CameraController.cpp.s
 
 Source/Source/Graph/GraphController/MaterialController.o: Source/Source/Graph/GraphController/MaterialController.cpp.o
 .PHONY : Source/Source/Graph/GraphController/MaterialController.o
@@ -585,6 +657,30 @@ Source/Source/Renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.s
 .PHONY : Source/Source/Renderer.cpp.s
 
+Utils/Source/ConstUtil.o: Utils/Source/ConstUtil.cpp.o
+.PHONY : Utils/Source/ConstUtil.o
+
+# target to build an object file
+Utils/Source/ConstUtil.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.o
+.PHONY : Utils/Source/ConstUtil.cpp.o
+
+Utils/Source/ConstUtil.i: Utils/Source/ConstUtil.cpp.i
+.PHONY : Utils/Source/ConstUtil.i
+
+# target to preprocess a source file
+Utils/Source/ConstUtil.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.i
+.PHONY : Utils/Source/ConstUtil.cpp.i
+
+Utils/Source/ConstUtil.s: Utils/Source/ConstUtil.cpp.s
+.PHONY : Utils/Source/ConstUtil.s
+
+# target to generate assembly for a file
+Utils/Source/ConstUtil.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.s
+.PHONY : Utils/Source/ConstUtil.cpp.s
+
 Utils/Source/FileUtil.o: Utils/Source/FileUtil.cpp.o
 .PHONY : Utils/Source/FileUtil.o
 
@@ -819,6 +915,9 @@ help:
 	@echo "... Source/Source/Extend/UI/Image.o"
 	@echo "... Source/Source/Extend/UI/Image.i"
 	@echo "... Source/Source/Extend/UI/Image.s"
+	@echo "... Source/Source/Graph/BaseRender/Camera.o"
+	@echo "... Source/Source/Graph/BaseRender/Camera.i"
+	@echo "... Source/Source/Graph/BaseRender/Camera.s"
 	@echo "... Source/Source/Graph/BaseRender/Material.o"
 	@echo "... Source/Source/Graph/BaseRender/Material.i"
 	@echo "... Source/Source/Graph/BaseRender/Material.s"
@@ -834,6 +933,12 @@ help:
 	@echo "... Source/Source/Graph/BaseRender/Transform.o"
 	@echo "... Source/Source/Graph/BaseRender/Transform.i"
 	@echo "... Source/Source/Graph/BaseRender/Transform.s"
+	@echo "... Source/Source/Graph/GraphController/AssetController.o"
+	@echo "... Source/Source/Graph/GraphController/AssetController.i"
+	@echo "... Source/Source/Graph/GraphController/AssetController.s"
+	@echo "... Source/Source/Graph/GraphController/CameraController.o"
+	@echo "... Source/Source/Graph/GraphController/CameraController.i"
+	@echo "... Source/Source/Graph/GraphController/CameraController.s"
 	@echo "... Source/Source/Graph/GraphController/MaterialController.o"
 	@echo "... Source/Source/Graph/GraphController/MaterialController.i"
 	@echo "... Source/Source/Graph/GraphController/MaterialController.s"
@@ -867,6 +972,9 @@ help:
 	@echo "... Source/Source/Renderer.o"
 	@echo "... Source/Source/Renderer.i"
 	@echo "... Source/Source/Renderer.s"
+	@echo "... Utils/Source/ConstUtil.o"
+	@echo "... Utils/Source/ConstUtil.i"
+	@echo "... Utils/Source/ConstUtil.s"
 	@echo "... Utils/Source/FileUtil.o"
 	@echo "... Utils/Source/FileUtil.i"
 	@echo "... Utils/Source/FileUtil.s"

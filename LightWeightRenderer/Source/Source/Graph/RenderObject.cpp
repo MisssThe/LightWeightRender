@@ -3,6 +3,7 @@
 //
 
 #include "../../Head/Graph/RenderObject.h"
+#include "../../Head/Graph/GraphController/CameraController.h"
 
 RenderObject::RenderObject() {
     this->renderType = RenderType::OPAQUE;
@@ -20,7 +21,7 @@ RenderObject *RenderObject::CreateRenderObject() {
 bool RenderObject::render() {
     this->mesh->use();
     this->shader->use();
-    this->material->use();
+//    this->material->use();
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
     return this->isAlive;
 }

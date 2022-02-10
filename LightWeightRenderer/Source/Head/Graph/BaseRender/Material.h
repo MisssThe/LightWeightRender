@@ -10,6 +10,7 @@
 
 #include "Shader.h"
 #include "../../../../Utils/Head/JsonUtil.h"
+#include "../../../../Utils/Head/ConstUtil.h"
 
 class Material {
 public:
@@ -24,11 +25,12 @@ private:
     {
         std::string type;
         std::string value;
+        int location;
         bool modify;
     };
     std::unordered_map<std::string,Info> property_map;
 private:
-    void init();
+    void setValue(std::string type,std::string value,int location);
 };
 
 
