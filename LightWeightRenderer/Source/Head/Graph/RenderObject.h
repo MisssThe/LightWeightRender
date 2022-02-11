@@ -20,12 +20,19 @@ enum RenderType
 
 class RenderObject {
 public:
-    RenderObject();
+    RenderObject(RenderType type = RenderType::OPAQUE);
+    RenderObject(Shader*shader,Material*material,Mesh*mesh,Transform*transform,RenderType type = RenderType::OPAQUE);
     static RenderObject*CreateRenderObject();
     bool render();
     RenderType getType();
     void destroy();
     void destroyImmediately();
+    void setMaterial(Material *material);
+    void setShader(Shader *shader);
+    void setMesh(Mesh *mesh);
+
+    void setTransform(Transform *transform);
+
 private:
     RenderType  renderType;
     Material*   material;

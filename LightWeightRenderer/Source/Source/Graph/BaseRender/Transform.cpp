@@ -43,3 +43,20 @@ glm::vec3 Transform::getRotation() {
 glm::vec3 Transform::getScale() {
     return this->scale;
 }
+
+Transform::Transform(float *array) {
+    std::vector<float> vec(array,array + 9);
+}
+
+Transform::Transform(std::vector<float> array) {
+    if (array.size() < 9)
+        return;
+    this->position = {array[0], array[1], array[2]};
+    this->rotation = {array[3], array[4], array[5]};
+    this->scale    = {array[6], array[7], array[8]};
+    this->createMatrix();
+}
+
+Transform::Transform() {
+
+}

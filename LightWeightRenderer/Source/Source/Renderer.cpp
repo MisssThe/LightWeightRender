@@ -17,8 +17,14 @@ void Renderer::Init() {
     },"Light Weight Renderer",1000,500);
 
     GraphController::Init();
-    pipeline1->addObject(RenderObject::CreateRenderObject());
-    pipeline2->addObject(RenderObject::CreateRenderObject());
+    int index = 0;
+    RenderObjectController::TraverObject([&pipeline1, &index, &pipeline2](RenderObject* ro) {
+        index = ((index+1) % 2);
+        if (index == 0)
+            pipeline1->addObject(ro);
+        else
+            pipeline2->addObject(ro);
+    });
     MainLoopUtil::Run();
 }
 

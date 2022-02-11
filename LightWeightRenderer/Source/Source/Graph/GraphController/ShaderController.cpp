@@ -6,7 +6,8 @@
 
 
 std::string ShaderController::shader_config_path = "LightWeightRenderer/Config/ShaderConfig.json";
-std::unordered_map<std::string,Shader*> ShaderController::shader_map;
+std::unordered_map<std::string, Shader *> ShaderController::shader_map;
+std::unordered_map<std::string, std::unordered_map<unsigned int, std::string> *> ShaderController::shader_path_map;
 bool ShaderController::isReady = false;
 std::string ShaderController::shader_default_name = "UI";
 
@@ -14,19 +15,15 @@ std::string ShaderController::shader_default_name = "UI";
 void ShaderController::Init() {
     if (!isReady) {
         isReady = true;
-        //读取config目录查找指定shader
-        Json::Value value = JsonUtil::ReadJson(shader_config_path);
-        std::unordered_map<unsigned int, std::string> *shaderMap = nullptr;
-        TraverUtil::TraverJsonValue(&value, [&shaderMap](std::string name, Json::Value *v) {
-            int length = v->size();
-            shaderMap = new std::unordered_map<unsigned int, std::string>();
-            for (int i = 0; i < length; ++i) {
-                std::string str = ((*v)[i]).getMemberNames()[0];
-                unsigned int type = CheckType(str);
-                std::string path = ((*v)[i])[str].asString();
-                shaderMap->insert(std::pair<unsigned int, std::string>(type, path));
-            }
-            shader_map.insert(std::pair<std::string, Shader *>(name, new Shader(*shaderMap)));
+        std::function<void(std::string, JValue *value, bool)> func = [](std::string name, JValue *value, bool flag) {
+            std::vector<int> index_vec = JsonUtil::JsonToArray<Json::Value>(*value);
+            std::vector<Json::Value> vec = DataSaveUtil::UseData<Json::Value>(index_vec);
+            CreateShader(name, &vec, flag);
+        };
+        InitAsset(shader_config_path, [&func](std::string name, JValue *value) {
+            func(name,value,true);
+        }, [&func](std::string name, JValue *value) {
+            func(name,value, false);
         });
     }
 }
@@ -34,7 +31,7 @@ void ShaderController::Init() {
 Shader *ShaderController::GetShader(std::string shaderName) {
     if (shader_map.find(shaderName) != shader_map.end())
         return shader_map[shaderName];
-    LogUtil::LogError("get shader","error shader name["+shaderName+"]\n");
+    LogUtil::LogError("get shader", "error shader name[" + shaderName + "]\n");
     return nullptr;
 }
 
@@ -48,10 +45,23 @@ unsigned int ShaderController::CheckType(std::string str) {
 //    else if (str == "tessellation")
 //        return 4;
     else
-        LogUtil::LogError("check shader type","type error");
+        LogUtil::LogError("check shader type", "type error");
     return -1;
 }
 
 Shader *ShaderController::GetDefaultShader() {
     return GetShader(shader_default_name);
+}
+
+void ShaderController::CreateShader(std::string name, std::vector<Json::Value> *value, bool create) {
+    std::unordered_map<unsigned int, std::string> *shaderPathMap = new std::unordered_map<unsigned int, std::string>();
+    TraverUtil::TraverVector<Json::Value>(value, [&shaderPathMap](JValue v) {
+        std::string name = v.getMemberNames()[0];
+        unsigned int type = CheckType(name);
+        shaderPathMap->insert(std::pair<unsigned int, std::string>(type, v[name].asString()));
+    });
+    shader_path_map.insert(
+            std::pair<std::string, std::unordered_map<unsigned int, std::string> *>(name, shaderPathMap));
+    if (create)
+        shader_map.insert(std::pair<std::string, Shader *>(name, new Shader(*shaderPathMap)));
 }

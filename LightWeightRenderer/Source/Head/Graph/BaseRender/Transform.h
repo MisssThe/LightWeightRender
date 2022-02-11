@@ -9,9 +9,13 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include "vector"
 
 class Transform {
 public:
+    Transform();
+    Transform(float* array);
+    Transform(std::vector<float> array);
     glm::mat4 getMatrix();
     void setPosition(float x,float y,float z);
     void setRotation(float x,float y,float z);

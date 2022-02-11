@@ -8,8 +8,10 @@
 
 #include "../BaseRender/Mesh.h"
 #include "../../../../Utils/Head/JsonUtil.h"
+#include "AssetController.h"
 
-class MeshController {
+class MeshController : public AssetController
+{
 public:
     static void Init();
     static Mesh*GetMesh(std::string name);

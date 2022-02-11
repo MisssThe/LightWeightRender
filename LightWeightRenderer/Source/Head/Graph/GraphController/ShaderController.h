@@ -8,9 +8,10 @@
 
 
 #include "../BaseRender/Shader.h"
-#include "../../../../Utils/Head/JsonUtil.h"
+#include "AssetController.h"
 
-class ShaderController {
+class ShaderController : public AssetController
+{
 public:
     static void Init();
     static Shader*GetShader(std::string shaderName);
@@ -20,11 +21,13 @@ public:
 //    static Shader*CreateShader();
 private:
     static std::unordered_map<std::string,Shader*> shader_map;
+    static std::unordered_map<std::string,std::unordered_map<unsigned int ,std::string>*> shader_path_map;
     static std::string shader_config_path;
     static bool isReady;
     static std::string shader_default_name;
 private:
     static unsigned int CheckType(std::string str);
+    static void CreateShader(std::string name,std::vector<Json::Value>* value,bool create);
 };
 
 

@@ -12,28 +12,12 @@ Mesh::Mesh(std::string path) {
 void Mesh::loadMesh(std::string path) {
     //从路径加载网格
     BaseLoader::MeshInfo* meshInfo = GeneralLoader::Load(path);
-
-    float vertices[] = {
-            0.5f,  0.5f, 0.0f,  // top right
-            0.5f, -0.5f, 0.0f,  // bottom right
-            -0.5f, -0.5f, 0.0f,  // bottom left
-            -0.5f,  0.5f, 0.0f   // top left
-    };
-    unsigned int indices[] = {  // note that we start from 0!
-            0, 1, 3,  // first Triangle
-            1, 2, 3   // second Triangle
-    };
-    meshInfo->vertex = vertices;
-    meshInfo->index = indices;
-    meshInfo->vertexSize = 12 * sizeof(float);
-    meshInfo->indexSize = 6 * sizeof(unsigned int);
-    meshInfo->attriVec.clear();
-    meshInfo->attriVec.push_back(BaseLoader::AttriStruct());
     this->processMesh(meshInfo);
 }
 
 void Mesh::processMesh(BaseLoader::MeshInfo* meshInfo) {
     if (meshInfo != nullptr) {
+        this->indexSize = meshInfo->indexSize / sizeof(unsigned int);
         unsigned int VBO, EBO;
         glGenVertexArrays(1, &VAO);
         glGenBuffers(1, &VBO);
@@ -57,4 +41,8 @@ void Mesh::processMesh(BaseLoader::MeshInfo* meshInfo) {
 
 void Mesh::use() {
     glBindVertexArray(this->VAO);
+}
+
+int Mesh::getIndexSize() {
+    return this->indexSize;
 }

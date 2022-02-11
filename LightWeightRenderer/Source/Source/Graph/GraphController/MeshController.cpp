@@ -17,24 +17,16 @@ void MeshController::Init() {
     if (!isReady)
     {
         isReady = true;
-        Json::Value root = JsonUtil::ReadJson(mesh_config_path);
-        TraverUtil::TraverJsonValueBool(&root,[](std::string name,Json::Value*value)->bool{
-            if (name == "preheat")
-                TraverUtil::TraverJsonValue(value,[](std::string name,Json::Value*v){
-                    std::string path = v->asString();
-                    path = FileUtil::CheckPath(path);
-                    mesh_path_map.insert(std::pair<std::string,std::string>(name,path));
-                    Mesh*mesh = new Mesh(path);
-                    mesh_map.insert(std::pair<std::string,Mesh*>(name,mesh));
-                });
-            else if (name == "passivity")
-                TraverUtil::TraverJsonValue(value,[](std::string name,Json::Value*v){
-                    std::string path = FileUtil::CheckPath(v->asString());
-                    mesh_path_map.insert(std::pair<std::string,std::string>(name,path));
-                });
-            else
-                return true;
-            return false;
+        InitAsset(mesh_config_path,[](std::string name,JValue* value) {
+                std::string path = value->asString();
+                path = FileUtil::CheckPath(path);
+                path = FileUtil::CheckPath(path);
+                mesh_path_map.insert(std::pair<std::string,std::string>(name,path));
+                Mesh*mesh = new Mesh(path);
+                mesh_map.insert(std::pair<std::string,Mesh*>(name,mesh));
+        },[](std::string name,JValue* value){
+                std::string path = FileUtil::CheckPath(value->asString());
+                mesh_path_map.insert(std::pair<std::string,std::string>(name,path));
         });
     }
 }

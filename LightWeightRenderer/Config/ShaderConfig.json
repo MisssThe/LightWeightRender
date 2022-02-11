@@ -1,10 +1,15 @@
 {
-  "UI" : [
-    {"vertex" : "LightWeightRenderer/Asset/Shader/unlit/unlit.vertex"},
-    {"fragment" : "LightWeightRenderer/Asset/Shader/unlit/unlit.fragment"}
-  ],
-  "Lambert" : [
-    {"vertex" : "LightWeightRenderer/Asset/Shader/Lambert/lambert.vertex"},
-    {"fragment" : "LightWeightRenderer/Asset/Shader/Lambert/lambert.fragment"}
-  ]
+  "preheat" : {
+    "UI" : [
+      {"vertex" : "LightWeightRenderer/Asset/Shader/unlit/unlit.vertex"},
+      {"fragment" : "LightWeightRenderer/Asset/Shader/unlit/unlit.fragment"}
+    ],
+    "Lambert" : [
+      {"vertex" : "LightWeightRenderer/Asset/Shader/Lambert/lambert.vertex"},
+      {"fragment" : "LightWeightRenderer/Asset/Shader/Lambert/lambert.fragment"}
+    ]
+  },
+  "passivity": {
+
+  }
 }

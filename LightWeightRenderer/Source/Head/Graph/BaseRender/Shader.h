@@ -19,11 +19,14 @@ public:
         std::string dataType;
         int location;
     };
-    std::unordered_map<std::string,KeyWord> keyWordMap;
 public:
     Shader(std::unordered_map<unsigned int,std::string> paths);
+
+    const std::unordered_map<std::string, KeyWord> &getKeyWordMap() const;
+
     void use();
 private:
+    std::unordered_map<std::string,KeyWord> keyWordMap;
     unsigned int shaderID;
     static std::string cut_of_word;
 private:

@@ -11,12 +11,14 @@
 #include "Shader.h"
 #include "../../../../Utils/Head/JsonUtil.h"
 #include "../../../../Utils/Head/ConstUtil.h"
+#include "../../../Head/Graph/GraphController/ShaderController.h"
 
 class Material {
 public:
+    Material();
     Material(std::string path);
     Material* RefreshPanel();
-    void setShader(Shader*shader);
+    void setMaterialValue(std::string name,std::string value);
     void use();
 private:
     Shader*shader;
@@ -26,10 +28,11 @@ private:
         std::string type;
         std::string value;
         int location;
-        bool modify;
     };
     std::unordered_map<std::string,Info> property_map;
+    static std::unordered_map<std::string,std::string> external_property_map;
 private:
+    void initMaterial(std::unordered_map<std::string, Shader::KeyWord>* keyWordMap,Json::Value* root);
     void setValue(std::string type,std::string value,int location);
 };
 

@@ -1,3 +1,9 @@
 {
-  "test" : "LightWeightRenderer/Config/Material/test.json"
+  "preheat" : {
+    "test" : "LightWeightRenderer/Asset/Material/test.json",
+    "test1": "LightWeightRenderer/Asset/Material/test1.json"
+  },
+  "passivity" : {
+
+  }
 }

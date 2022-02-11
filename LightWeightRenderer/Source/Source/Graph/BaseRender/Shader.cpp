@@ -78,3 +78,7 @@ void Shader::findKeyWordLocation() {
         this->keyWordMap[name].location = location;
     });
 }
+
+const std::unordered_map<std::string, Shader::KeyWord> &Shader::getKeyWordMap() const {
+    return keyWordMap;
+}

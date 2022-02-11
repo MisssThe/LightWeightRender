@@ -6,7 +6,7 @@
 
 //------------ UNIFORM ------------
 uniform sampler2D texture1;
-uniform int c;
+uniform float color_r;
 //------------ UNIFORM ------------
 
 
@@ -19,9 +19,8 @@ out vec4 FragColor;
 //------------- MAIN -------------
 void main()
 {
-    float cc = c;
 //    float r = TexCoord.x;
-    FragColor = vec4(1,1,1.0,1);
+    FragColor = vec4(color_r,color_r,1.0,1);
 //    FragColor = texture(texture1, TexCoord);
 }
 //------------- MAIN -------------

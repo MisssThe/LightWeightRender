@@ -14,11 +14,13 @@
 class Mesh {
 public:
     Mesh(std::string path);
+    int getIndexSize();
     void use();
 private:
     std::string meshName;
     unsigned int VAO;
     BaseLoader::MeshInfo*meshInfo;
+    int indexSize;
 private:
     void loadMesh(std::string path);
     void processMesh(BaseLoader::MeshInfo* meshInfo);

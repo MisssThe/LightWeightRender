@@ -441,6 +441,30 @@ Source/Source/Graph/GraphController/MeshController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/MeshController.cpp.s
 .PHONY : Source/Source/Graph/GraphController/MeshController.cpp.s
 
+Source/Source/Graph/GraphController/RenderObjectController.o: Source/Source/Graph/GraphController/RenderObjectController.cpp.o
+.PHONY : Source/Source/Graph/GraphController/RenderObjectController.o
+
+# target to build an object file
+Source/Source/Graph/GraphController/RenderObjectController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/RenderObjectController.cpp.o
+.PHONY : Source/Source/Graph/GraphController/RenderObjectController.cpp.o
+
+Source/Source/Graph/GraphController/RenderObjectController.i: Source/Source/Graph/GraphController/RenderObjectController.cpp.i
+.PHONY : Source/Source/Graph/GraphController/RenderObjectController.i
+
+# target to preprocess a source file
+Source/Source/Graph/GraphController/RenderObjectController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/RenderObjectController.cpp.i
+.PHONY : Source/Source/Graph/GraphController/RenderObjectController.cpp.i
+
+Source/Source/Graph/GraphController/RenderObjectController.s: Source/Source/Graph/GraphController/RenderObjectController.cpp.s
+.PHONY : Source/Source/Graph/GraphController/RenderObjectController.s
+
+# target to generate assembly for a file
+Source/Source/Graph/GraphController/RenderObjectController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/RenderObjectController.cpp.s
+.PHONY : Source/Source/Graph/GraphController/RenderObjectController.cpp.s
+
 Source/Source/Graph/GraphController/ShaderController.o: Source/Source/Graph/GraphController/ShaderController.cpp.o
 .PHONY : Source/Source/Graph/GraphController/ShaderController.o
 
@@ -680,6 +704,30 @@ Utils/Source/ConstUtil.s: Utils/Source/ConstUtil.cpp.s
 Utils/Source/ConstUtil.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.s
 .PHONY : Utils/Source/ConstUtil.cpp.s
+
+Utils/Source/DataSaveUtil.o: Utils/Source/DataSaveUtil.cpp.o
+.PHONY : Utils/Source/DataSaveUtil.o
+
+# target to build an object file
+Utils/Source/DataSaveUtil.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/DataSaveUtil.cpp.o
+.PHONY : Utils/Source/DataSaveUtil.cpp.o
+
+Utils/Source/DataSaveUtil.i: Utils/Source/DataSaveUtil.cpp.i
+.PHONY : Utils/Source/DataSaveUtil.i
+
+# target to preprocess a source file
+Utils/Source/DataSaveUtil.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/DataSaveUtil.cpp.i
+.PHONY : Utils/Source/DataSaveUtil.cpp.i
+
+Utils/Source/DataSaveUtil.s: Utils/Source/DataSaveUtil.cpp.s
+.PHONY : Utils/Source/DataSaveUtil.s
+
+# target to generate assembly for a file
+Utils/Source/DataSaveUtil.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/DataSaveUtil.cpp.s
+.PHONY : Utils/Source/DataSaveUtil.cpp.s
 
 Utils/Source/FileUtil.o: Utils/Source/FileUtil.cpp.o
 .PHONY : Utils/Source/FileUtil.o
@@ -945,6 +993,9 @@ help:
 	@echo "... Source/Source/Graph/GraphController/MeshController.o"
 	@echo "... Source/Source/Graph/GraphController/MeshController.i"
 	@echo "... Source/Source/Graph/GraphController/MeshController.s"
+	@echo "... Source/Source/Graph/GraphController/RenderObjectController.o"
+	@echo "... Source/Source/Graph/GraphController/RenderObjectController.i"
+	@echo "... Source/Source/Graph/GraphController/RenderObjectController.s"
 	@echo "... Source/Source/Graph/GraphController/ShaderController.o"
 	@echo "... Source/Source/Graph/GraphController/ShaderController.i"
 	@echo "... Source/Source/Graph/GraphController/ShaderController.s"
@@ -975,6 +1026,9 @@ help:
 	@echo "... Utils/Source/ConstUtil.o"
 	@echo "... Utils/Source/ConstUtil.i"
 	@echo "... Utils/Source/ConstUtil.s"
+	@echo "... Utils/Source/DataSaveUtil.o"
+	@echo "... Utils/Source/DataSaveUtil.i"
+	@echo "... Utils/Source/DataSaveUtil.s"
 	@echo "... Utils/Source/FileUtil.o"
 	@echo "... Utils/Source/FileUtil.i"
 	@echo "... Utils/Source/FileUtil.s"

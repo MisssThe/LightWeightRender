@@ -5,12 +5,12 @@
 #include "../../../Head/Graph/MeshLoader/BaseLoader.h"
 
 std::unordered_map<std::string,BaseLoader::MeshInfo*> BaseLoader::mesh_map;
-
+int BaseLoader::Vertex::base_vertex_size =  sizeof(glm::vec3) * 9;
 BaseLoader::MeshInfo *BaseLoader::processMesh(BaseLoader::TempMesh *tempMesh) {
     MeshInfo*finalMesh = new MeshInfo();
     finalMesh->vertex = reinterpret_cast<float *>(&tempMesh->vertexVec[0]);
     finalMesh->index = &tempMesh->indexVec[0];
-    finalMesh->vertexSize = tempMesh->vertexVec.size() * sizeof(float);
+    finalMesh->vertexSize = tempMesh->vertexVec.size() * Vertex::GetVertexBaseSize();
     finalMesh->indexSize = tempMesh->indexVec.size() * sizeof(unsigned int);
     finalMesh->attriVec.push_back({3,27,0});
     finalMesh->attriVec.push_back({3,27,3});
@@ -25,12 +25,7 @@ BaseLoader::MeshInfo *BaseLoader::processMesh(BaseLoader::TempMesh *tempMesh) {
 
 BaseLoader::MeshInfo *BaseLoader::load(std::string path)
 {
-    MeshInfo* meshInfo = mesh_map[path];
-    if (meshInfo == nullptr)
-    {
-        meshInfo = this->processMesh(this->starLoad(path));
-        mesh_map[path] = meshInfo;
-    }
+    MeshInfo* meshInfo = this->processMesh(this->starLoad(path));
     return meshInfo;
 }
 
@@ -74,4 +69,8 @@ int BaseLoader::Vertex::addStandby(glm::vec4 value, int index)
             break;
     }
     return MathUtil::Saturate(++index,0,3);
+}
+
+int BaseLoader::Vertex::GetVertexBaseSize() {
+    return base_vertex_size;
 }

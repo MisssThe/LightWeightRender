@@ -27,6 +27,9 @@ public:
         glm::vec4 standby3;
     public:
         int addStandby(glm::vec4 value,int index = 0);
+        static int GetVertexBaseSize();
+    private:
+        static int base_vertex_size;
     };
     struct TempMesh
     {

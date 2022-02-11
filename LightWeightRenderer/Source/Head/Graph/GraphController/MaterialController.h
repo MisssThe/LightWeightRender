@@ -8,16 +8,24 @@
 
 #include "../BaseRender/Material.h"
 #include "../../../../Utils/Head/JsonUtil.h"
+#include "AssetController.h"
+#include "../../../Head/Graph/GraphController/ShaderController.h"
 
-class MaterialController {
+class MaterialController : public AssetController
+{
 public:
     static void Init();
+    static Material* GetMaterial(std::string name);
+    static Material* SaveMaterial(std::string name,Material* material);
     static Material*CreateMaterial();
 
 private:
     static std::unordered_map<std::string,Material*> material_map;
+    static std::unordered_map<std::string, std::string> material_path_map;
     static bool isReady;
     static std::string material_config_path;
+private:
+    static void AddMaterial(JValue value);
 };
 
 

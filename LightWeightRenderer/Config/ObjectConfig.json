@@ -1,0 +1,9 @@
+{
+  "preheat" : {
+    "object_1" : "LightWeightRenderer/Asset/RenderObject/object_1.json",
+    "object_2" : "LightWeightRenderer/Asset/RenderObject/object_2.json"
+  },
+  "passivity": {
+
+  }
+}
