@@ -25,6 +25,10 @@ void Renderer::Init() {
         else
             pipeline2->addObject(ro);
     });
+
+    Physics::Init();
+    InputController::AddEquip(InputController::EquipType::MOUSE,w1.getWindow());
+    Physics::Run();
     MainLoopUtil::Run();
 }
 

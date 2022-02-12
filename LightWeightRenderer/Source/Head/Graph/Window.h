@@ -20,14 +20,14 @@ class Window
 public:
     Window(std::function<void()> func,std::string name = "test",int width = 0,int height = 0);
     ~Window();
+    GLFWwindow *getWindow() const;
 private:
     void initContext();
     void initWindow();
     bool run();
     void updateWindow();
     void deleteWindow();
-
-public:
+private:
     GLFWwindow*window;
     int width,height;
     std::string windowName;

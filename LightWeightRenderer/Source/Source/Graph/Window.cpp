@@ -99,3 +99,7 @@ void Window::deleteWindow() {
 Window::~Window() {
     this->deleteWindow();
 }
+
+GLFWwindow *Window::getWindow() const {
+    return window;
+}

@@ -558,8 +558,8 @@ extern "C" {
 
 /*! @} */
 
-/*! @defgroup buttons Mouse buttons
- *  @brief Mouse button IDs.
+/*! @defgroup buttons MouseEquip buttons
+ *  @brief MouseEquip button IDs.
  *
  *  See [mouse button input](@ref input_mouse_button) for how these are used.
  *
@@ -845,9 +845,9 @@ extern "C" {
  *  [window attribute](@ref GLFW_TRANSPARENT_FRAMEBUFFER_attrib).
  */
 #define GLFW_TRANSPARENT_FRAMEBUFFER 0x0002000A
-/*! @brief Mouse cursor hover window attribute.
+/*! @brief MouseEquip cursor hover window attribute.
  *
- *  Mouse cursor hover [window attribute](@ref GLFW_HOVERED_attrib).
+ *  MouseEquip cursor hover [window attribute](@ref GLFW_HOVERED_attrib).
  */
 #define GLFW_HOVERED                0x0002000B
 /*! @brief Input focus on calling show window hint and attribute

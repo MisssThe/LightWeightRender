@@ -657,6 +657,78 @@ Source/Source/Physics/CollisionDetection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.s
 .PHONY : Source/Source/Physics/CollisionDetection.cpp.s
 
+Source/Source/Physics/InputController.o: Source/Source/Physics/InputController.cpp.o
+.PHONY : Source/Source/Physics/InputController.o
+
+# target to build an object file
+Source/Source/Physics/InputController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o
+.PHONY : Source/Source/Physics/InputController.cpp.o
+
+Source/Source/Physics/InputController.i: Source/Source/Physics/InputController.cpp.i
+.PHONY : Source/Source/Physics/InputController.i
+
+# target to preprocess a source file
+Source/Source/Physics/InputController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.i
+.PHONY : Source/Source/Physics/InputController.cpp.i
+
+Source/Source/Physics/InputController.s: Source/Source/Physics/InputController.cpp.s
+.PHONY : Source/Source/Physics/InputController.s
+
+# target to generate assembly for a file
+Source/Source/Physics/InputController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.s
+.PHONY : Source/Source/Physics/InputController.cpp.s
+
+Source/Source/Physics/InputEquip/MouseEquip.o: Source/Source/Physics/InputEquip/MouseEquip.cpp.o
+.PHONY : Source/Source/Physics/InputEquip/MouseEquip.o
+
+# target to build an object file
+Source/Source/Physics/InputEquip/MouseEquip.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.o
+.PHONY : Source/Source/Physics/InputEquip/MouseEquip.cpp.o
+
+Source/Source/Physics/InputEquip/MouseEquip.i: Source/Source/Physics/InputEquip/MouseEquip.cpp.i
+.PHONY : Source/Source/Physics/InputEquip/MouseEquip.i
+
+# target to preprocess a source file
+Source/Source/Physics/InputEquip/MouseEquip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.i
+.PHONY : Source/Source/Physics/InputEquip/MouseEquip.cpp.i
+
+Source/Source/Physics/InputEquip/MouseEquip.s: Source/Source/Physics/InputEquip/MouseEquip.cpp.s
+.PHONY : Source/Source/Physics/InputEquip/MouseEquip.s
+
+# target to generate assembly for a file
+Source/Source/Physics/InputEquip/MouseEquip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.s
+.PHONY : Source/Source/Physics/InputEquip/MouseEquip.cpp.s
+
+Source/Source/Physics/Physics.o: Source/Source/Physics/Physics.cpp.o
+.PHONY : Source/Source/Physics/Physics.o
+
+# target to build an object file
+Source/Source/Physics/Physics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.o
+.PHONY : Source/Source/Physics/Physics.cpp.o
+
+Source/Source/Physics/Physics.i: Source/Source/Physics/Physics.cpp.i
+.PHONY : Source/Source/Physics/Physics.i
+
+# target to preprocess a source file
+Source/Source/Physics/Physics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.i
+.PHONY : Source/Source/Physics/Physics.cpp.i
+
+Source/Source/Physics/Physics.s: Source/Source/Physics/Physics.cpp.s
+.PHONY : Source/Source/Physics/Physics.s
+
+# target to generate assembly for a file
+Source/Source/Physics/Physics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.s
+.PHONY : Source/Source/Physics/Physics.cpp.s
+
 Source/Source/Renderer.o: Source/Source/Renderer.cpp.o
 .PHONY : Source/Source/Renderer.o
 
@@ -1020,6 +1092,15 @@ help:
 	@echo "... Source/Source/Physics/CollisionDetection.o"
 	@echo "... Source/Source/Physics/CollisionDetection.i"
 	@echo "... Source/Source/Physics/CollisionDetection.s"
+	@echo "... Source/Source/Physics/InputController.o"
+	@echo "... Source/Source/Physics/InputController.i"
+	@echo "... Source/Source/Physics/InputController.s"
+	@echo "... Source/Source/Physics/InputEquip/MouseEquip.o"
+	@echo "... Source/Source/Physics/InputEquip/MouseEquip.i"
+	@echo "... Source/Source/Physics/InputEquip/MouseEquip.s"
+	@echo "... Source/Source/Physics/Physics.o"
+	@echo "... Source/Source/Physics/Physics.i"
+	@echo "... Source/Source/Physics/Physics.s"
 	@echo "... Source/Source/Renderer.o"
 	@echo "... Source/Source/Renderer.i"
 	@echo "... Source/Source/Renderer.s"

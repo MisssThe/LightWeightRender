@@ -170,6 +170,18 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/CollisionDetection.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputController.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/BaseEquip.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/MouseEquip.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/Physics.h">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Renderer.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -240,6 +252,15 @@
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/CollisionDetection.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputController.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputEquip/MouseEquip.cpp">
+			<Option target="LightWeightRenderer"/>
+		</Unit>
+		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/Physics.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Renderer.cpp">

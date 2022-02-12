@@ -2645,6 +2645,61 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.o
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.o
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/CollisionDetection.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/CollisionDetection.cpp
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o
+ ../Include/glfw/3.3.4/include/GLFW/glfw3.h
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputController.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/BaseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/MouseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputController.cpp
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/LogUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/MathUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.o
+ ../Include/glfw/3.3.4/include/GLFW/glfw3.h
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/BaseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/MouseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputEquip/MouseEquip.cpp
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/LogUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/MathUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.o
+ ../Include/glfw/3.3.4/include/GLFW/glfw3.h
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputController.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/BaseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/MouseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/Physics.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/Physics.cpp
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/LogUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/MathUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/ThreadUtil.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o
  ../Include/assimp/5.0.1/include/assimp/Compiler/poppack1.h
  ../Include/assimp/5.0.1/include/assimp/Compiler/pstdint.h
@@ -2906,6 +2961,10 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderObject.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderPipeline.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/Window.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputController.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/BaseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/MouseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/Physics.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Renderer.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Renderer.cpp
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/ConstUtil.h
@@ -3274,6 +3333,10 @@ CMakeFiles/LightWeightRenderer.dir/main.cpp.o
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderObject.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/RenderPipeline.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Graph/Window.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputController.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/BaseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/InputEquip/MouseEquip.h
+ /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/Physics.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Renderer.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/ConstUtil.h
  /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Head/DataSaveUtil.h

@@ -508,6 +508,45 @@ CMakeFiles/LightWeightRenderer.dir/Utils/Source/DataSaveUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Utils/Source/DataSaveUtil.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Utils/Source/DataSaveUtil.cpp -o CMakeFiles/LightWeightRenderer.dir/Utils/Source/DataSaveUtil.cpp.s
 
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o: ../Source/Source/Physics/InputController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputController.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputController.cpp > CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputController.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.s
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.o: ../Source/Source/Physics/InputEquip/MouseEquip.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputEquip/MouseEquip.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputEquip/MouseEquip.cpp > CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/InputEquip/MouseEquip.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.s
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.o: CMakeFiles/LightWeightRenderer.dir/flags.make
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.o: ../Source/Source/Physics/Physics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.o -c /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/Physics.cpp
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/Physics.cpp > CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.i
+
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/Physics.cpp -o CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.s
+
 # Object files for target LightWeightRenderer
 LightWeightRenderer_OBJECTS = \
 "CMakeFiles/LightWeightRenderer.dir/main.cpp.o" \
@@ -543,7 +582,10 @@ LightWeightRenderer_OBJECTS = \
 "CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.cpp.o" \
 "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/RenderObjectController.cpp.o" \
 "CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.o" \
-"CMakeFiles/LightWeightRenderer.dir/Utils/Source/DataSaveUtil.cpp.o"
+"CMakeFiles/LightWeightRenderer.dir/Utils/Source/DataSaveUtil.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.o" \
+"CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.o"
 
 # External object files for target LightWeightRenderer
 LightWeightRenderer_EXTERNAL_OBJECTS =
@@ -582,13 +624,16 @@ LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Utils/Source/ConstUtil.c
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/RenderObjectController.cpp.o
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/AssetController.cpp.o
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Utils/Source/DataSaveUtil.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.o
+LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.o
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/build.make
 LightWeightRenderer: ../Include/glfw/3.3.4/lib/libglfw.3.3.dylib
 LightWeightRenderer: ../Include/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib
 LightWeightRenderer: ../Include/jsoncpp/1.9.4_1/lib/libjsoncpp.24.dylib
 LightWeightRenderer: ../Include/assimp/5.0.1/lib/libassimp.dylib
 LightWeightRenderer: CMakeFiles/LightWeightRenderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable LightWeightRenderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tandijie/LightWeightRender/LightWeightRenderer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable LightWeightRenderer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LightWeightRenderer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

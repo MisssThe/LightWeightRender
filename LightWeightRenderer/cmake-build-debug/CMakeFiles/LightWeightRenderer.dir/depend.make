@@ -2645,6 +2645,61 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/Window.cpp.o: \
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.o: \
  ../Source/Head/Physics/CollisionDetection.h \
  ../Source/Source/Physics/CollisionDetection.cpp
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o: \
+ ../Include/glfw/3.3.4/include/GLFW/glfw3.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Source/Head/Physics/InputController.h \
+ ../Source/Head/Physics/InputEquip/BaseEquip.h \
+ ../Source/Head/Physics/InputEquip/MouseEquip.h \
+ ../Source/Source/Physics/InputController.cpp \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/TraverUtil.h
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/MouseEquip.cpp.o: \
+ ../Include/glfw/3.3.4/include/GLFW/glfw3.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Source/Head/Physics/InputEquip/BaseEquip.h \
+ ../Source/Head/Physics/InputEquip/MouseEquip.h \
+ ../Source/Source/Physics/InputEquip/MouseEquip.cpp \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/TraverUtil.h
+CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/Physics.cpp.o: \
+ ../Include/glfw/3.3.4/include/GLFW/glfw3.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Source/Head/Physics/InputController.h \
+ ../Source/Head/Physics/InputEquip/BaseEquip.h \
+ ../Source/Head/Physics/InputEquip/MouseEquip.h \
+ ../Source/Head/Physics/Physics.h \
+ ../Source/Source/Physics/Physics.cpp \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/ThreadUtil.h \
+ ../Utils/Head/TraverUtil.h
 CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o: \
  ../Include/assimp/5.0.1/include/assimp/Compiler/poppack1.h \
  ../Include/assimp/5.0.1/include/assimp/Compiler/pstdint.h \
@@ -2906,6 +2961,10 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o: \
  ../Source/Head/Graph/RenderObject.h \
  ../Source/Head/Graph/RenderPipeline.h \
  ../Source/Head/Graph/Window.h \
+ ../Source/Head/Physics/InputController.h \
+ ../Source/Head/Physics/InputEquip/BaseEquip.h \
+ ../Source/Head/Physics/InputEquip/MouseEquip.h \
+ ../Source/Head/Physics/Physics.h \
  ../Source/Head/Renderer.h \
  ../Source/Source/Renderer.cpp \
  ../Utils/Head/ConstUtil.h \
@@ -3274,6 +3333,10 @@ CMakeFiles/LightWeightRenderer.dir/main.cpp.o: \
  ../Source/Head/Graph/RenderObject.h \
  ../Source/Head/Graph/RenderPipeline.h \
  ../Source/Head/Graph/Window.h \
+ ../Source/Head/Physics/InputController.h \
+ ../Source/Head/Physics/InputEquip/BaseEquip.h \
+ ../Source/Head/Physics/InputEquip/MouseEquip.h \
+ ../Source/Head/Physics/Physics.h \
  ../Source/Head/Renderer.h \
  ../Utils/Head/ConstUtil.h \
  ../Utils/Head/DataSaveUtil.h \

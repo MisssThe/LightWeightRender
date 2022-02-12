@@ -5,7 +5,7 @@
 #include "../Head/LogUtil.h"
 
 void LogUtil::LogWarning(std::string func, std::string context) {
-
+    std::cout << func << "," << context;
 }
 
 void LogUtil::LogError(std::string func, std::string context) {

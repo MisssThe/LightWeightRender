@@ -12,6 +12,7 @@ ThreadUtil::ThreadUtil() {
     //不能额外构造
 }
 
+//@param endless false：无限循环 true：只运行一次
 int ThreadUtil::Start(std::function<void()> func,bool endless) {
     while (isLoading)
     {
@@ -26,12 +27,10 @@ int ThreadUtil::Start(std::function<void()> func,bool endless) {
     tempThread->thread = new std::thread([&tempThread](std::function<void()> func){
         while (true){
             func();
-            while (tempThread->pauseFlag);
-            if (tempThread)return;
+            while (*(tempThread->pauseFlag));
+            if (*(tempThread->stopFlag)) return;
         }
     },func);
-//    isLoading = false;
-//    thread_map.insert(std::pair<int,PrivateThread*>(tempThread->threadID,tempThread));
     return tempThread->threadID;
 }
 

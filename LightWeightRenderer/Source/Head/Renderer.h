@@ -9,6 +9,7 @@
 #include "Graph/RenderPipeline.h"
 #include "../Head/Graph/Window.h"
 #include "../Head/Graph/GraphController/GraphController.h"
+#include "../Head/Physics/Physics.h"
 
 class Renderer {
 public:
