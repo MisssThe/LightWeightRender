@@ -15,11 +15,24 @@
 class Camera {
 public:
     Camera(Transform* transform,float ratio,float degrees = 45,float near = 0.1,float far = 100);
-    glm::mat4 use(unsigned int program);
+    void update();
 private:
     Transform* transform;
     glm::mat4 p_matrix;
     glm::mat4 v_matrix;
+public:
+    const glm::mat4 &getPMatrix() const;
+    const glm::mat4 &getVMatrix() const;
+    void setRatio(float ratio);
+    void setDegrees(float degrees);
+    void setNear(float near);
+    void setFar(float far);
+    float getRatio() const;
+    float getDegrees() const;
+    float getNear() const;
+    float getFar() const;
+
+private:
     float ratio;
     float degrees;
     float near;

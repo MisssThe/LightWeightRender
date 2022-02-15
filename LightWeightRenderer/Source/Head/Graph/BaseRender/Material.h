@@ -12,17 +12,14 @@
 #include "../../../../Utils/Head/JsonUtil.h"
 #include "../../../../Utils/Head/ConstUtil.h"
 #include "../../../Head/Graph/GraphController/ShaderController.h"
+#include "Transform.h"
 
 class Material {
 public:
     Material();
     Material(std::string path);
-    Material* RefreshPanel();
-    void setMaterialValue(std::string name,std::string value);
-    void use();
+    void use(Transform *transform = nullptr);
 private:
-    Shader*shader;
-    std::string shaderName;
     struct Info
     {
         std::string type;
@@ -30,10 +27,11 @@ private:
         int location;
     };
     std::unordered_map<std::string,Info> property_map;
-    static std::unordered_map<std::string,std::string> external_property_map;
+    std::unordered_map<std::string,int> external_property_map;
 private:
     void initMaterial(std::unordered_map<std::string, Shader::KeyWord>* keyWordMap,Json::Value* root);
     void setValue(std::string type,std::string value,int location);
+    void setExternalValue(Transform* transform);
 };
 
 

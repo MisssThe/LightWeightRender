@@ -13,10 +13,50 @@ Camera::Camera(Transform* transform,float ratio,float degrees,float near,float f
     this->transform = transform;
 }
 
-glm::mat4 Camera::use(unsigned int program) {
-//    int vLocation = glGetUniformLocation(program, "Model");
-//    int pLocation = glGetUniformLocation(program, "Projection");
-//    this->v_matrix = -transform->getMatrix();
-//    glUniformMatrix4fv(vLocation, 1, GL_FALSE, &this->v_matrix[0][0]);
-//    glUniformMatrix4fv(pLocation, 1, GL_FALSE, &this->p_matrix[0][0]);
+const glm::mat4 &Camera::getPMatrix() const {
+    return this->p_matrix;
+}
+
+const glm::mat4 &Camera::getVMatrix() const {
+    return -this->transform->getMatrix();
+}
+
+void Camera::update() {
+    this->p_matrix = glm::perspective(glm::radians(degrees), ratio, near, far);
+}
+
+void Camera::setRatio(float ratio) {
+    Camera::ratio = ratio;
+    this->update();
+}
+
+float Camera::getRatio() const {
+    return ratio;
+}
+
+float Camera::getDegrees() const {
+    return degrees;
+}
+
+float Camera::getNear() const {
+    return near;
+}
+
+float Camera::getFar() const {
+    return far;
+}
+
+void Camera::setDegrees(float degrees) {
+    Camera::degrees = degrees;
+    this->update();
+}
+
+void Camera::setNear(float near) {
+    Camera::near = near;
+    this->update();
+}
+
+void Camera::setFar(float far) {
+    Camera::far = far;
+    this->update();
 }

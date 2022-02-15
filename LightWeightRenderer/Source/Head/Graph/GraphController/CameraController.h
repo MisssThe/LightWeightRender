@@ -11,7 +11,7 @@ class CameraController {
 public:
     static void AddCamera(Transform*transform,std::string name = "main");
     static void DeleteCamera(std::string name);
-    static void UseCamera(unsigned int program);
+    static Camera *GetCamera();
     static void ChangeCamera(std::string name);
 private:
     static std::unordered_map<std::string,Camera*> camera_map;

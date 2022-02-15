@@ -22,6 +22,8 @@ void CameraController::ChangeCamera(std::string name) {
         LogUtil::LogWarning("change camera","error camera name");
 }
 
-void CameraController::UseCamera(unsigned int program) {
-    usingCamera->use(program);
+Camera *CameraController::GetCamera() {
+    if (!usingCamera)
+        LogUtil::LogError("get camera","null camera");
+    return usingCamera;
 }

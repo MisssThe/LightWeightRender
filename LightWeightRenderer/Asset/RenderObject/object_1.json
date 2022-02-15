@@ -1,6 +1,6 @@
 {
   "shader"    : "UI",
-  "mesh"      : "square",
+  "mesh"      : "cube",
   "material"  : "test",
   "transform" : [
     1,2,3,

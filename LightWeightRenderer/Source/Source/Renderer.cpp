@@ -20,7 +20,7 @@ void Renderer::Init() {
     RenderObjectController::TraverObject([&pipeline1, &pipeline2](RenderObject *ro) {
         //根据object创建属性面板
         pipeline1->addObject(ro);
-        pipeline2->addObject(CreateInfoPanel(ro));
+//        pipeline2->addObject(CreateInfoPanel(ro));
     });
 
     Physics::Init({w1.getWindow(), w2.getWindow()});

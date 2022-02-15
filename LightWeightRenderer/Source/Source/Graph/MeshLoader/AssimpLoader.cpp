@@ -38,7 +38,8 @@ void AssimpLoader::processMesh(aiMesh *mesh) {
         //读取法线信息
         tempVertex.normal = glm::vec3(mesh->mNormals[i].x, mesh->mNormals[i].y, mesh->mNormals[i].z);
         //读取切线信息
-        tempVertex.tangent = glm::vec3(mesh->mTangents[i].x, mesh->mTangents[i].y, mesh->mTangents[i].z);
+        if (mesh->mTangents)
+            tempVertex.tangent = glm::vec3(mesh->mTangents[i].x, mesh->mTangents[i].y, mesh->mTangents[i].z);
         //读取颜色信息以及读取纹理坐标
         if (mesh->mColors[0])
             tempVertex.color = glm::vec4(mesh->mColors[0][i].r, mesh->mColors[0][i].g, mesh->mColors[0][i].b,mesh->mColors[0][i].a);
