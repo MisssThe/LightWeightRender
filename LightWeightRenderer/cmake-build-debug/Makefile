@@ -657,29 +657,77 @@ Source/Source/Physics/CollisionDetection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.s
 .PHONY : Source/Source/Physics/CollisionDetection.cpp.s
 
-Source/Source/Physics/InputController.o: Source/Source/Physics/InputController.cpp.o
-.PHONY : Source/Source/Physics/InputController.o
+Source/Source/Physics/InputController/InputController.o: Source/Source/Physics/InputController/InputController.cpp.o
+.PHONY : Source/Source/Physics/InputController/InputController.o
 
 # target to build an object file
-Source/Source/Physics/InputController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.o
-.PHONY : Source/Source/Physics/InputController.cpp.o
+Source/Source/Physics/InputController/InputController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController/InputController.cpp.o
+.PHONY : Source/Source/Physics/InputController/InputController.cpp.o
 
-Source/Source/Physics/InputController.i: Source/Source/Physics/InputController.cpp.i
-.PHONY : Source/Source/Physics/InputController.i
+Source/Source/Physics/InputController/InputController.i: Source/Source/Physics/InputController/InputController.cpp.i
+.PHONY : Source/Source/Physics/InputController/InputController.i
 
 # target to preprocess a source file
-Source/Source/Physics/InputController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.i
-.PHONY : Source/Source/Physics/InputController.cpp.i
+Source/Source/Physics/InputController/InputController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController/InputController.cpp.i
+.PHONY : Source/Source/Physics/InputController/InputController.cpp.i
 
-Source/Source/Physics/InputController.s: Source/Source/Physics/InputController.cpp.s
-.PHONY : Source/Source/Physics/InputController.s
+Source/Source/Physics/InputController/InputController.s: Source/Source/Physics/InputController/InputController.cpp.s
+.PHONY : Source/Source/Physics/InputController/InputController.s
 
 # target to generate assembly for a file
-Source/Source/Physics/InputController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController.cpp.s
-.PHONY : Source/Source/Physics/InputController.cpp.s
+Source/Source/Physics/InputController/InputController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController/InputController.cpp.s
+.PHONY : Source/Source/Physics/InputController/InputController.cpp.s
+
+Source/Source/Physics/InputController/ShortcutController.o: Source/Source/Physics/InputController/ShortcutController.cpp.o
+.PHONY : Source/Source/Physics/InputController/ShortcutController.o
+
+# target to build an object file
+Source/Source/Physics/InputController/ShortcutController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController/ShortcutController.cpp.o
+.PHONY : Source/Source/Physics/InputController/ShortcutController.cpp.o
+
+Source/Source/Physics/InputController/ShortcutController.i: Source/Source/Physics/InputController/ShortcutController.cpp.i
+.PHONY : Source/Source/Physics/InputController/ShortcutController.i
+
+# target to preprocess a source file
+Source/Source/Physics/InputController/ShortcutController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController/ShortcutController.cpp.i
+.PHONY : Source/Source/Physics/InputController/ShortcutController.cpp.i
+
+Source/Source/Physics/InputController/ShortcutController.s: Source/Source/Physics/InputController/ShortcutController.cpp.s
+.PHONY : Source/Source/Physics/InputController/ShortcutController.s
+
+# target to generate assembly for a file
+Source/Source/Physics/InputController/ShortcutController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController/ShortcutController.cpp.s
+.PHONY : Source/Source/Physics/InputController/ShortcutController.cpp.s
+
+Source/Source/Physics/InputEquip/KeyboardEquip.o: Source/Source/Physics/InputEquip/KeyboardEquip.cpp.o
+.PHONY : Source/Source/Physics/InputEquip/KeyboardEquip.o
+
+# target to build an object file
+Source/Source/Physics/InputEquip/KeyboardEquip.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/KeyboardEquip.cpp.o
+.PHONY : Source/Source/Physics/InputEquip/KeyboardEquip.cpp.o
+
+Source/Source/Physics/InputEquip/KeyboardEquip.i: Source/Source/Physics/InputEquip/KeyboardEquip.cpp.i
+.PHONY : Source/Source/Physics/InputEquip/KeyboardEquip.i
+
+# target to preprocess a source file
+Source/Source/Physics/InputEquip/KeyboardEquip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/KeyboardEquip.cpp.i
+.PHONY : Source/Source/Physics/InputEquip/KeyboardEquip.cpp.i
+
+Source/Source/Physics/InputEquip/KeyboardEquip.s: Source/Source/Physics/InputEquip/KeyboardEquip.cpp.s
+.PHONY : Source/Source/Physics/InputEquip/KeyboardEquip.s
+
+# target to generate assembly for a file
+Source/Source/Physics/InputEquip/KeyboardEquip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputEquip/KeyboardEquip.cpp.s
+.PHONY : Source/Source/Physics/InputEquip/KeyboardEquip.cpp.s
 
 Source/Source/Physics/InputEquip/MouseEquip.o: Source/Source/Physics/InputEquip/MouseEquip.cpp.o
 .PHONY : Source/Source/Physics/InputEquip/MouseEquip.o
@@ -969,6 +1017,30 @@ Utils/Source/ThreadUtil.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/ThreadUtil.cpp.s
 .PHONY : Utils/Source/ThreadUtil.cpp.s
 
+Utils/Source/TypeCastUtil.o: Utils/Source/TypeCastUtil.cpp.o
+.PHONY : Utils/Source/TypeCastUtil.o
+
+# target to build an object file
+Utils/Source/TypeCastUtil.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/TypeCastUtil.cpp.o
+.PHONY : Utils/Source/TypeCastUtil.cpp.o
+
+Utils/Source/TypeCastUtil.i: Utils/Source/TypeCastUtil.cpp.i
+.PHONY : Utils/Source/TypeCastUtil.i
+
+# target to preprocess a source file
+Utils/Source/TypeCastUtil.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/TypeCastUtil.cpp.i
+.PHONY : Utils/Source/TypeCastUtil.cpp.i
+
+Utils/Source/TypeCastUtil.s: Utils/Source/TypeCastUtil.cpp.s
+.PHONY : Utils/Source/TypeCastUtil.s
+
+# target to generate assembly for a file
+Utils/Source/TypeCastUtil.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Utils/Source/TypeCastUtil.cpp.s
+.PHONY : Utils/Source/TypeCastUtil.cpp.s
+
 glad.o: glad.c.o
 .PHONY : glad.o
 
@@ -1092,9 +1164,15 @@ help:
 	@echo "... Source/Source/Physics/CollisionDetection.o"
 	@echo "... Source/Source/Physics/CollisionDetection.i"
 	@echo "... Source/Source/Physics/CollisionDetection.s"
-	@echo "... Source/Source/Physics/InputController.o"
-	@echo "... Source/Source/Physics/InputController.i"
-	@echo "... Source/Source/Physics/InputController.s"
+	@echo "... Source/Source/Physics/InputController/InputController.o"
+	@echo "... Source/Source/Physics/InputController/InputController.i"
+	@echo "... Source/Source/Physics/InputController/InputController.s"
+	@echo "... Source/Source/Physics/InputController/ShortcutController.o"
+	@echo "... Source/Source/Physics/InputController/ShortcutController.i"
+	@echo "... Source/Source/Physics/InputController/ShortcutController.s"
+	@echo "... Source/Source/Physics/InputEquip/KeyboardEquip.o"
+	@echo "... Source/Source/Physics/InputEquip/KeyboardEquip.i"
+	@echo "... Source/Source/Physics/InputEquip/KeyboardEquip.s"
 	@echo "... Source/Source/Physics/InputEquip/MouseEquip.o"
 	@echo "... Source/Source/Physics/InputEquip/MouseEquip.i"
 	@echo "... Source/Source/Physics/InputEquip/MouseEquip.s"
@@ -1131,6 +1209,9 @@ help:
 	@echo "... Utils/Source/ThreadUtil.o"
 	@echo "... Utils/Source/ThreadUtil.i"
 	@echo "... Utils/Source/ThreadUtil.s"
+	@echo "... Utils/Source/TypeCastUtil.o"
+	@echo "... Utils/Source/TypeCastUtil.i"
+	@echo "... Utils/Source/TypeCastUtil.s"
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"

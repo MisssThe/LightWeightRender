@@ -14,7 +14,6 @@
 class Transform {
 public:
     Transform();
-    Transform(float* array);
     Transform(std::vector<float> array);
     glm::mat4 getMatrix();
     void setPosition(float x,float y,float z);

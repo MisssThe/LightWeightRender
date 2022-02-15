@@ -14,9 +14,9 @@ Camera::Camera(Transform* transform,float ratio,float degrees,float near,float f
 }
 
 glm::mat4 Camera::use(unsigned int program) {
-    int vLocation = glGetUniformLocation(program, "Model");
-    int pLocation = glGetUniformLocation(program, "Projection");
-    this->v_matrix = -transform->getMatrix();
-    glUniformMatrix4fv(vLocation, 1, GL_FALSE, &this->v_matrix[0][0]);
-    glUniformMatrix4fv(pLocation, 1, GL_FALSE, &this->p_matrix[0][0]);
+//    int vLocation = glGetUniformLocation(program, "Model");
+//    int pLocation = glGetUniformLocation(program, "Projection");
+//    this->v_matrix = -transform->getMatrix();
+//    glUniformMatrix4fv(vLocation, 1, GL_FALSE, &this->v_matrix[0][0]);
+//    glUniformMatrix4fv(pLocation, 1, GL_FALSE, &this->p_matrix[0][0]);
 }

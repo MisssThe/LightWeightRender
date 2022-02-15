@@ -5,14 +5,18 @@
 #ifndef LIGHTWEIGHTRENDERER_PHYSICS_H
 #define LIGHTWEIGHTRENDERER_PHYSICS_H
 
-#include "../../Head/Physics/InputController.h"
+#include "InputController/InputController.h"
 #include "../../../Utils/Head/ThreadUtil.h"
 
 class Physics {
 public:
-    static void Init();
+    Physics();
+
+    static void Init(std::vector<GLFWwindow*> windowVec);
     static void Run();
     static void Stop();
+private:
+    static bool isReady;
 };
 
 

@@ -11,27 +11,50 @@
 #include "../../../../Utils/Head/LogUtil.h"
 #include "glfw3.h"
 
+enum ClickState {
+    RELEASE, LOOSE, PRESS, HOLD
+};
+
 class BaseEquip {
 public:
-    void setWindow(GLFWwindow* window)
+    enum EquipType
     {
+        ERROR,MOUSE,KEYBOARD
+    };
+public:
+    void setEquipType(BaseEquip::EquipType type)
+    {
+        if (this->type == EquipType::ERROR)
+            this->type = type;
+    }
+    EquipType getEquipType()
+    {
+        return this->type;
+    }
+    void setWindow(GLFWwindow *window) {
         if (!window)
-            LogUtil::LogError("init equip","error window");
+            LogUtil::LogError("init equip", "error window");
         this->window = window;
     }
-    void externalUpdate()
-    {
+    void externalUpdate() {
         if (window)
             this->indirectUpdate();
         else
-            LogUtil::LogError("update mouse","null window");
+            LogUtil::LogError("update mouse", "null window");
     }
     virtual void indirectUpdate() = 0;
 protected:
     virtual void use() = 0;
     virtual void update() = 0;
-    GLFWwindow* window;
+    GLFWwindow *window;
+protected:
+    ClickState updateClickState(int click, ClickState oldState) {
+        int oldClick = oldState;
+        int newClick = click ? (oldClick < PRESS ? PRESS : HOLD) : (oldClick > LOOSE ? RELEASE : LOOSE);
+        return ClickState(newClick);
+    }
+private:
+    EquipType type;
 };
-
 
 #endif //LIGHTWEIGHTRENDERER_BASEEQUIP_H

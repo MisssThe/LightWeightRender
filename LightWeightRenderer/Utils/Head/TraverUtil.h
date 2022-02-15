@@ -112,6 +112,15 @@ public:
             func(str[i]);
         }
     }
+    //遍历枚举
+    template<class T> static void TraverEnum(T begin,T end,std::function<void(T)> func)
+    {
+        int int_begin = (int)begin + 1;
+        int int_end  = end;
+        for (int i = int_begin; i < int_end; ++i) {
+            func(T(i));
+        }
+    }
 };
 
 #endif //LIGHTWEIGHTRENDERER_TRAVERUTIL_H

@@ -44,9 +44,6 @@ glm::vec3 Transform::getScale() {
     return this->scale;
 }
 
-Transform::Transform(float *array) {
-    std::vector<float> vec(array,array + 9);
-}
 
 Transform::Transform(std::vector<float> array) {
     if (array.size() < 9)

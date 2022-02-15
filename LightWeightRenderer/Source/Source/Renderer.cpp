@@ -9,25 +9,21 @@ void Renderer::Init() {
     RenderPipeline *pipeline1 = new RenderPipeline();
     RenderPipeline *pipeline2 = new RenderPipeline();
 
-    Window w1([pipeline1](){
+    Window w1([pipeline1]() {
         pipeline1->render();
-    },"Light Weight Renderer",800,600),
-           w2([pipeline2]() {
+    }, "Light Weight Renderer", 1920, 1080),
+            w2([pipeline2]() {
         pipeline2->render();
-    },"Light Weight Renderer",1000,500);
+    }, "Light Weight Renderer", 400, 800);
 
     GraphController::Init();
-    int index = 0;
-    RenderObjectController::TraverObject([&pipeline1, &index, &pipeline2](RenderObject* ro) {
-        index = ((index+1) % 2);
-        if (index == 0)
-            pipeline1->addObject(ro);
-        else
-            pipeline2->addObject(ro);
+    RenderObjectController::TraverObject([&pipeline1, &pipeline2](RenderObject *ro) {
+        //根据object创建属性面板
+        pipeline1->addObject(ro);
+        pipeline2->addObject(CreateInfoPanel(ro));
     });
 
-    Physics::Init();
-    InputController::AddEquip(InputController::EquipType::MOUSE,w1.getWindow());
+    Physics::Init({w1.getWindow(), w2.getWindow()});
     Physics::Run();
     MainLoopUtil::Run();
 }
@@ -37,4 +33,15 @@ void Renderer::Run() {
 
 void Renderer::Stop() {
     glfwTerminate();
+}
+
+RenderObject* Renderer::CreateInfoPanel(RenderObject* ro) {
+    RenderObject* infoPanel = new RenderObject(
+            ShaderController::GetDefaultShader(),
+            new Material(),
+            MeshController::GetSquareMesh(),
+            new Transform(std::vector<float>({})),
+            RenderType::OPAQUE
+            );
+    return infoPanel;
 }

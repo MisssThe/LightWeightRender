@@ -20,7 +20,7 @@ MouseMoveState MouseEquip::getMouseMoveState() const {
     return mouseMoveState;
 }
 
-MouseClickState MouseEquip::getMouseClickState(bool isLeft) const {
+ClickState MouseEquip::getMouseClickState(bool isLeft) const {
     if (isLeft)
         return mouseClickState_1;
     return mouseClickState_2;
@@ -28,21 +28,18 @@ MouseClickState MouseEquip::getMouseClickState(bool isLeft) const {
 
 void MouseEquip::updateMove() {
     MathUtil::double2 oldPosition = this->position;
-    glfwGetCursorPos(this->window,&(this->position.x),&(this->position.y));
+    glfwGetCursorPos(this->window, &(this->position.x), &(this->position.y));
     if (oldPosition.equal(this->position))
         this->mouseMoveState = MouseMoveState::STOP;
+    else if (this->mouseClickState_1 != ClickState::HOLD)
+        this->mouseMoveState = MouseMoveState::SLIDE;
     else
-        if (this->mouseClickState_1 != MouseClickState::HOLD)
-            this->mouseMoveState = MouseMoveState::SLIDE;
-        else
-            this->mouseMoveState = MouseMoveState::DRAG;
+        this->mouseMoveState = MouseMoveState::DRAG;
 }
 
-MouseClickState MouseEquip::updateClick(int button,MouseClickState state) {
-    int click = glfwGetMouseButton(window,button);
-    int oldClick = state;
-    int newClick = click?(oldClick < PRESS?PRESS:HOLD):(oldClick > LOOSE?RELEASE:LOOSE);
-    return MouseClickState(newClick);
+ClickState MouseEquip::updateClick(int button, ClickState state) {
+    int click = glfwGetMouseButton(window, button);
+    return this->updateClickState(click, state);
 }
 
 void MouseEquip::indirectUpdate() {

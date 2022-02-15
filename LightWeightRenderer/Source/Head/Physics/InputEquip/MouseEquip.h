@@ -9,10 +9,6 @@
 #include "BaseEquip.h"
 #include "../../../../Utils/Head/MathUtil.h"
 
-enum MouseClickState
-{
-    RELEASE,LOOSE,PRESS,HOLD
-};
 enum MouseMoveState
 {
     SLIDE,DRAG,STOP     //鼠标左键在hold状态下移动视为drag
@@ -27,14 +23,14 @@ protected:
 public:
     void indirectUpdate() override;
     MouseMoveState getMouseMoveState() const;
-    MouseClickState getMouseClickState(bool isLeft = true) const;
+    ClickState getMouseClickState(bool isLeft = true) const;
 private:
     MouseMoveState mouseMoveState;
-    MouseClickState mouseClickState_1,mouseClickState_2;
+    ClickState mouseClickState_1,mouseClickState_2;
     MathUtil::double2 position;
 private:
     void updateMove();
-    MouseClickState updateClick(int button,MouseClickState state);
+    ClickState updateClick(int button,ClickState state);
 };
 
 

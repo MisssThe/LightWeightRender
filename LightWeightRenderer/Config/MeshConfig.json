@@ -1,6 +1,7 @@
 {
   "preheat" : {
-    "square" : "LightWeightRenderer/Asset/Mesh/square.obj"
+    "square" : "LightWeightRenderer/Asset/Mesh/square.obj",
+    "cube" : "LightWeightRenderer/Asset/Mesh/cube.obj"
   },
   "passivity": {
 

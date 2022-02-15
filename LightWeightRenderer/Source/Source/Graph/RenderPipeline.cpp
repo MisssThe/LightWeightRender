@@ -32,7 +32,6 @@ int RenderPipeline::addObject(RenderObject *ro) {
             if (rq->type == ro->getType())
                 rq->queue.push(ro);
         });
-
     }
     else
         LogUtil::LogError("add object in pipeline","null object");

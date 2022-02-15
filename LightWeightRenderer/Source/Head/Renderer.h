@@ -16,6 +16,9 @@ public:
     static void Init();
     static void Run();
     static void Stop();
+private:
+    Renderer();
+    static RenderObject* CreateInfoPanel(RenderObject* ro);
 };
 
 
