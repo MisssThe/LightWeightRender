@@ -13,7 +13,7 @@ class InputController {
 public:
     static void Init();
     static void Update();
-    static int AddEquip(BaseEquip::EquipType type,GLFWwindow* window);
+    static void AddEquip(BaseEquip::EquipType type,Window* window);
     static void DeleteEquip(int index);
 public:
     static void UseFunc(BaseEquip::EquipType type,std::function<void(BaseEquip*)> func,int index = -1);
@@ -28,7 +28,7 @@ private:
     public:
         void indirectUpdate() override;
     };
-    static std::unordered_map<int,BaseEquip*> equip_map;
+    static std::unordered_map<int,std::queue<BaseEquip*>*> equip_map;
     static int base_equip_id;
     static int waitingTime;         //等待时间
     static int constWaitingTime;    //响应时间

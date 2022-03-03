@@ -6,10 +6,10 @@
 
 #ifndef LIGHTWEIGHTRENDERER_BASEEQUIP_H
 #define LIGHTWEIGHTRENDERER_BASEEQUIP_H
-
+#include "../../Graph/Window.h"
 #include "../../../../Utils/Head/TraverUtil.h"
 #include "../../../../Utils/Head/LogUtil.h"
-#include "glfw3.h"
+//#include "glfw3.h"
 
 enum ClickState {
     RELEASE, LOOSE, PRESS, HOLD
@@ -21,6 +21,7 @@ public:
     {
         ERROR,MOUSE,KEYBOARD
     };
+    int id = -1;
 public:
     void setEquipType(BaseEquip::EquipType type)
     {

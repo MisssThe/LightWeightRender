@@ -11,8 +11,7 @@
 class Physics {
 public:
     Physics();
-
-    static void Init(std::vector<GLFWwindow*> windowVec);
+    static void Init(std::vector<Window*> windowVec);
     static void Run();
     static void Stop();
 private:

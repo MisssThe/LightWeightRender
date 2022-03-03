@@ -13,11 +13,13 @@ std::unordered_map<std::string,std::function<BaseComponent*()>> ComponentControl
 
 bool ComponentController::isNecessary(std::string name) {
     Init();
+    return false;
 //    return TraverUtil::ExistInQueue<std::string>(&necessary_map,name);
 }
 
 bool ComponentController::isOnly(std::string name) {
     Init();
+    return false;
 //    return TraverUtil::ExistInQueue<std::string>(&only_map,name);
 }
 

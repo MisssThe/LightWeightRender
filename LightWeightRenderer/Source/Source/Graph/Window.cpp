@@ -103,3 +103,7 @@ Window::~Window() {
 GLFWwindow *Window::getWindow() const {
     return window;
 }
+
+int Window::getWindowID() {
+    return this->windowID;
+}

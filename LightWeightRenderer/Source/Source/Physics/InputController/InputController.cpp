@@ -4,7 +4,7 @@
 
 #include "../../../Head/Physics/InputController/InputController.h"
 
-std::unordered_map<int,BaseEquip*> InputController::equip_map;
+std::unordered_map<int,std::queue<BaseEquip*>*> InputController::equip_map;
 int InputController::base_equip_id = 0;
 int InputController::waitingTime = 0;
 int InputController::constWaitingTime = 0;
@@ -16,15 +16,16 @@ void InputController::Init() {
 void InputController::Update() {
     if (waitingTime < constWaitingTime)
         return;
-    TraverUtil::TraverUMap<int,BaseEquip*>(&equip_map,[](int index,BaseEquip* equip) {
-        equip->externalUpdate();
+    TraverUtil::TraverUMap<int,std::queue<BaseEquip*>*>(&equip_map,[](int index, std::queue<BaseEquip*>* equip_queue) {
+        TraverUtil::TraverQueue<BaseEquip*>(equip_queue,[](BaseEquip*equip) {
+            equip->externalUpdate();
+        });
     });
     waitingTime = 0;
 }
-int InputController::AddEquip(BaseEquip::EquipType type, GLFWwindow* window) {
+void InputController::AddEquip(BaseEquip::EquipType type, Window* window) {
     if (!window)
         LogUtil::LogError("add equip","error window");
-    int id = ++base_equip_id;
     BaseEquip* equip = nullptr;
     switch (type) {
         case BaseEquip::MOUSE:
@@ -39,9 +40,10 @@ int InputController::AddEquip(BaseEquip::EquipType type, GLFWwindow* window) {
             LogUtil::LogError("add equip","invalid equip type");
     }
     equip->setEquipType(type);
-    equip->setWindow(window);
-    equip_map.insert(std::pair<int,BaseEquip*>(id,equip));
-    return id;
+    equip->setWindow(window->getWindow());
+    if (equip_map.find(window->getWindowID()) == equip_map.end())
+        equip_map.insert(std::pair<int,std::queue<BaseEquip*>*>(window->getWindowID(), new std::queue<BaseEquip*>));
+    equip_map[window->getWindowID()]->push(equip);
 }
 
 void InputController::DeleteEquip(int index) {
@@ -57,11 +59,12 @@ InputController::InputController() {
 
 //index为-1时调用所有type匹配设备
 void InputController::UseFunc(BaseEquip::EquipType type, std::function<void(BaseEquip*)> func, int index) {
-    TraverUtil::TraverUMap<int,BaseEquip*>(&equip_map,[&type, &index, &func](int id,BaseEquip* equip) {
-        if (equip->getEquipType() == type)
-            if (index < 0 || index == id) {
-                func(equip);
-            }
+    TraverUtil::TraverUMap<int,std::queue<BaseEquip*>*>(&equip_map,[&index, &func, &type](int id, std::queue<BaseEquip*>* equip_queue) {
+        if (index < 0 || index == id)
+            TraverUtil::TraverQueue<BaseEquip*>(equip_queue,[ &func, &type](BaseEquip*equip) {
+                if (equip->getEquipType() == type)
+                    func(equip);
+            });
     });
 }
 

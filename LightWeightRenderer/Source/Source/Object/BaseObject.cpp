@@ -27,8 +27,8 @@ bool BaseObject::use() {
     return this->objectInfo->isAlive;
 }
 
-BaseObject::BaseObject() {
-
+BaseObject::BaseObject(int windowIndex) {
+    this->objectInfo = new ObjectInfo(windowIndex);
 }
 
 void BaseObject::addComponent(std::string comName) {

@@ -50,7 +50,7 @@ RenderPipeline::RenderPipeline() {
 }
 
 RenderPipeline *RenderPipeline::GetPipeLine(int index) {
-    return nullptr;
+    return pipeline_vec[index];
 }
 
 int RenderPipeline::getIndex() {

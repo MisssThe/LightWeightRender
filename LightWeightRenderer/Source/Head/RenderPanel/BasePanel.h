@@ -8,6 +8,7 @@
 
 #include "../Graph/Window.h"
 #include "../Graph/RenderPipeline.h"
+#include "../Object/BaseObject.h"
 
 class BasePanel {
 protected:
@@ -18,29 +19,40 @@ protected:
         this->window = new Window([this]() {
             this->pipeline->render();
         }, this->panelName, this->width, this->height);
+        this->windowID = this->window->getWindowID();
     }
     virtual void update() = 0;
 private:
     Window* window;
     RenderPipeline* pipeline;
+private:
+    void objectLoop()
+    {
+        TraverUtil::TraverQueueBool<BaseObject*>(&objectQueue,[](BaseObject* object) ->bool {
+            return object->use();
+        });
+    }
 protected:
     std::string panelName;
     int width,height;
     int panelID = -1;
     int intervalTime;
+    int windowID;
+    std::queue<BaseObject*> objectQueue;
 public:
     BasePanel()
     {
 
     }
-    GLFWwindow* getWindow()
+    Window* getWindow()
     {
-        return this->window->getWindow();
+        return this->window;
     }
     void run()
     {
         ThreadUtil::Start([this]() {
             this->update();
+            this->objectLoop();
         }, this->intervalTime);
     }
 };

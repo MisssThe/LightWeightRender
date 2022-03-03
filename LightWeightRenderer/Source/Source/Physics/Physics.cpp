@@ -7,7 +7,7 @@
 
 bool Physics::isReady = false;
 
-void Physics::Init(std::vector<GLFWwindow *> windowVec) {
+void Physics::Init(std::vector<Window *> windowVec) {
     if (isReady)
         return;
     if (windowVec.size() < 1)
@@ -15,7 +15,7 @@ void Physics::Init(std::vector<GLFWwindow *> windowVec) {
     isReady = true;
     //自动检测已连接输入设备
     InputController::Init();
-    TraverUtil::TraverVector<GLFWwindow*>(&windowVec,[](GLFWwindow* window){
+    TraverUtil::TraverVector<Window*>(&windowVec,[](Window* window){
         InputController::AddEquip(BaseEquip::EquipType::MOUSE,window);
         InputController::AddEquip(BaseEquip::EquipType::KEYBOARD,window);
     });

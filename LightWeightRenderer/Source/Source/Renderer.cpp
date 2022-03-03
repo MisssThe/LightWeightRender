@@ -3,7 +3,6 @@
 //
 
 #include "../Head/Renderer.h"
-#include "../Head/Object/ObjectLoop.h"
 
 ShowPanel Renderer::showPanel;
 InfoPanel Renderer::infoPanel;

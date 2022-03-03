@@ -21,7 +21,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/BaseComponent.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/BaseObject.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/ComponentController.cpp.o"
-  "CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/ObjectLoop.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/CollisionDetection.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController/InputController.cpp.o"
   "CMakeFiles/LightWeightRenderer.dir/Source/Source/Physics/InputController/ShortcutController.cpp.o"

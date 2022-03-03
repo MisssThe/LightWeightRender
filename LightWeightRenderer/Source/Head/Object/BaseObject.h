@@ -11,7 +11,7 @@
 
 class BaseObject {
 public:
-    BaseObject();
+    BaseObject(int windowIndex);
     bool use();
     bool slowUse();             //主要做检测工作等不太需要实时性的
     void addComponent(std::string comName);
@@ -21,7 +21,6 @@ public:
     void destroyImmediately();
 private:
     ObjectInfo* objectInfo;
-    std::string name;
 };
 
 

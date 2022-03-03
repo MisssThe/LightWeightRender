@@ -185,9 +185,6 @@
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Object/ObjectInfo.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
-		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Object/ObjectLoop.h">
-			<Option target="LightWeightRenderer"/>
-		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Head/Physics/CollisionDetection.h">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
@@ -285,9 +282,6 @@
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Object/ComponentController.cpp">
-			<Option target="LightWeightRenderer"/>
-		</Unit>
-		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Object/ObjectLoop.cpp">
 			<Option target="LightWeightRenderer"/>
 		</Unit>
 		<Unit filename="/Users/tandijie/LightWeightRender/LightWeightRenderer/Source/Source/Physics/CollisionDetection.cpp">

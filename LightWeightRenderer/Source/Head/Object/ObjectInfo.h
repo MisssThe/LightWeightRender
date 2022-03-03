@@ -13,10 +13,12 @@
 
 class ObjectInfo {
 public:
-    ObjectInfo(RenderPipeline* pipeline)
+    ObjectInfo(int windowIndex)
     {
-        if (pipeline)
-            this->pipeline = pipeline;
+        this->windowID = windowIndex;
+        this->isAlive = true;
+        this->pipeline = RenderPipeline::GetPipeLine(this->windowID - 1);
+        this->queueUtil = new VoidQueueUtil();
     }
     RenderPipeline* getPipeline()
     {
@@ -25,7 +27,7 @@ public:
     VoidQueueUtil* queueUtil;
     std::string name;
     int windowID = -1;
-    int objectID = -1;
+//    int objectID = -1;
     bool isAlive;
 private:
     RenderPipeline* pipeline;

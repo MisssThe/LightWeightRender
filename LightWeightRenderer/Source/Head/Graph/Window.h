@@ -7,10 +7,9 @@
 #ifndef LIGHTWEIGHTRENDERER_WINDOW_H
 #define LIGHTWEIGHTRENDERER_WINDOW_H
 
-
-#include <string>
 #include <glad.h>
 #include <glfw3.h>
+#include <string>
 #include "../../../Utils/Head/LogUtil.h"
 #include "../../../Utils/Head/ThreadUtil.h"
 #include "../../../Utils/Head/MainLoopUtil.h"
@@ -21,6 +20,7 @@ public:
     Window(std::function<void()> func,std::string name = "test",int width = 0,int height = 0);
     ~Window();
     GLFWwindow *getWindow() const;
+    int getWindowID();
 private:
     void initContext();
     void initWindow();

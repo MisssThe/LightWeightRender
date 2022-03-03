@@ -23,6 +23,6 @@ void RendererComponent::initProperty() {
 }
 
 RendererComponent::RendererComponent() {
-    this->isReady = true;
+    this->isReady = false;
     this->baseRenderer = new BaseRenderer();
 }

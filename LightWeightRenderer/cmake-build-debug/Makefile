@@ -657,30 +657,6 @@ Source/Source/Object/ComponentController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/ComponentController.cpp.s
 .PHONY : Source/Source/Object/ComponentController.cpp.s
 
-Source/Source/Object/ObjectLoop.o: Source/Source/Object/ObjectLoop.cpp.o
-.PHONY : Source/Source/Object/ObjectLoop.o
-
-# target to build an object file
-Source/Source/Object/ObjectLoop.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/ObjectLoop.cpp.o
-.PHONY : Source/Source/Object/ObjectLoop.cpp.o
-
-Source/Source/Object/ObjectLoop.i: Source/Source/Object/ObjectLoop.cpp.i
-.PHONY : Source/Source/Object/ObjectLoop.i
-
-# target to preprocess a source file
-Source/Source/Object/ObjectLoop.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/ObjectLoop.cpp.i
-.PHONY : Source/Source/Object/ObjectLoop.cpp.i
-
-Source/Source/Object/ObjectLoop.s: Source/Source/Object/ObjectLoop.cpp.s
-.PHONY : Source/Source/Object/ObjectLoop.s
-
-# target to generate assembly for a file
-Source/Source/Object/ObjectLoop.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightWeightRenderer.dir/build.make CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/ObjectLoop.cpp.s
-.PHONY : Source/Source/Object/ObjectLoop.cpp.s
-
 Source/Source/Physics/CollisionDetection.o: Source/Source/Physics/CollisionDetection.cpp.o
 .PHONY : Source/Source/Physics/CollisionDetection.o
 
@@ -1284,9 +1260,6 @@ help:
 	@echo "... Source/Source/Object/ComponentController.o"
 	@echo "... Source/Source/Object/ComponentController.i"
 	@echo "... Source/Source/Object/ComponentController.s"
-	@echo "... Source/Source/Object/ObjectLoop.o"
-	@echo "... Source/Source/Object/ObjectLoop.i"
-	@echo "... Source/Source/Object/ObjectLoop.s"
 	@echo "... Source/Source/Physics/CollisionDetection.o"
 	@echo "... Source/Source/Physics/CollisionDetection.i"
 	@echo "... Source/Source/Physics/CollisionDetection.s"

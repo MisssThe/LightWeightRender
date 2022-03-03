@@ -40,10 +40,14 @@ public:
             {
                 this->addInfo();
             }
-        }, this->panelID);
+        }, this->windowID);
     }
     void addInfo()
     {
+        BaseObject* object = new BaseObject(this->windowID);
+        object->addComponent("RendererComponent");
+        this->objectQueue.push(object);
+//        infoQueue.push(new BaseObject());
 //        Info* info = infoQueue.front();
 //        int pos = info->pos + info->area;
 //        this->infoQueue.push(new Info(pos));
@@ -53,7 +57,6 @@ public:
 //        }
     }
 private:
-    std::queue<BaseObject*> infoQueue;
 };
 
 
