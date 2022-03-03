@@ -13,6 +13,8 @@ public:
     static void DeleteCamera(std::string name);
     static Camera *GetCamera();
     static void ChangeCamera(std::string name);
+//    static glm::mat4* GetPMatrix();
+//    static glm::mat4* GetVMatrix();
 private:
     static std::unordered_map<std::string,Camera*> camera_map;
     static Camera* usingCamera;

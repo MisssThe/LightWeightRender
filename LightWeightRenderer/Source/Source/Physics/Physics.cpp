@@ -27,7 +27,7 @@ void Physics::Run() {
     ThreadUtil::Start([](){
         InputController::Update();
         ShortcutController::Update();
-    });
+    }, 100);
 }
 
 void Physics::Stop() {

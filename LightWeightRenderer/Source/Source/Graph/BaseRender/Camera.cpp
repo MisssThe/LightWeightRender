@@ -13,12 +13,12 @@ Camera::Camera(Transform* transform,float ratio,float degrees,float near,float f
     this->transform = transform;
 }
 
-const glm::mat4 &Camera::getPMatrix() const {
-    return this->p_matrix;
+const glm::mat4* Camera::getPMatrix() const {
+    return &(this->p_matrix);
 }
 
-const glm::mat4 &Camera::getVMatrix() const {
-    return -this->transform->getMatrix();
+const glm::mat4* Camera::getVMatrix() const {
+    return this->transform->getMatrix();
 }
 
 void Camera::update() {

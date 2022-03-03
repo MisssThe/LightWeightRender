@@ -39,10 +39,10 @@ void Mesh::processMesh(BaseLoader::MeshInfo* meshInfo) {
     }
 }
 
-void Mesh::use() {
-    glBindVertexArray(this->VAO);
-}
-
 int Mesh::getIndexSize() {
     return this->indexSize;
+}
+
+void Mesh::render() {
+    glBindVertexArray(this->VAO);
 }

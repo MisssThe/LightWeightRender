@@ -2,7 +2,7 @@
 // Created by MisThe on 2022/2/8.
 //
 
-#ifndef LIGHTWEIGHTRENDERER_RENDERER_H
+#ifndef LIGHTWEIGHTRENDERER_BASERENDERER_H
 #define LIGHTWEIGHTRENDERER_RENDERER_H
 
 
@@ -10,6 +10,9 @@
 #include "../Head/Graph/Window.h"
 #include "../Head/Graph/GraphController/GraphController.h"
 #include "../Head/Physics/Physics.h"
+#include "Object/BaseObject.h"
+#include "RenderPanel/ShowPanel.h"
+#include "RenderPanel/InfoPanel.h"
 
 class Renderer {
 public:
@@ -17,9 +20,11 @@ public:
     static void Run();
     static void Stop();
 private:
+    static ShowPanel showPanel;
+    static InfoPanel infoPanel;
+private:
     Renderer();
-    static RenderObject* CreateInfoPanel(RenderObject* ro);
 };
 
 
-#endif //LIGHTWEIGHTRENDERER_RENDERER_H
+#endif //LIGHTWEIGHTRENDERER_BASERENDERER_H

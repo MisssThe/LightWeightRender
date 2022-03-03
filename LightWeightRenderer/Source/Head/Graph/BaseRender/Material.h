@@ -12,13 +12,13 @@
 #include "../../../../Utils/Head/JsonUtil.h"
 #include "../../../../Utils/Head/ConstUtil.h"
 #include "../../../Head/Graph/GraphController/ShaderController.h"
-#include "Transform.h"
 
-class Material {
+class Material : public RenderComponent
+{
 public:
     Material();
     Material(std::string path);
-    void use(Transform *transform = nullptr);
+    void render() override;
 private:
     struct Info
     {
@@ -31,7 +31,6 @@ private:
 private:
     void initMaterial(std::unordered_map<std::string, Shader::KeyWord>* keyWordMap,Json::Value* root);
     void setValue(std::string type,std::string value,int location);
-    void setExternalValue(Transform* transform);
 };
 
 

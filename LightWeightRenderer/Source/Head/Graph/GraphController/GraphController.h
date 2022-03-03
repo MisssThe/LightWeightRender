@@ -13,7 +13,6 @@
 #include "MeshController.h"
 #include "MaterialController.h"
 #include "TextureController.h"
-#include "RenderObjectController.h"
 
 class GraphController {
 public:
@@ -23,7 +22,6 @@ public:
         MeshController::Init();
         MaterialController::Init();
         TextureController::Init();
-        RenderObjectController::Init();
     }
     static void Restart()
     {

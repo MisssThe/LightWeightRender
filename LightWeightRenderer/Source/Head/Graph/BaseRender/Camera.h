@@ -1,5 +1,6 @@
 //
 // Created by MisThe on 2022/2/9.
+// 当ro被标记为camera时会从pipeline中剔除，由camera接管相关操作
 //
 
 #ifndef LIGHTWEIGHTRENDERER_CAMERA_H
@@ -21,8 +22,8 @@ private:
     glm::mat4 p_matrix;
     glm::mat4 v_matrix;
 public:
-    const glm::mat4 &getPMatrix() const;
-    const glm::mat4 &getVMatrix() const;
+    const glm::mat4* getPMatrix() const;
+    const glm::mat4* getVMatrix() const;
     void setRatio(float ratio);
     void setDegrees(float degrees);
     void setNear(float near);

@@ -22,7 +22,6 @@ public:
 private:
     static std::unordered_map<std::string,Shader*> shader_map;
     static std::unordered_map<std::string,std::unordered_map<unsigned int ,std::string>*> shader_path_map;
-    static std::string shader_config_path;
     static bool isReady;
     static std::string shader_default_name;
 private:

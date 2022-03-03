@@ -9,14 +9,16 @@
 #include <glad/glad.h>
 #include "../../../../Utils/Head/LogUtil.h"
 #include "../../../../Utils/Head/FileUtil.h"
+#include "RenderComponent.h"
 
-class Texture {
+class Texture : public RenderComponent{
 public:
     Texture(std::string path);
     ~Texture();
     int getWidth();
+    void render() override;
+public:
     int getHeight();
-    void use();
 private:
     int width,height;
     unsigned int texture;

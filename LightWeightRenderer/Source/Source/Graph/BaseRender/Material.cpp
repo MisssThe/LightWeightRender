@@ -15,14 +15,6 @@ Material::Material(std::string path) {
     this->initMaterial(&keyWordMap,&root);
 }
 
-void Material::use(Transform* transform) {
-    TraverUtil::TraverUMap<std::string,Info>(&this->property_map,[this](std::string name,Info info){
-        this->setValue(info.type,info.value,info.location);
-    });
-    //额外变量设置
-    this->setExternalValue(transform);
-}
-
 void Material::setValue(std::string type, std::string value,int location) {
     if (type == "float")
         glUniform1f(location,std::stof(value));
@@ -31,16 +23,6 @@ void Material::setValue(std::string type, std::string value,int location) {
 }
 
 Material::Material() {
-
-}
-
-void Material::setExternalValue(Transform* transform) {
-//    glm::mat4 p_matrix = CameraController::GetCamera()->getPMatrix();
-//    glm::mat4 v_matrix = CameraController::GetCamera()->getVMatrix();
-//    glm::mat4 m_matrix = transform->getMatrix();
-//    glUniformMatrix4fv(this->external_property_map["Model"], 1, GL_FALSE, glm::value_ptr(m_matrix));      //Model矩阵
-//    glUniformMatrix4fv(this->external_property_map["View"], 1, GL_FALSE, glm::value_ptr(v_matrix));       //View矩阵
-//    glUniformMatrix4fv(this->external_property_map["Project"], 1, GL_FALSE, glm::value_ptr(p_matrix));    //Projection矩阵
 
 }
 
@@ -55,6 +37,12 @@ void Material::initMaterial(std::unordered_map<std::string, Shader::KeyWord>* ke
         } else {
             this->external_property_map.insert(std::pair<std::string,int>(name,keyWord.location));
         }
+    });
+}
+
+void Material::render() {
+    TraverUtil::TraverUMap<std::string,Info>(&this->property_map,[this](std::string name,Info info){
+        this->setValue(info.type,info.value,info.location);
     });
 }
 

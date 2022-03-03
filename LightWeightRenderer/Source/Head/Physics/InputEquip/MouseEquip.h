@@ -24,6 +24,7 @@ public:
     void indirectUpdate() override;
     MouseMoveState getMouseMoveState() const;
     ClickState getMouseClickState(bool isLeft = true) const;
+    MathUtil::double2 getMousePosition();
 private:
     MouseMoveState mouseMoveState;
     ClickState mouseClickState_1,mouseClickState_2;

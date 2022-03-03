@@ -10,12 +10,14 @@
 #include <unordered_map>
 #include "../../../Head/Graph/MeshLoader/BaseLoader.h"
 #include "../../../Head/Graph/MeshLoader/GeneralLoader.h"
+#include "RenderComponent.h"
 
-class Mesh {
+class Mesh : public RenderComponent
+{
 public:
     Mesh(std::string path);
     int getIndexSize();
-    void use();
+    void render() override;
 private:
     std::string meshName;
     unsigned int VAO;

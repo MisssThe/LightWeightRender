@@ -23,7 +23,6 @@ private:
     static std::unordered_map<std::string,Material*> material_map;
     static std::unordered_map<std::string, std::string> material_path_map;
     static bool isReady;
-    static std::string material_config_path;
 private:
     static void AddMaterial(JValue value);
 };

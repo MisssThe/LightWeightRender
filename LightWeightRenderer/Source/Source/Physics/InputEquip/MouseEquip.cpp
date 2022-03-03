@@ -45,3 +45,7 @@ ClickState MouseEquip::updateClick(int button, ClickState state) {
 void MouseEquip::indirectUpdate() {
     LogUtil::LogError("indirect update", "try to direct use");
 }
+
+MathUtil::double2 MouseEquip::getMousePosition() {
+    return this->position;
+}

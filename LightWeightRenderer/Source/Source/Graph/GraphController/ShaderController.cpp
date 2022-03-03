@@ -5,7 +5,6 @@
 #include "../../../Head/Graph/GraphController/ShaderController.h"
 
 
-std::string ShaderController::shader_config_path = "LightWeightRenderer/Config/ShaderConfig.json";
 std::unordered_map<std::string, Shader *> ShaderController::shader_map;
 std::unordered_map<std::string, std::unordered_map<unsigned int, std::string> *> ShaderController::shader_path_map;
 bool ShaderController::isReady = false;
@@ -20,7 +19,8 @@ void ShaderController::Init() {
             std::vector<Json::Value> vec = DataSaveUtil::UseData<Json::Value>(index_vec);
             CreateShader(name, &vec, flag);
         };
-        InitAsset(shader_config_path, [&func](std::string name, JValue *value) {
+        Json::Value root = Config::GetShaderConfig();
+        InitAsset(&root, [&func](std::string name, JValue *value) {
             func(name,value,true);
         }, [&func](std::string name, JValue *value) {
             func(name,value, false);

@@ -11,8 +11,10 @@
 #include <unordered_map>
 #include "../../../../Utils/Head/StringUtil.h"
 #include "../../../../Utils/Head/FileUtil.h"
+#include "RenderComponent.h"
 
-class Shader {
+class Shader : public RenderComponent
+{
 public:
     struct KeyWord
     {
@@ -21,10 +23,8 @@ public:
     };
 public:
     Shader(std::unordered_map<unsigned int,std::string> paths);
-
     const std::unordered_map<std::string, KeyWord> &getKeyWordMap() const;
-
-    void use();
+    void render() override;
 private:
     std::unordered_map<std::string,KeyWord> keyWordMap;
     unsigned int shaderID;

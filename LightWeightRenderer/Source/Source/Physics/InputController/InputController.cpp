@@ -51,10 +51,6 @@ void InputController::DeleteEquip(int index) {
         LogUtil::LogWarning("delete equip","error index");
 }
 
-void InputController::GetMouseMove() {
-
-}
-
 InputController::InputController() {
 
 }

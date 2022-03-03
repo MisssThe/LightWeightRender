@@ -17,7 +17,6 @@ public:
     static void DeleteEquip(int index);
 public:
     static void UseFunc(BaseEquip::EquipType type,std::function<void(BaseEquip*)> func,int index = -1);
-    static void GetMouseMove();
 private:
     class PrivateMouse : public MouseEquip
     {

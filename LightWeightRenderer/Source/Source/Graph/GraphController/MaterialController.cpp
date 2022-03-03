@@ -5,14 +5,14 @@
 #include "../../../Head/Graph/GraphController/MaterialController.h"
 
 bool MaterialController::isReady = false;
-std::string MaterialController::material_config_path = "LightWeightRenderer/Config/MaterialConfig.json";
 std::unordered_map<std::string, Material *> MaterialController::material_map;
 std::unordered_map<std::string, std::string> MaterialController::material_path_map;
 
 void MaterialController::Init() {
     if (!isReady) {
         isReady = true;
-        InitAsset(material_config_path, [](std::string name, JValue *value) {
+        Json::Value root = Config::GetMaterialConfig();
+        InitAsset(&root, [](std::string name, JValue *value) {
             material_map.insert(std::pair<std::string,Material*>(name,new Material(value->asString())));
             material_path_map.insert(std::pair<std::string,std::string>(name,value->asString()));
         }, [](std::string name, JValue *value) {

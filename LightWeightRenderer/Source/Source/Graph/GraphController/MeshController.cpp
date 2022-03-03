@@ -17,7 +17,8 @@ void MeshController::Init() {
     if (!isReady)
     {
         isReady = true;
-        InitAsset(mesh_config_path,[](std::string name,JValue* value) {
+        JValue root = Config::GetMeshConfig();
+        InitAsset(&root,[](std::string name,JValue* value) {
                 std::string path = value->asString();
                 path = FileUtil::CheckPath(path);
                 path = FileUtil::CheckPath(path);

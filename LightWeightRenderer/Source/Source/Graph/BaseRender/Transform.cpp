@@ -19,8 +19,8 @@ void Transform::setRotation(float x, float y, float z) {
     this->createMatrix();
 }
 
-glm::mat4 Transform::getMatrix() {
-    return this->matrix;
+glm::mat4* Transform::getMatrix() {
+    return &(this->matrix);
 }
 
 void Transform::createMatrix() {
@@ -45,7 +45,7 @@ glm::vec3 Transform::getScale() {
 }
 
 
-Transform::Transform(std::vector<float> array) {
+Transform::Transform(VoidQueueUtil* queue,std::vector<float> array) {
     if (array.size() < 9)
         return;
     this->position = {array[0], array[1], array[2]};
@@ -54,6 +54,10 @@ Transform::Transform(std::vector<float> array) {
     this->createMatrix();
 }
 
-Transform::Transform() {
+bool Transform::use() {
+    return false;
+}
 
+void Transform::initProperty() {
+    this->name = "Transform";
 }

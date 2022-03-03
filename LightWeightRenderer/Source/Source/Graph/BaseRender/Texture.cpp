@@ -39,6 +39,6 @@ int Texture::getHeight() {
     return this->height;
 }
 
-void Texture::use() {
+void Texture::render() {
     glBindTexture(GL_TEXTURE_2D, texture);
 }

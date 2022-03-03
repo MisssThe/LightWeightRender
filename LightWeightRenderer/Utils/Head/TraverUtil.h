@@ -29,6 +29,7 @@ public:
             }
         }
     }
+    //@return false：剔除 true：继续
     template<class T> static void TraverQueueBool(std::queue<T>*queue,std::function<bool(T)> func) {
         if (queue != nullptr) {
             int length = queue->size();
@@ -42,6 +43,32 @@ public:
                 }
             }
         }
+    }
+    //@return false：继续 true：结束
+    template<class T> static void TraverQueueBreak(std::queue<T>*queue,std::function<bool(T)> func) {
+        if (queue != nullptr) {
+            int length = queue->size();
+            if (length > 0) {
+                T element;
+                for (int i = 0; i < length; ++i) {
+                    element = queue->front();
+                    queue->pop();
+                    if (func(element))
+                        return;
+                }
+            }
+        }
+    }
+    //@return true: 存在 false: 不存在
+    template<class T> static bool ExistInQueue(std::queue<T>* queue,T value)
+    {
+        bool isExist = false;
+        TraverQueueBreak<T>(queue,[&value, &isExist](T v) {
+            if (v == value)
+                isExist = true;
+            return isExist;
+        });
+        return isExist;
     }
 
     template<class T> static void TraverVector(std::vector<T>*vector,std::function<void(T)> func) {

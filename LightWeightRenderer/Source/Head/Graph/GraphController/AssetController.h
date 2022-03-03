@@ -7,13 +7,13 @@
 #define LIGHTWEIGHTRENDERER_ASSETCONTROLLER_H
 
 #include "../../../../Utils/Head/JsonUtil.h"
+#include "../../../../Config/Config.h"
 
 class AssetController {
 protected:
-    static void InitAsset(std::string path, std::function<void(std::string,JValue*)> preheatFunc, std::function<void(std::string,JValue*)> passivityFunc) {
-        JValue root = JsonUtil::ReadJson(path);
+    static void InitAsset(Json::Value* root, std::function<void(std::string,JValue*)> preheatFunc, std::function<void(std::string,JValue*)> passivityFunc) {
         bool flag = false;
-        TraverUtil::TraverJsonValueBool(&root, [&flag, &preheatFunc, &passivityFunc](std::string name, JValue *value) -> bool {
+        TraverUtil::TraverJsonValueBool(root, [&flag, &preheatFunc, &passivityFunc](std::string name, JValue *value) -> bool {
             flag = false;
             if (name == "preheat") {
                 TraverUtil::TraverJsonValue(value,[&preheatFunc](std::string name,JValue* v){
@@ -32,8 +32,7 @@ protected:
             return true;
         });
         if (flag)
-            LogUtil::LogError("init asset", "asset config error:[" + path + "]");
-
+            LogUtil::LogError("init asset", "asset config error:[]");
     }
 };
 

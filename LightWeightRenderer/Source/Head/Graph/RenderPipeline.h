@@ -6,27 +6,26 @@
 #define LIGHTWEIGHTRENDERER_RENDERPIPELINE_H
 
 
-#include "BaseRender/Material.h"
-#include "BaseRender/Mesh.h"
-#include "BaseRender/Shader.h"
-#include "BaseRender/Transform.h"
-#include "RenderObject.h"
+#include "../../Head/Graph/BaseRenderer.h"
 
 class RenderPipeline {
 public:
     RenderPipeline();
-    int  addObject(RenderObject*ro);
-    int  addObject(RenderObject ro);
-    void dropObject(int index);
+    int  addRenderer(BaseRenderer*br);
+    void dropRenderer(int index);
     void render();
+    static RenderPipeline* GetPipeLine(int index);
+    int getIndex();
 private:
     static bool isInit;
     struct RenderQueue
     {
         RenderType type;
-        std::queue<RenderObject*> queue;
+        std::queue<BaseRenderer*> queue;
     };
     std::queue<RenderQueue*> renderQueue;
+    static std::vector<RenderPipeline*> pipeline_vec;
+    int index = -1;
 private:
     void init();
     void loadShader();

@@ -5,9 +5,11 @@
 
 #include "../../Head/Graph/RenderPipeline.h"
 
+std::vector<RenderPipeline*> RenderPipeline::pipeline_vec;
+
 void RenderPipeline::render() {
     TraverUtil::TraverQueue<RenderQueue*>(&this->renderQueue,[](RenderQueue* queue) {
-        TraverUtil::TraverQueue<RenderObject*>(&queue->queue,[](RenderObject* object){
+        TraverUtil::TraverQueue<BaseRenderer*>(&queue->queue,[](BaseRenderer* object){
             return object->render();
         });
     });
@@ -20,17 +22,18 @@ void RenderPipeline::init() {
         rq->type = RenderType(i);
         this->renderQueue.push(rq);
     }
+    this->index = pipeline_vec.size();
+    pipeline_vec.push_back(this);
 }
 
-
-int RenderPipeline::addObject(RenderObject *ro) {
-    if (ro)
+int RenderPipeline::addRenderer(BaseRenderer *br) {
+    if (br)
     {
-        if ((int)ro->getType() > this->renderQueue.size())
+        if ((int)br->getType() > this->renderQueue.size())
             LogUtil::LogError("add object in pipeline","error render type");
-        TraverUtil::TraverQueue<RenderQueue*>(&this->renderQueue,[&ro, this](RenderQueue*rq){
-            if (rq->type == ro->getType())
-                rq->queue.push(ro);
+        TraverUtil::TraverQueue<RenderQueue*>(&this->renderQueue,[&br, this](RenderQueue*rq){
+            if (rq->type == br->getType())
+                rq->queue.push(br);
         });
     }
     else
@@ -38,14 +41,22 @@ int RenderPipeline::addObject(RenderObject *ro) {
     return 0;
 }
 
-int RenderPipeline::addObject(RenderObject ro) {
-    return addObject(&ro);
-}
-
-void RenderPipeline::dropObject(int index) {
+void RenderPipeline::dropRenderer(int index) {
 
 }
 
 RenderPipeline::RenderPipeline() {
     this->init();
+}
+
+RenderPipeline *RenderPipeline::GetPipeLine(int index) {
+    return nullptr;
+}
+
+int RenderPipeline::getIndex() {
+    return this->index;
+}
+
+void RenderPipeline::loadShader() {
+
 }

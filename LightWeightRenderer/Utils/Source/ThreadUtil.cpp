@@ -13,7 +13,8 @@ ThreadUtil::ThreadUtil() {
 }
 
 //@param endless false：无限循环 true：只运行一次
-int ThreadUtil::Start(std::function<void()> func,bool endless) {
+//@param interval 时间间隔 单位：毫秒
+int ThreadUtil::Start(std::function<void()> func,int interval,bool endless) {
     while (isLoading)
     {
         //保证线程安全
@@ -24,13 +25,15 @@ int ThreadUtil::Start(std::function<void()> func,bool endless) {
     *tempThread->stopFlag = endless;
     *tempThread->pauseFlag = false;
     tempThread->threadID = thread_id;
-    tempThread->thread = new std::thread([&tempThread](std::function<void()> func){
+    tempThread->thread = new std::thread([](std::function<void()> func,int waitTime,PrivateThread*thread){
         while (true){
             func();
-            while (*(tempThread->pauseFlag));
-            if (*(tempThread->stopFlag)) return;
+            while (*(thread->pauseFlag));
+            if (*(thread->stopFlag)) return;
+            std::this_thread::sleep_for(std::chrono::milliseconds(waitTime));
         }
-    },func);
+    },func,interval,tempThread);
+    isLoading = false;
     return tempThread->threadID;
 }
 

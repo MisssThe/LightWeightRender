@@ -15,7 +15,7 @@
 class ThreadUtil
 {
 public:
-    static int  Start(std::function<void()> func,bool endless = false);
+    static int Start(std::function<void()> func, int interval = 0, bool endless = false);
     static void Pause(int threadID = -1);
     static void Resume(int threadID = -1);
     static void Stop(int threadID = -1);
