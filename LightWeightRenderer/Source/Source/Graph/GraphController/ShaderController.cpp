@@ -31,7 +31,7 @@ void ShaderController::Init() {
 Shader *ShaderController::GetShader(std::string shaderName) {
     if (shader_map.find(shaderName) != shader_map.end())
         return shader_map[shaderName];
-    LogUtil::LogError("get shader", "error shader name[" + shaderName + "]\n");
+    LogUtil::LogError("get shader", "error shader name[" + shaderName + "]\n");\
     return nullptr;
 }
 

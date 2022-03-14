@@ -12,26 +12,23 @@
 class AssetController {
 protected:
     static void InitAsset(Json::Value* root, std::function<void(std::string,JValue*)> preheatFunc, std::function<void(std::string,JValue*)> passivityFunc) {
-        bool flag = false;
-        TraverUtil::TraverJsonValueBool(root, [&flag, &preheatFunc, &passivityFunc](std::string name, JValue *value) -> bool {
-            flag = false;
+        bool flag_1 = false, flag_2 = false;
+        bool success = TraverUtil::TraverJsonValueBool(root, [&flag_1, &flag_2, &preheatFunc, &passivityFunc](std::string name, JValue *value) -> bool {
             if (name == "preheat") {
                 TraverUtil::TraverJsonValue(value,[&preheatFunc](std::string name,JValue* v){
                     preheatFunc(name,v);
                 });
-                return false;
+                flag_1 = true;
             }
             else if (name == "passivity") {
                 TraverUtil::TraverJsonValue(value,[&passivityFunc](std::string name,JValue* v){
                     passivityFunc(name,v);
                 });
-                return false;
+                flag_2 = true;
             }
-            flag = true;
-            return true;
-            return true;
+            return flag_1 && flag_2;
         });
-        if (flag)
+        if (!success)
             LogUtil::LogError("init asset", "asset config error:[]");
     }
 };

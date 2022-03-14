@@ -201,6 +201,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Head/Graph/RendererComponent.cpp.o: \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \
@@ -514,6 +515,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o: 
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
@@ -783,6 +785,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.o
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
@@ -1279,6 +1282,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
@@ -1497,6 +1501,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRenderer.cpp.o: \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/MaterialController.h \
@@ -1763,6 +1768,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraCon
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
@@ -1799,6 +1805,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/MaterialC
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/MaterialController.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \
@@ -2604,6 +2611,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderPipeline.cpp.o: \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \
@@ -2836,6 +2844,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/BaseComponent.cpp.o: \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \
@@ -3104,6 +3113,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/BaseObject.cpp.o: \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
@@ -3326,6 +3336,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/ComponentController.cpp.
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \
@@ -3662,6 +3673,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/RenderPanel/BasePanel.cpp.o: \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \
@@ -3887,6 +3899,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/RenderPanel/InfoPanel.cpp.o: \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \
@@ -4117,6 +4130,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/RenderPanel/ShowPanel.cpp.o: \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
+ ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/ShaderController.h \

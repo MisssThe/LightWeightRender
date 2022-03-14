@@ -20,76 +20,47 @@ Json::Value JsonUtil::ReadJson(std::string path) {
 }
 
 
-void JsonUtil::WriteJson(Json::Value value, std::string path) {
-
-}
-
-void JsonUtil::WriteJson(std::queue<std::string> jsonPath, std::string value, std::string path) {
-    Json::Value root = ReadJson(path);
-    Json::Value head = root;
-    if (!root.empty()) {
-        std::string front = jsonPath.front();
-        jsonPath.pop();
-        TraverUtil::TraverQueueBool<std::string>(&jsonPath,[&root](std::string key)->bool {
-            if (root[key].empty())
-                return false;
-            root = root[key];
-            return false;
-        });
-        TraverUtil::TraverQueue<std::string>(&jsonPath,[&root](std::string key){
-            root[key] = Json::Value();
-            root = root[key];
-        });
-        if (!root.empty())
-            root[front] = value;
-        else
-            LogUtil::LogError("Write Json","invalid json key path");
-    } else {
-        LogUtil::LogError("Write Json","invalid json path");
-    }
-}
-
-void JsonUtil::UpdateJson(std::queue<std::string> keyPath, std::string value, std::string path) {
-    Json::Value root = ReadJson(path);
-    if (!root.empty()) {
-        std::string front = keyPath.front();
-        keyPath.pop();
-        TraverUtil::TraverQueue<std::string>(&keyPath,[&root](std::string key){
-            root = root[key];
-            if (root.empty())
-                return;
-        });
-        if (!root.empty())
-            root[front] = value;
-        else
-            LogUtil::LogError("Update Json","invalid json key path");
-
-    } else {
-        LogUtil::LogError("Update Json","invalid json path");
-    }
-
-}
-
 std::string JsonUtil::CheckPath(std::string path) {
-    if (current_path == "")
-    {
+    if (current_path == "") {
         current_path = std::filesystem::current_path();
-        current_path = StringUtil::SplitAndReduce(&current_path,"/",3);
+        current_path = StringUtil::SplitAndReduce(&current_path, "/", 3);
     }
     std::ifstream file;
     file.open(path);
-    if (file.is_open())
-    {
+    if (file.is_open()) {
         file.close();
         return path;
     }
     path = current_path + path;
     file.open(path);
-    if (file.is_open())
-    {
+    if (file.is_open()) {
         file.close();
         return path;
     }
-    LogUtil::LogError("check path","file not exit[" + path + "]\n");
+    LogUtil::LogError("check path", "file not exit[" + path + "]\n");
     return NULL;
+}
+
+void JsonUtil::WriteJson(Json::Value value, std::string path) {
+    std::string name = value.getMemberNames()[0];
+    WriteJson(name, value[name], path);
+}
+
+bool JsonUtil::IsExit(std::string key, Json::Value v) {
+    return IsExit(key, &v);
+}
+
+bool JsonUtil::IsExit(std::string key, Json::Value *v) {
+    if (!isObject(v))
+        return false;
+    std::vector<std::string> names = v->getMemberNames();
+    return TraverUtil::TraverVectorBool<std::string>(&names, [&key](std::string name) -> bool {
+        if (name == key)
+            return true;
+        return false;
+    });
+}
+
+bool JsonUtil::isObject(Json::Value *v) {
+    return !v->empty() && v->isObject();
 }

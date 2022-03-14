@@ -79,16 +79,19 @@ public:
             }
         }
     }
-    template<class T> static void TraverVectorBool(std::vector<T>*vector,std::function<bool(T)> func) {
+
+    //@return true:成功中断 false:未中断
+    template<class T> static bool TraverVectorBool(std::vector<T>*vector,std::function<bool(T)> func) {
         if (vector != nullptr) {
             int length = vector->size();
             for (int i = 0; i < length; ++i) {
                 if (func((*vector)[i]))
                 {
-                    break;
+                    return true;
                 }
             }
         }
+        return false;
     }
     template<class T1,class T2> static void TraverUMap(std::unordered_map<T1,T2>*umap,std::function<void(T1,T2)> func) {
         if (umap != nullptr) {
@@ -113,25 +116,28 @@ public:
             Json::Value::Members members = json->getMemberNames();
             for (std::string member: members) {
                 Json::Value *temp = &(*json)[member];
-                TraverJsonValue(temp, func);
                 func(member, temp);
+                TraverJsonValue(temp, func);
             }
         }
     }
 
     // 可中断json value遍历
     // @return true 中断，false 继续
-    static void TraverJsonValueBool(Json::Value* json,std::function<bool(std::string,Json::Value*)> func){
+    static bool TraverJsonValueBool(Json::Value* json,std::function<bool(std::string,Json::Value*)> func){
         if (!json->empty() && json->isObject()) {
             Json::Value::Members members = json->getMemberNames();
             for (std::string member: members) {
                 Json::Value *temp = &(*json)[member];
-                TraverJsonValue(temp, func);
                 if (func(member, temp))
-                    return;
+                    return true;
+                if (TraverJsonValueBool(temp, func))
+                    return true;
             }
         }
+        return false;
     }
+
     static void TraverString(std::string str,std::function<void(char)> func)
     {
         int length = str.length();
