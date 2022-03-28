@@ -10,10 +10,12 @@ RenderType BaseRenderer::getType() {
     return this->type;
 }
 
-bool BaseRenderer::render() {
+bool BaseRenderer::render(glm::mat4 model) {
     this->mesh->render();
     this->shader->render();
+    //初始化材质数据
     this->material->render();
+    //初始化常量信息
     glDrawElements(GL_TRIANGLES, this->mesh->getIndexSize(), GL_UNSIGNED_INT, 0);
     return false;
 }
@@ -24,6 +26,7 @@ BaseRenderer::BaseRenderer() {
     this->shader = ShaderController::GetDefaultShader();
     this->mesh = MeshController::GetSquareMesh();
     this->material = new Material();
+    this->material->bindShader(this->shader->getKeyWordMap());
     this->type = RenderType::OPAQUE;
 }
 

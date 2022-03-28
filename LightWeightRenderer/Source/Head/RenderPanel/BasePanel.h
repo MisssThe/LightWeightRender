@@ -14,13 +14,21 @@ class BasePanel {
 protected:
     void init()
     {
+        this->initProperty();
         this->pipeline = new RenderPipeline();
         this->panelID = this->pipeline->getIndex();
         this->window = new Window([this]() {
             this->pipeline->render();
         }, this->panelName, this->width, this->height);
         this->windowID = this->window->getWindowID();
+        this->initView();
+        this->bindClick();
     }
+
+    virtual void initProperty() = 0;
+    virtual void initView()     = 0;
+    virtual void bindClick()    = 0;
+
     virtual void update() = 0;
 private:
     Window* window;

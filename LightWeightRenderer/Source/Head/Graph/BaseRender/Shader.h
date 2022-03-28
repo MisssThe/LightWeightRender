@@ -16,14 +16,8 @@
 class Shader : public RenderComponent
 {
 public:
-    struct KeyWord
-    {
-        std::string dataType;
-        int location;
-    };
-public:
     Shader(std::unordered_map<unsigned int,std::string> paths);
-    const std::unordered_map<std::string, KeyWord> &getKeyWordMap() const;
+    std::unordered_map<std::string, KeyWord>* getKeyWordMap();
     void render() override;
 private:
     std::unordered_map<std::string,KeyWord> keyWordMap;

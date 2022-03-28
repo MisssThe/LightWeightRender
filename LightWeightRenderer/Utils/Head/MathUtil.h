@@ -9,6 +9,11 @@
 #include <ostream>
 #include "string"
 
+enum DataType
+{
+    VEC,VEC2,VEC3
+};
+
 class MathUtil {
 public:
     struct int2

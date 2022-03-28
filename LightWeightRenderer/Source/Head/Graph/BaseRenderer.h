@@ -9,6 +9,7 @@
 
 #include "BaseRender/Material.h"
 #include "BaseRender/Mesh.h"
+#include "BaseRender/Shader.h"
 
 enum RenderType
 {
@@ -23,7 +24,7 @@ class BaseRenderer
 public:
     BaseRenderer();
     RenderType getType();
-    bool render();
+    bool render(glm::mat4 model = glm::mat4(1));
     void setMaterial(std::string name);
     void setMaterial(Material*material);
     void setShader(Shader*shader);

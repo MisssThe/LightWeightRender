@@ -60,7 +60,8 @@ void Shader::findKeyWord(std::string *code) {
             std::vector<std::string> keyWordVec = StringUtil::Split(&str, " ");
             int index = keyWordVec.size() - 1;
             if (index > 0) {
-                this->keyWordMap.insert(std::pair<std::string, KeyWord>(keyWordVec[index], {keyWordVec[1], 0}));
+                std::string  key = keyWordVec[index];
+                this->keyWordMap.insert(std::pair<std::string, KeyWord>(key, KeyWord()));
             }
         });
     }
@@ -73,6 +74,6 @@ void Shader::findKeyWordLocation() {
     });
 }
 
-const std::unordered_map<std::string, Shader::KeyWord> &Shader::getKeyWordMap() const {
-    return keyWordMap;
+std::unordered_map<std::string, RenderComponent::KeyWord> *Shader::getKeyWordMap() {
+    return &this->keyWordMap;
 }

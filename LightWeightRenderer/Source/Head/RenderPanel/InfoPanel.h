@@ -23,13 +23,25 @@ private:
         int area;           // panel长度
     };
 public:
-    InfoPanel()
-    {
+protected:
+    void initProperty() override {
         this->panelName = "info panel";
         this->width = 400;
         this->height = 800;
         this->intervalTime = 100;
-//        this->infoQueue.push(new Info(0));
+    }
+
+    void initView() override {
+
+    }
+
+    void bindClick() override {
+
+    }
+
+public:
+    InfoPanel()
+    {
         this->init();
     }
     void update() override {

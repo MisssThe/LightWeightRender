@@ -4,14 +4,14 @@
 
 #include "../Head/Renderer.h"
 
-ShowPanel Renderer::showPanel;
+//ShowPanel Renderer::showPanel;
 InfoPanel Renderer::infoPanel;
 
 
 void Renderer::Init() {
     try {
         GraphController::Init();
-        Physics::Init({infoPanel.getWindow(), showPanel.getWindow()});
+        Physics::Init({infoPanel.getWindow()});
         Physics::Run();
         infoPanel.run();
 //        showPanel.run();

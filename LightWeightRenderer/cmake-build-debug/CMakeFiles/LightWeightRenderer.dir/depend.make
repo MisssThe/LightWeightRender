@@ -196,15 +196,14 @@ CMakeFiles/LightWeightRenderer.dir/Source/Head/Graph/RendererComponent.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
- ../Config/Config.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
- ../Source/Head/Graph/GraphController/AssetController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
@@ -254,6 +253,12 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Extend/TexturePacker.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/DataSaveUtil.h \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/StringUtil.h \
  ../Source/Head/Extend/TexturePacker.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Texture.h \
@@ -508,8 +513,9 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o: 
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Utils/Head/TraverUtil.h \
- ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Camera.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -518,8 +524,6 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Camera.cpp.o: 
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/BaseRenderer.h \
- ../Source/Head/Graph/GraphController/AssetController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
@@ -778,8 +782,9 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.o
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Utils/Head/TraverUtil.h \
- ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Camera.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -788,9 +793,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Material.cpp.o
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/BaseRenderer.h \
- ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/CameraController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
@@ -991,6 +994,22 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Mesh.cpp.o: \
  ../Include/glm/0.9.9.8/include/glm/vec3.hpp \
  ../Include/glm/0.9.9.8/include/glm/vec4.hpp \
  ../Include/glm/0.9.9.8/include/glm/vector_relational.hpp \
+ ../Include/jsoncpp/1.9.4_1/include/json/allocator.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/config.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/forwards.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/json_features.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/reader.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/value.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/version.h \
+ ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/DataSaveUtil.h \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/StringUtil.h \
+ ../Utils/Head/TraverUtil.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
@@ -1010,6 +1029,12 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Shader.cpp.o: 
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/DataSaveUtil.h \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/StringUtil.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
  ../Source/Source/Graph/BaseRender/Shader.cpp \
@@ -1028,6 +1053,12 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Texture.cpp.o:
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
  ../Include/stb_image/include/stb_image.h \
+ ../Utils/Head/DataSaveUtil.h \
+ ../Utils/Head/FileUtil.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/LogUtil.h \
+ ../Utils/Head/MathUtil.h \
+ ../Utils/Head/StringUtil.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Source/Graph/BaseRender/Texture.cpp \
@@ -1277,7 +1308,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
- ../Config/Config.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
@@ -1285,8 +1317,6 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRender/Transform.cpp.
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/BaseRenderer.h \
- ../Source/Head/Graph/GraphController/AssetController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
@@ -1496,6 +1526,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/BaseRenderer.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -1761,8 +1793,9 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraCon
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Utils/Head/TraverUtil.h \
- ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Camera.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -1771,9 +1804,7 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/CameraCon
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRender/Transform.h \
  ../Source/Head/Graph/BaseRenderer.h \
- ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/CameraController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
@@ -1801,6 +1832,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/MaterialC
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
@@ -2010,6 +2043,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/MeshContr
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
@@ -2037,6 +2072,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/ShaderCon
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
@@ -2059,6 +2096,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/GraphController/TextureCo
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/GraphController/TextureController.h \
@@ -2606,15 +2645,14 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Graph/RenderPipeline.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
- ../Config/Config.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
- ../Source/Head/Graph/GraphController/AssetController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
@@ -2839,15 +2877,14 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/BaseComponent.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
- ../Config/Config.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
  ../Source/Head/Graph/BaseRender/RenderComponent.h \
  ../Source/Head/Graph/BaseRender/Shader.h \
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
- ../Source/Head/Graph/GraphController/AssetController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
@@ -3106,6 +3143,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/BaseObject.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Utils/Head/TraverUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Camera.h \
@@ -3118,12 +3157,10 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/BaseObject.cpp.o: \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
  ../Source/Head/Graph/GraphController/CameraController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
  ../Source/Head/Graph/RenderPipeline.h \
- ../Source/Head/Graph/RendererComponent.h \
  ../Source/Head/Object/BaseComponent.h \
  ../Source/Head/Object/BaseObject.h \
  ../Source/Head/Object/ComponentController.h \
@@ -3331,6 +3368,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/ComponentController.cpp.
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -3339,7 +3378,6 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Object/ComponentController.cpp.
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
@@ -3668,6 +3706,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/RenderPanel/BasePanel.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -3676,12 +3716,10 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/RenderPanel/BasePanel.cpp.o: \
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
  ../Source/Head/Graph/RenderPipeline.h \
- ../Source/Head/Graph/RendererComponent.h \
  ../Source/Head/Graph/Window.h \
  ../Source/Head/Object/BaseComponent.h \
  ../Source/Head/Object/BaseObject.h \
@@ -3894,6 +3932,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/RenderPanel/InfoPanel.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -3902,12 +3942,10 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/RenderPanel/InfoPanel.cpp.o: \
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
  ../Source/Head/Graph/RenderPipeline.h \
- ../Source/Head/Graph/RendererComponent.h \
  ../Source/Head/Graph/Window.h \
  ../Source/Head/Object/BaseComponent.h \
  ../Source/Head/Object/BaseObject.h \
@@ -4125,6 +4163,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/RenderPanel/ShowPanel.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -4133,12 +4173,10 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/RenderPanel/ShowPanel.cpp.o: \
  ../Source/Head/Graph/BaseRender/Texture.h \
  ../Source/Head/Graph/BaseRenderer.h \
  ../Source/Head/Graph/GraphController/AssetController.h \
- ../Source/Head/Graph/GraphController/ShaderController.h \
  ../Source/Head/Graph/MeshLoader/AssimpLoader.h \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
  ../Source/Head/Graph/RenderPipeline.h \
- ../Source/Head/Graph/RendererComponent.h \
  ../Source/Head/Graph/Window.h \
  ../Source/Head/Object/BaseComponent.h \
  ../Source/Head/Object/BaseObject.h \
@@ -4352,6 +4390,8 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -4369,7 +4409,6 @@ CMakeFiles/LightWeightRenderer.dir/Source/Source/Renderer.cpp.o: \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
  ../Source/Head/Graph/RenderPipeline.h \
- ../Source/Head/Graph/RendererComponent.h \
  ../Source/Head/Graph/Window.h \
  ../Source/Head/Object/BaseComponent.h \
  ../Source/Head/Object/BaseObject.h \
@@ -4688,6 +4727,8 @@ CMakeFiles/LightWeightRenderer.dir/main.cpp.o: \
  ../Include/jsoncpp/1.9.4_1/include/json/value.h \
  ../Include/jsoncpp/1.9.4_1/include/json/version.h \
  ../Include/jsoncpp/1.9.4_1/include/json/writer.h \
+ ../Utils/Head/JsonUtil.h \
+ ../Utils/Head/MathUtil.h \
  ../Config/Config.h \
  ../Source/Head/Graph/BaseRender/Material.h \
  ../Source/Head/Graph/BaseRender/Mesh.h \
@@ -4705,7 +4746,6 @@ CMakeFiles/LightWeightRenderer.dir/main.cpp.o: \
  ../Source/Head/Graph/MeshLoader/BaseLoader.h \
  ../Source/Head/Graph/MeshLoader/GeneralLoader.h \
  ../Source/Head/Graph/RenderPipeline.h \
- ../Source/Head/Graph/RendererComponent.h \
  ../Source/Head/Graph/Window.h \
  ../Source/Head/Object/BaseComponent.h \
  ../Source/Head/Object/BaseObject.h \

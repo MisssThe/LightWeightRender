@@ -8,32 +8,25 @@
 #define LIGHTWEIGHTRENDERER_MATERIAL_H
 
 
-#include "Shader.h"
 #include "../../../../Utils/Head/JsonUtil.h"
 #include "../../../../Utils/Head/ConstUtil.h"
-#include "../../../Head/Graph/GraphController/ShaderController.h"
 #include "Texture.h"
 
 class Material : public RenderComponent
 {
 public:
-    Material();
-    Material(std::string path);
+    Material();                     //创建一个空material
+    Material(std::string path);     //根据文本创建material
     void render() override;
-    
+    void bindShader(std::unordered_map<std::string, RenderComponent::KeyWord>* property);
 private:
     struct Info
     {
-        std::string type;
-        std::string value;
-        int location;
+        std::function<void()> func;
     };
-    std::unordered_map<std::string,Info> property_map;
-    std::unordered_map<std::string,int> external_property_map;
-    std::vector<Texture*>   texture;
+    std::vector<Info> property_map;
+    Json::Value content;
 private:
-    void initMaterial(std::unordered_map<std::string, Shader::KeyWord>* keyWordMap,Json::Value* root);
-    void setValue(std::string type,std::string value,int location);
 };
 
 

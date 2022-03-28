@@ -16,6 +16,7 @@ public:
     void render();
     static RenderPipeline* GetPipeLine(int index);
     int getIndex();
+    void addStaticBuffer(std::string bufferName);
 private:
     static bool isInit;
     struct RenderQueue

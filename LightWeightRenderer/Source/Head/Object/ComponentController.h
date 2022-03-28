@@ -8,8 +8,7 @@
 #define LIGHTWEIGHTRENDERER_COMPONENTCONTROLLER_H
 
 #include "BaseComponent.h"
-#include "../Graph/BaseRenderer.h"
-#include "../Graph/RendererComponent.h"
+#include "../Graph/GraphController/AssetController.h"
 
 class ComponentController : public AssetController
 {

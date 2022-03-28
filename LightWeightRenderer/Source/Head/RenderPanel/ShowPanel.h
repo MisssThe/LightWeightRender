@@ -13,10 +13,21 @@ class ShowPanel : public BasePanel
 public:
     ShowPanel()
     {
+        this->init();
+    }
+protected:
+    void initProperty() override {
         this->panelName = "info panel";
         this->width = 1280;
         this->height = 720;
-        this->init();
+    }
+
+    void initView() override {
+
+    }
+
+    void bindClick() override {
+
     }
     void update() override {
 

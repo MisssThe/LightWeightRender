@@ -53,8 +53,6 @@ private:
 
     template<class T> static void SaveDataReal(int key,T data)
     {
-        T* tempData = new T();
-        *tempData = data;
         data_map.insert(std::pair<int, void *>(key, data));
     }
 };

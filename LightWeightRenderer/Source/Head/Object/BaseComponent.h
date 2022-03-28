@@ -29,12 +29,18 @@ public:
     BaseComponent* getComponent(std::string name);
     std::vector<BaseComponent*> getComponents(std::string name);
 protected:
-    virtual bool use() = 0;
+    virtual bool use()        = 0;
+//    virtual void start()      = 0;
+//    virtual void update()     = 0;
+//    virtual void lateUpdate() = 0;
+//    virtual void end()        = 0;
     virtual void initProperty() = 0;
     std::string name;
     ComponentProperty property;
     ObjectInfo* objectInfo;
     bool isEnable;
+protected:
+    void registerValue(void* address,DataType type);
 };
 
 

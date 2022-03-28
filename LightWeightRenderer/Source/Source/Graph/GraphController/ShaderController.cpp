@@ -15,8 +15,7 @@ void ShaderController::Init() {
     if (!isReady) {
         isReady = true;
         std::function<void(std::string, JValue *value, bool)> func = [](std::string name, JValue *value, bool flag) {
-            std::vector<int> index_vec = JsonUtil::JsonToArray<Json::Value>(*value);
-            std::vector<Json::Value> vec = DataSaveUtil::UseData<Json::Value>(index_vec);
+            std::vector<Json::Value> vec = JsonUtil::JsonToArray<Json::Value>(*value);
             CreateShader(name, &vec, flag);
         };
         Json::Value root = Config::GetShaderConfig();

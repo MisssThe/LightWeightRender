@@ -52,3 +52,7 @@ void BaseComponent::init(ObjectInfo *objectInfo) {
     if (this->name.empty())
         LogUtil::LogError("init base component","error name");
 }
+
+void BaseComponent::registerValue(void* address,DataType type) {
+
+}

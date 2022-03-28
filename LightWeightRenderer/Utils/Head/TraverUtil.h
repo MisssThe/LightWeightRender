@@ -122,6 +122,15 @@ public:
         }
     }
 
+    //map取交集操作
+    template<class T1,class T2,class T3> static void MapIntersect(std::unordered_map<T1,T2>*map1,std::unordered_map<T1,T3>*map2,std::function<void(T2,T3)> func)
+    {
+        TraverUMap(map1,[&map2, &func](T1 key,T2 value) {
+            if (map2->find(key) != map2->end())
+                func(value,map2[key]);
+        });
+    }
+
     // 可中断json value遍历
     // @return true 中断，false 继续
     static bool TraverJsonValueBool(Json::Value* json,std::function<bool(std::string,Json::Value*)> func){

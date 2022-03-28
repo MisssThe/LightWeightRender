@@ -46,29 +46,34 @@ public:
             jsonFile.close();
         }
     }
-    template<class T> static std::vector<int> JsonToArray(Json::Value root) {
+    template<class T> static std::vector<T> JsonToArray(Json::Value root) {
         if (!root.empty()) {
             int length = root.size();
-            std::vector<int> vec;
-            for (int i = 0; i < length; ++i) {
+            std::vector<void*> vec;
+            for (int i = 0; i < length; ++i) {                            // 装箱
                 std::string type = typeid(T).name();
+                void* value = nullptr;
                 if (type == typeid(float).name()) {
-                    float data = root[i].asFloat();
-                    vec.push_back(DataSaveUtil::SaveData(data));
+                    int data = root[i].asFloat();
+                    value = &data;
                 } else if (type == typeid(int).name()) {
                     int data = root[i].asInt();
-                    vec.push_back(DataSaveUtil::SaveData(data));
+                    value = &data;
                 } else if (type == typeid(std::string).name()) {
                     std::string data = root[i].asString();
-                    vec.push_back(DataSaveUtil::SaveData(data));
+                    value = &data;
                 } else if (type == typeid(Json::Value).name()) {
-                    Json::Value data = root[i];
-                    vec.push_back(DataSaveUtil::SaveData(data));
+                    value = &root[i];
                 }
+                vec.push_back(value);
             }
-            return vec;
+            std::vector<T> result;
+            TraverUtil::TraverVector<void*>(&vec,[&result](void* data) {     //拆箱
+                result.push_back(*(T*)data);
+            });
+            return result;
         }
-        return std::vector<int>();
+        return std::vector<T>();
     }
 
 private:

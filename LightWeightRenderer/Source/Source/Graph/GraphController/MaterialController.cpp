@@ -32,7 +32,7 @@ Material *MaterialController::CreateMaterial() {
 void MaterialController::AddMaterial(JValue value) {
     std::string shaderName = value["shader"].asString();
     Shader *shader = ShaderController::GetShader(shaderName);
-    std::unordered_map<std::string, Shader::KeyWord> keyWordMap = shader->getKeyWordMap();
+//    std::unordered_map<std::string, Shader::KeyWord> keyWordMap = shader->getKeyWordMap();
 }
 
 Material *MaterialController::GetMaterial(std::string name) {

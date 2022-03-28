@@ -20,7 +20,7 @@ public:
     static void Run();
     static void Stop();
 private:
-    static ShowPanel showPanel;
+//    static ShowPanel showPanel;
     static InfoPanel infoPanel;
 private:
     Renderer();

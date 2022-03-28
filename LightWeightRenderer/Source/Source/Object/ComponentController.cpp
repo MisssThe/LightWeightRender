@@ -3,6 +3,8 @@
 //
 
 #include "../../Head/Object/ComponentController.h"
+#include "../../Head/Graph/RendererComponent.h"
+
 std::unordered_map<std::string,int> ComponentController::only_map;
 std::unordered_map<std::string,int> ComponentController::necessary_map;
 bool ComponentController::isReady = false;
